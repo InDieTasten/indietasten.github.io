@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/indietasten
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://about.indietasten.net
+  * I am indietasten (https://keybase.io/indietasten) on keybase.
+  * I have a public key with fingerprint DE92 597B 9E19 2CDF 91F6  1366 F9BD A47B AE66 BC0C
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120f0383fd9a844be0a0d6db02aefc1fb3f668012051b05272af63fbd08710565230a",
+            "fingerprint": "de92597b9e192cdf91f61366f9bda47bae66bc0c",
+            "host": "keybase.io",
+            "key_id": "f9bda47bae66bc0c",
+            "kid": "0101c1ef2bcb4b304288ea4c16b0f398f02ee09fad8e598049d516349b01ee5f91dd0a",
+            "uid": "7a13e034e6bfd167e3e1defb476d5319",
+            "username": "indietasten"
+        },
+        "service": {
+            "hostname": "about.indietasten.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1475271402,
+    "expire_in": 157680000,
+    "prev": "3e11b7ec0e47bd38593e37381427548f8c29663158b8d867605e8f2990012076",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMN1AnicbZJtUFVFHMZ5SdQLEgYM4hSDBwjugLB73g+lHzJimACDCHOG5nJe9lxO
+4L2Xew/voAYY8EFNhoxAEQQyqyGgZrABYgBn6mKDLyWO1pQgIBERSfKiZJ3D6Ewf
+2i87u/t7nn3++9+LW9xdDK6r/W0lHXKfl+ulwdY8l33zt2ZLMMEqFWGxJVg2Wp9Q
+joQcqilbkbBYDEAcyIBgCVnieJYkBQR4INGSAHAeySKUBUKmaVbHKCgACmdwXqYJ
+WZAAy0BA0RROAB6LwmTFYkZ2m12xqJqthDic4hiBQ5DDRUnmoExDgqZlTpB4khF4
+RNOCCERNmGV16AotnMA7ULRi1fa0hWk93v/wT3IDKEIk44IokAIBSJxlEU+KkBaA
+THCsDHCEACfzEosojgUkJ1GQJkhOABAhSgskSeu589btGB4SCBAkogVZgjSDCAQl
+JAskQ0sUATkddCC7hT+ANFqxSApSeYeKLFhZFKYd5Csi0t9WL+YxxAvWPDX6P2i0
+Bamaj81uVa2iNUdDslTVFqs7qEU2XVKABNNjM5OgKy1mTZCP7A7FasFioUaKqqK7
+Q5LRWgFJgEdhqNCm2JFJ0QmK0XqlDf0alK9ZanVAgUEiQNorSgRLcQQiGIKFJM5Q
+JCuzIs7RNAEpVmAllmZoQCFWxjkO6C1naEwvL9di1byhlpM3a54OxWzh1Tw7wsqG
+BjOecnE1uHhscNP/moths8+TH7j1vI9LZ3HVlfQBp3fTB6+DheA/1kbJ4Rs1J/qQ
+W9CZje25A3tLQVHlBWf8/bsBzv7m3qSAubFrE2lmQ6VnY/rw70MH908/Gqq3hTXF
++F/qK885bfho5dnUo12JL52rOna7eOuDfnn5lPSTyXgykGuAB/2M2fEzC5nbIh69
+DFIORUbseaNlT+PV8ekR/rBUtHPZ0FytLvUeiUqrmqmJ+yUmJaJ02KP18pb871ea
+L+yVYv0LPb8eKU/+rsd3YG5zBVtMTpnvdtnLO0rObupWevuIm7u7gvM/uflXZ57v
+OUtlSWNgRa2b2vLiq2RmwWL1UmBFUWRQyJkjx0rvhWSeap9vTQmbjl8a8nozYaw/
+4+pn9db5qcORPwdkVaCGhNCEijvGkZCBqQ9nV6Z23PIPD5v3e9BDrz4cV5vouLG1
+8Mt3hPeq55Rff4tOjfkz6Hxi4Gvb7oVz6SvZa6Zdr5w93gqcf9tvvAOerh0Y9J5d
+vt3unTwh/zh5vdrZ9ty7qT+0J3UO/TMXF2xsMX6eu7g6M/n8plG15mN8467ua9mL
+kwWOL77asftTX8/xt+e4wqyOwlqHkrzvxM4DaYeckUkhbl+W1F30M8dMZOQuV3q0
+LdRuUL71jvCpE8frjMm5oaH1+wPKwrZHPdOZkvUNfFjZNni9p6XbM+U0n3j0SvD9
+t9w7QjK3T7iPhnjNnnyh4f2IfwG6Rsus
+=ngyw
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/indietasten
+
+==================================================================
