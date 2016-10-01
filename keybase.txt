@@ -67,9 +67,6 @@ t9w7QjK3T7iPhnjNnnyh4f2IfwG6Rsus
 =ngyw
 -----END PGP MESSAGE-----
 
-And finally, I am proving ownership of this host by posting or
-appending to this document.
-
 View my publicly-auditable identity here: https://keybase.io/indietasten
 
 ==================================================================
