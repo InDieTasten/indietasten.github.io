@@ -1,8 +1,3 @@
-# indietasten.github.io
-Welcome to my personal homepage WIP
+# My Homepage
 
--
-
-Have fun and enjoy coding!
-
--
+ - about.indietasten.net
