@@ -1,3 +1,5 @@
 theme: jekyll-theme-midnight
 title: InDieTasten
 description: Homepage of InDieTasten. A developer, gamer and youtuber!
+show_downloads: "false"
+google_analytics: "UA-40316745-4"
