@@ -17,7 +17,7 @@ Those are the projects that I completed, am currently working on, and those, who
     - SfmlState - State management plugin for SFML
     - LikeLink - C++ data binding helper
     - SfmlSync - Extended networking (EntitySync, MessageHub) plugin for SFML
-    - SfmlRig - nimation with joints and keyframes plugin for SFML
+    - SfmlRig - Animation with joints and keyframes plugin for SFML
     - SfmlDust - Particle plugin for SFML
 - Machine Learning
     - XOR - Simple NEAT implementation to create an XOR agent
