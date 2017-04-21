@@ -12,8 +12,7 @@ Those are the projects that I completed, am currently working on, and those, who
     - ~~Electron Jump - Doodle Jump clone using SFML~~
     - ~~Connect4 - Connect4 clone with local and remote multiplayer using SFML~~
     - **B0tnet - HTML5 Idle/Hacking game**
-    - Signal - C++ EventHandler implementation
-    - SfmlFormal - GuiPlugin for SFML
+    - **SfmlFormal - GuiPlugin for SFML**
     - SfmlState - State management plugin for SFML
     - LikeLink - C++ data binding helper
     - SfmlSync - Extended networking (EntitySync, MessageHub) plugin for SFML
