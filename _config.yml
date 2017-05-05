@@ -2,6 +2,6 @@ theme:
 title: "InDieTasten"
 description: "Developer, Gamer, YouTuber"
 show_downloads: false
-google_analytics: "UA-40316745-4"
+google_analytics: false
 gems:
   - jekyll-feed
