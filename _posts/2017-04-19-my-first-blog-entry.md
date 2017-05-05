@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "My first blog entry using GH pages and Jekyll"
 categories: milestone update
 ---
