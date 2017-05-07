@@ -22,6 +22,8 @@ Those are the projects that I completed, am currently working on, and those, who
     - XOR - Simple NEAT implementation to create an XOR agent
     - Pole-Balancing - Simple NEAT implementation to create a pole-balancing agent
     - BestBet - Program that predicts outcomes of sports events and tells you what's best to bet $$$
+- World Problems
+    - Open Source educational platform (Khan academy in distributed form)
 
 Apart from those projects, I'm also professionally working on other projects ran by the company I work for, which I am not going to list in here due to NDAs.
 
