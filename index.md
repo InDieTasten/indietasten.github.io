@@ -14,6 +14,7 @@ Those are the projects that I completed, am currently working on, and those, who
     - **XOR - Simple NEAT implementation to create an XOR agent**
     - Pole-Balancing - Simple NEAT implementation to create a pole-balancing agent
     - Intelligent City Traffic Control
+    - NLP Semantics Visualizer (objects, relations, locations)
 
 Apart from those projects, I'm also professionally working on other projects ran by the company I work for, which I can not list here unfortunately.
 
