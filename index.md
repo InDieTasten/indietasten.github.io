@@ -6,10 +6,14 @@ title: InDieTasten
 
 Those are the projects that I completed, am currently working on, and those, who I want to pursue in the future:
 
-- Games / Libraries
+- Games / Applications / Libraries
     - ~~Electron Jump - Doodle Jump clone using SFML~~
     - ~~Connect4 - Connect4 clone with local and remote multiplayer using SFML~~
+    - ~~indie-classes - Lightweight classes for Lua~~
+    - **indie-ml - Neural network and NEAT algorithm implementation for Lua**
     - Top Down Heist - A 2D payday2 stealth clone (coop)
+    - LOC - Idle game inspired by Cookie Clicker and Paperclips
+    - NewTube - YouTube wrapper adding neutral recommendations, ratings, subscriptions and views
 - Machine Learning
     - **XOR - Simple NEAT implementation to create an XOR agent**
     - Pole-Balancing - Simple NEAT implementation to create a pole-balancing agent
