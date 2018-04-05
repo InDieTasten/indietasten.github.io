@@ -20,9 +20,7 @@ Those are the projects that I completed, am currently working on, and those, who
     - Intelligent City Traffic Control
     - NLP Semantics Visualizer (objects, relations, locations)
 
-```diff
-- Apart from those "childish" projects I do in my free time, I'm also professionally working full-time in projects executed by my employer. These are mostly cloud-based distributed web applications utilizing Microsofts hardware and software stack, such as Azure and ASP.NET, SQL Server, etc.
-```
+_Apart from those "childish" projects I do in my free time, I'm also professionally working full-time in projects executed by my employer. These are mostly cloud-based distributed web applications utilizing Microsofts hardware and software stack, such as Azure and ASP.NET, SQL Server, etc._
 
 To frame the scope of my experience so far, here is a list of languages, frameworks and platforms I touched in the past, am actively using and those, who I want to get in touch with in the future:
 
@@ -44,3 +42,6 @@ To frame the scope of my experience so far, here is a list of languages, framewo
 - **Docker Swarm**
 - Service Fabric
 - Angular 4
+
+While this page has been about software development at the coding scale, I have also gotton in touch with designing scalable, highly available and business critical architectures. This is something I'm really passionate about and I'm happy, that my current employment enables me to seamlessly jump between developer and architect role.
+
