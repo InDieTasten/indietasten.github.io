@@ -13,12 +13,11 @@ Those are the projects that I completed, am currently working on, and those, who
     - **indie-ml - Neural network and NEAT algorithm implementation for Lua**
     - Top Down Heist - A 2D payday2 stealth clone (coop)
     - LOC - Idle game inspired by Cookie Clicker and Paperclips
-    - NewTube - YouTube wrapper adding neutral recommendations, ratings, subscriptions and views
+    - CC-C# - C# Build tools to write CC programs in C#
 - Machine Learning
     - **XOR - Simple NEAT implementation to create an XOR agent**
     - Pole-Balancing - Simple NEAT implementation to create a pole-balancing agent
     - Intelligent City Traffic Control
-    - NLP Semantics Visualizer (objects, relations, locations)
 
 _Apart from those "childish" projects I do in my free time, I'm also professionally working full-time in projects executed by my employer. These are mostly cloud-based distributed web applications utilizing Microsofts hardware and software stack, such as Azure and ASP.NET, SQL Server, etc._
 
