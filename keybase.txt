@@ -4,7 +4,7 @@ https://keybase.io/indietasten
 
 I hereby claim:
 
-  * I am an admin of http://about.indietasten.net
+  * I am an admin of https://about.indietasten.net
   * I am indietasten (https://keybase.io/indietasten) on keybase.
   * I have a public key with fingerprint DE92 597B 9E19 2CDF 91F6  1366 F9BD A47B AE66 BC0C
 
