@@ -16,7 +16,7 @@ Of course, I have lots of work ahead of me to fill this page with a reasonable a
 
 ## Discussion
 
-For questions or comments, here's a GitHub thread for this post.
+For questions or comments, [here's](https://github.com/InDieTasten/indietasten.github.io/issues/19) a GitHub thread for this post.
 
 Wish me luck,
 ~InDieTasten
