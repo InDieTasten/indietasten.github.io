@@ -5,7 +5,8 @@ $primary-color: #2e7bcf;
 $secondary-color: #9ddcff;
 $background-color: #0a121f;
 $text-color: #ececec;
-$heading-color: $secondary-color;
+$heading-color: desaturate($secondary-color, 15%);
+$heading-icon-color: adjust-hue($secondary-color, 40deg);
 
 
 /* LAYOUT STYLES */
@@ -185,7 +186,7 @@ form {
 #main-content h1:before {
   padding-right: 0.3em;
   margin-left: -0.9em;
-  color: #9ddcff;
+  color: $heading-icon-color;
   content: "/";
 }
 
@@ -200,7 +201,7 @@ form {
   padding-right: 0.3em;
   margin-left: -1.5em;
   content: "//";
-  color: #9ddcff;
+  color: $heading-icon-color;
 }
 
 #main-content h3 {
@@ -216,7 +217,7 @@ form {
   padding-right: 0.3em;
   margin-left: -2em;
   content: "///";
-  color: #9ddcff;
+  color: $heading-icon-color;
 }
 
 #main-content h4 {
@@ -231,7 +232,7 @@ h4:before {
   padding-right: 0.3em;
   margin-left: -2.8em;
   content: "////";
-  color: #9ddcff;
+  color: $heading-icon-color;
 }
 
 #main-content h5 {
@@ -244,7 +245,7 @@ h5:before {
   padding-right: 0.3em;
   margin-left: -3.2em;
   content: "/////";
-  color: #9ddcff;
+  color: $heading-icon-color;
 }
 
 #main-content h6 {
@@ -257,7 +258,7 @@ h6:before {
   padding-right: 0.3em;
   margin-left: -3.7em;
   content: "//////";
-  color: #9ddcff;
+  color: $heading-icon-color;
 }
 
 p {
