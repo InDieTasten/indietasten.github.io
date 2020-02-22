@@ -25,7 +25,7 @@ I'm secretly proud I got this vanity url 😊
 [GitHub](https://github.com/indietasten)
 Star my stuff, and follow my activity, or lack thereof.
 
-[Twitter](https://github.com/twitter)
+[Twitter](https://twitter.com/indietasten)
 Just gift me a follow, cause I won't post anyways...
 
 
