@@ -1,9 +1,11 @@
 @import "normalize";
 @import "rouge-github";
 
-$accent-color: #2e7bcf;
+$primary-color: #2e7bcf;
+$secondary-color: #9ddcff;
 $background-color: #0a121f;
 $text-color: #ececec;
+$heading-color: $secondary-color;
 
 
 /* LAYOUT STYLES */
@@ -21,16 +23,16 @@ p {
 }
 
 a {
-  color: #2879d0;
+  color: $secondary-color;
 }
 a:hover {
-  color: #2268b2;
+  color: darken($secondary-color, 10%);
 }
 
 header {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: $accent-color url(../images/header-bg.jpg) 0 0 repeat-x;
+  background: $primary-color url(../images/header-bg.jpg) 0 0 repeat-x;
 }
 
 header h1 {
@@ -175,7 +177,7 @@ form {
   margin-bottom: 0;
   font-size: 2.8em;
   font-weight: normal;
-  color: #474747;
+  color: $heading-color;
   text-indent: 6px;
   letter-spacing: -1px;
 }
@@ -191,7 +193,7 @@ form {
   margin-bottom: 8px;
   font-size: 22px;
   font-weight: bold;
-  color: #474747;
+  color: $heading-color;
   text-indent: 4px;
 }
 #main-content h2:before {
@@ -206,7 +208,7 @@ form {
   margin-bottom: 8px;
   font-size: 18px;
   font-weight: bold;
-  color: #474747;
+  color: $heading-color;
   text-indent: 3px;
 }
 
@@ -221,7 +223,7 @@ form {
   margin-bottom: 8px;
   font-size: 15px;
   font-weight: bold;
-  color: #474747;
+  color: $heading-color;
   text-indent: 3px;
 }
 
@@ -235,7 +237,7 @@ h4:before {
 #main-content h5 {
   margin-bottom: 8px;
   font-size: 14px;
-  color: #474747;
+  color: $heading-color;
   text-indent: 3px;
 }
 h5:before {
@@ -248,7 +250,7 @@ h5:before {
 #main-content h6 {
   margin-bottom: 8px;
   font-size: .8em;
-  color: #474747;
+  color: $heading-color;
   text-indent: 3px;
 }
 h6:before {
@@ -299,15 +301,6 @@ footer {
   padding-bottom: 30px;
   margin-top: 40px;
   font-size: 13px;
-  color: #aaa;
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
-}
-
-footer a {
-  color: #666;
-}
-footer a:hover {
-  color: #444;
 }
 
 /* MISC */
