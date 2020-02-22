@@ -5,8 +5,8 @@ $primary-color: #2e7bcf;
 $secondary-color: #9ddcff;
 $background-color: #0a121f;
 $text-color: #ececec;
-$heading-color: desaturate($secondary-color, 15%);
-$heading-icon-color: adjust-hue($secondary-color, 40deg);
+$heading-color: desaturate($secondary-color, 30%);
+$heading-icon-color: adjust-hue($primary-color, 0deg);
 
 
 /* LAYOUT STYLES */
