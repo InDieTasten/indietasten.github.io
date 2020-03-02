@@ -1,7 +1,5 @@
-theme:
 title: "InDieTasten"
 description: "Developer & Gamer"
-show_downloads: false
-google_analytics: false
 gems:
   - jekyll-feed
+  - jekyll-paginate
