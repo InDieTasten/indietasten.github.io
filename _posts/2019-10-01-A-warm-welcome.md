@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "A warm welcome to my blog"
 categories: general
 ---
