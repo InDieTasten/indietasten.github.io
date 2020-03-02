@@ -1,5 +1,6 @@
 ---
 title: Blog
+layout: default
 description: The home page of InDieTasten's blog.
 ---
 
@@ -15,6 +16,7 @@ description: The home page of InDieTasten's blog.
 {% endfor %}
 
 <!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">
@@ -32,3 +34,4 @@ description: The home page of InDieTasten's blog.
     <span class="next ">Next</span>
   {% endif %}
 </div>
+{% endif %}
