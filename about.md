@@ -32,4 +32,7 @@ Star my stuff, and follow my activity, or lack thereof.
 [Twitter](https://twitter.com/indietasten)
 Just gift me a follow, cause I won't post anyways...
 
+[StackOverflow](https://stackoverflow.com/users/3919195/indietasten)
+Just one more rep! You can do it!
+
 
