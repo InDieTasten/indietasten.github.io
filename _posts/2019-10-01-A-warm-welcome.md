@@ -4,8 +4,6 @@ title: "A warm welcome to my blog"
 categories: general
 ---
 
-# A warm welcome to my blog
-
 Hi there! Welcome to my blog. I'm Max. I am a full-stack web developer based in Germany.
 
 This is my personal blog, where I write about interesting topics I run
