@@ -1,3 +1,8 @@
+---
+title: My projects
+description: A list of my past and current development projects
+---
+
 # My projects
 
 **Legend**
