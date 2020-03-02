@@ -1,3 +1,7 @@
+---
+title: About InDieTasten
+description: Some general details and facts about InDieTasten, including social media links.
+---
 
 # About me
 
