@@ -1,0 +1,10 @@
+.NET Core Dependency Injection
+==============================
+
+## Intro
+
+Hi, in this video I'm going to showcase the Microsoft .NET Core Dependency Injection abstractions and their default implementation.
+
+I am not going to explain, why you would want to use dependency injection in general.
+
+
