@@ -3,8 +3,23 @@
 
 ## Intro
 
-Hi, in this video I'm going to showcase the Microsoft .NET Core Dependency Injection abstractions and their default implementation.
+Hi, in this video I'm going to showcase the Microsoft .NET Core Dependency Injection abstractions and how other frameworks like ASP.NET Core use them internally.
 
-I am not going to explain, why you would want to use dependency injection in general.
 
+### Registration and Resolution
+
+For the basics, there are two main interfaces, which correspond to the two main phases for dependency injection.
+
+In this code sample, I have defined a class and an interface. As in most dependency injection frameworks, we have two phases:
+Registration and resolution.
+
+In the .NET Core DI system, we use a so-called ServiceCollection to register our objects.
+
+From the ServiceCollection, we can build a ServiceProvider. The service provider is able to resolve all the services, that have been registered to the afore-mentioned service collection that was used to create the ServiceProvider.
+
+In a lot of other frameworks, there is less of a separation between Registration and Resolution.
+This design of the interfaces forces developers to initialize the entire dependency graph at the initialization of an application, which makes debugging problems with the dependency injection much easier.
+
+When we run out sample, we can see that we can sucessfully register our service, and resolve it from the ServiceProvider.
+If we were to register our service after the creation of our service provider, the provider will not know about the existance of the service and will therefor not be able to resolve it.
 
