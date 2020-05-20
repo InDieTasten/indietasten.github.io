@@ -36,7 +36,7 @@ A blazor app for designing eletrical cirtcuits for minecraft, known as Redstone.
 Not even close to beginning with the actual implementation. The website is already up though, running in WASM capable browsers.
 
 [GitHub](https://github.com/indietasten/breadstone)
-[Demo](https://breadstone.indietasten.net/)
+| [Demo](https://breadstone.indietasten.net/)
 | Blazor
 | C#
 | Tool
@@ -46,8 +46,8 @@ Not even close to beginning with the actual implementation. The website is alrea
 
 Sample project showcasing .NET Core dependency injection.
 I might write a separate blog post about this one day...
-
-[GitHub](https://github.com/InDieTasten/DevTease.DI)
+[YouTube](https://youtu.be/VwIRrsQDVWQ)
+| [GitHub](https://github.com/InDieTasten/DevTease.DI)
 | .NET Core
 | C#
 | Sample
