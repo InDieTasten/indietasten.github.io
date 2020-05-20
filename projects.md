@@ -46,6 +46,7 @@ Not even close to beginning with the actual implementation. The website is alrea
 
 Sample project showcasing .NET Core dependency injection.
 I might write a separate blog post about this one day...
+
 [YouTube](https://youtu.be/VwIRrsQDVWQ)
 | [GitHub](https://github.com/InDieTasten/DevTease.DI)
 | .NET Core
@@ -59,8 +60,8 @@ I might write a separate blog post about this one day...
 
 A project showcasing the WebApplicationFactory to facilitate integration tests of ASP.NET Core applications.
 
-[GitHub](https://github.com/InDieTasten/DevTease.AspNetIntegrationTests)
 [YouTube](https://www.youtube.com/watch?v=dBCFFZS4ACo)
+| [GitHub](https://github.com/InDieTasten/DevTease.AspNetIntegrationTests)
 | ASP.NET Core
 | C#
 | Sample
