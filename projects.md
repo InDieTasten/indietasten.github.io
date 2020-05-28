@@ -15,7 +15,16 @@ description: A list of my past and current development projects
 
 ## 2020
 
-Nothing new started so far. But there are lots of ideas :D
+### ✔ TerminalRTX
+
+A basic raytracing renderer that runs in the terminal. It's completely useless.
+The entire 3 hours of the port are documented as a live coding session on YouTube.
+
+[YouTube](https://www.youtube.com/playlist?list=PLmdmw12jg5sz1UIrHYT1_kQ5k0pgDUgec)
+| [GitHub](https://github.com/InDieTasten/TerminalRTX)
+| .NET 5
+| C#
+| Fun
 
 ## 2019
 
@@ -94,7 +103,7 @@ A hacking game idea, that turned into a terminal playground for myself.
 There are couple funny demoes in the tagged releases of some of those experiments.
 
 [GitHub](https://github.com/InDieTasten/b0tnet)
-[Demo](https://b0tnet.indietasten.net/)
+| [Demo](https://b0tnet.indietasten.net/)
 | HTML
 | Typescript
 | Game
