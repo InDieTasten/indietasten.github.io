@@ -63,6 +63,15 @@ Not even close to beginning with the actual implementation. The website is alrea
 | C#
 | Tool
 
+### ✔ DevTease.Plugins
+
+Sample project showcasing dynamic assembly loading and unloading in .NET Core 3.
+I might write a separate blog post about this one day...
+
+[GitHub](https://github.com/InDieTasten/DevTease.Plugins)
+| .NET Core
+| C#
+| Sample
 
 ### ✔ DevTease.DI
 
