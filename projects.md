@@ -26,6 +26,19 @@ The entire 3 hours of the port are documented as a live coding session on YouTub
 | C#
 | Fun
 
+### ✔ Cov-2-Queue
+
+A questionaire for determining a priority classification for a test subject's sample.
+This was designed, implemented and rolled out as part of the 48-hour #wirvsvirus hackathon.
+The hackathon was the biggest in history by participant and submission count at the time.
+
+[Demo](https://cov2q.de/)
+| [GitHub](https://github.com/InDieTasten/Sars-Cov2-Necessity-Screening)
+| Angular
+| Medical
+| Covid-19
+| Web App
+
 ## 2019
 
 ### ✔ Authenticated Integration Testing
