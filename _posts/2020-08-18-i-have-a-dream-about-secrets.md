@@ -4,6 +4,8 @@ title: "I have a dream(rant) about secrets in repositories"
 categories: git secrets deployment
 ---
 
+# I have a ~~dream~~ rant about secrets in repositories
+
 TL DR: Please don't put them there
 
 ## What?
