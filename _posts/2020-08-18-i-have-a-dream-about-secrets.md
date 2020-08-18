@@ -91,7 +91,9 @@ No more "config". You don't have builds that only work for one environment.
 You don't need to rebuild to move a code version from one environment to another.
 You just deploy the same code with different config to the next environment.
 
-    Code + Config = Release
+    Code => Build
+    
+    Build + Config => Release
 
 And the intern can finally work on all them cool projects without seeing prod credentials.
 
