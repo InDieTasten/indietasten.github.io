@@ -10,9 +10,9 @@ TL DR: Please don't put them there
 
 ## What?
 
-I've been working in the software development business professionally for 5 years now, all at one company.
-We have yet to "discover" open source. We heavily use OSS, but have nothing up of our own stuff.
-That may be the reason why nobody so far has ever questioned putting secrets into the git repository.
+I've been working in the software development business professionally for 5 years now.
+The company I work for has yet to "discover" open source. We heavily use OSS, but have nothing up of our own stuff.
+That may be the reason why nobody so far has ever questioned putting secrets into git repositories.
 
 That would be one of the first lessons, when pushing anything into a public repository.
 No secrets. It's that simple.
@@ -24,16 +24,15 @@ For public repositories, I think it should be fairly obvious, that putting secre
 
 But even for private repos, there is always a chance of leaking the repo. A quick clone on some machine.
 Drive may not be encrypted and the device gets lost. Of course you forget, which repos have been cloned to that machine.
-Nobody keeps track of that. I have probably 30 something repos on my dev machine.
-The secrets on that single machine could potentially kill 10 or more production services we are running right now.
+Nobody keeps track of that. I have probably 30 something repos on my dev machine. Some of which containing secrets that can potentially cause damage.
 
     appsettings.json => connection strings => sql db => drop
 
 Or even worse, silently taking dumps and blackmailing us. The problem wouldn't be as bad, when secrets would rotate often.
-But sadly, that's another problem we haven't touched. I am happy to see at least some passwords having 30+ bits of entropy.
+But sadly, that's another problem we haven't touched. It's been getting better lately, but there's still room for improvement.
 
-Another problem is versioning. It might not come off as a huge problem, but the commit history is cluttered with our devops guy
-commiting "config" over and over again, as he wants to trigger our continuous deployment with different settings in a trial and error manner.
+Another problem is versioning. It might not come off as a huge problem, but the commit history is cluttered with our devops people
+commiting "config" over and over again, as they want to trigger our continuous deployment with different settings in a trial and error manner.
 It's a cool setup. We have branches for each environment, and you just have to merge into them, and as they update, they will be deployed.
 It's cool as long as you go "forward". If you want to get back to a different version, or want to try a feature branch on some environment,
 you will be faced with reverting commits, which is kinf of stupid, because then you'd have to revert the revert, if you were to ever test that
@@ -41,8 +40,6 @@ branch again. Resetting the branch would be better, but often people will branch
 
 Also, any intern starting to set foot in one of the real projects requiring access to code,
 will automatically be granted access to all of the environments secrets. Good stuff.
-
-It's a mess.
 
 
 ## A vision for improvement
@@ -66,11 +63,11 @@ Having a hard to repro bug in production? Just deploy the Debug version there fo
 
 Want to test a feature branch? Select your preferred build definition. Select an environment, done.
 
-As a bonus, you also have increase confidence,
+As a bonus, you also have increased confidence,
 that moving a code version from one environment to another won't introduce additional changes,
 that may have happened in the target environment branch before.
 
-Of couse you still need to communicate about who is putting what into which environment.
+Of course you still need to communicate about who is putting what into which environment.
 Unless you can dynamically provision new environments,
 but that's a dream for another night.
 
