@@ -5,12 +5,20 @@ description: The home page of InDieTasten's blog.
 ---
 
 <!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <a href="{{ post.url }}">
-    {{ post.title }}
-    <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
-  </a>
-{% endfor %}
+<table>
+  {% for post in paginator.posts %}
+    <tr>
+      <td>
+        <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
+      </td>
+      <td>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </td>
+  </tr>
+  {% endfor %}
+</table>
 
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
