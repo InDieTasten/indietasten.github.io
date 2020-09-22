@@ -15,6 +15,15 @@ description: A list of my past and current development projects
 
 ## 2020
 
+### ✔ TextAdventure.NET
+
+A .NET Standard library for creating interactive text adventures inside a terminal
+
+[Github](https://github.com/InDieTasten/TextAdventure.NET)
+| .NET Standard
+| C#
+| Library
+
 ### ✔ TerminalRTX
 
 A basic raytracing renderer that runs in the terminal. It's completely useless.
