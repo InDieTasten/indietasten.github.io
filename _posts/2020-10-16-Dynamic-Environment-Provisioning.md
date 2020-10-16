@@ -6,7 +6,7 @@ categories: ci cd testing infrastructure
 I have a dream about dynamic environment provisioning
 ========================================================
 
-# The repeating annoyance of pre-release madness
+## The repeating annoyance of pre-release madness
 
 Oftentimes when developing larger business applications in a larger team,
 you run into problems as you get close to release dates.
@@ -32,7 +32,7 @@ and to test intermediate revisions of the result.
 Deploying these one after the other and testing these sequentially,
 wastes a lot of time. A lot of the time is spent waiting for CI/CD pipelines.
 
-# Make annoyance go bleh
+## Make annoyance go bleh
 
 I'd like to propose a different solution.
 Be prepared for such incidents by having the ability to easily create additional environments.
@@ -57,7 +57,7 @@ which are aspects of development that easily fall out of focus when time is runn
 Schema migrations, seeding and similar issues are often at fault for final release day madness
 and embarrassed team members.
 
-# Caveats
+## Caveats
 
 Of course this will be a bit more expensive on your infrastructure resources.
 You have to make sure to unprovision all these environments,
