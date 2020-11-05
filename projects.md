@@ -15,11 +15,21 @@ description: A list of my past and current development projects
 
 ## 2020
 
+### 🛠 Space Race
+
+Entry for the Game Off 2020 itchio game jam. Created by me and some colleagues in Unity. You are a mechanic and try to build a rocket capable of flying to the moon faster than your enemy.
+
+[GitHub](https://github.com/InDieTasten/SpaceRace)
+| .NET Mono
+| Unity
+| C#
+| Game
+
 ### 🛠 TextAdventure.NET
 
 A .NET Standard library for creating interactive text adventures inside a terminal
 
-[Github](https://github.com/InDieTasten/TextAdventure.NET)
+[GitHub](https://github.com/InDieTasten/TextAdventure.NET)
 | .NET Standard
 | C#
 | Library
