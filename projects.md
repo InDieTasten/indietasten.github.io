@@ -51,7 +51,7 @@ A questionaire for determining a priority classification for a test subject's sa
 This was designed, implemented and rolled out as part of the 48-hour #wirvsvirus hackathon.
 The hackathon was the biggest in history by participant and submission count at the time.
 
-[Demo](https://cov2q.de/)
+[Demo](https://necessity-screening.indietasten.net/)
 | [GitHub](https://github.com/InDieTasten/Sars-Cov2-Necessity-Screening)
 | Angular
 | Medical
