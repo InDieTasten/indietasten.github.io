@@ -12,7 +12,7 @@ Oftentimes when developing larger business applications in a larger team,
 you run into problems as you get close to release dates.
 You and your colleages finally merge all of their changes together,
 it deploys to a test environment and something breaks.
-Assuming you've all had a couple of bugfixes at the end of the sprint,
+Assuming you've all had a couple of bug fixes at the end of the sprint,
 and with larger features just completing in time to be included for the release,
 you are all left with a broken application the evening before release.
 What to do?
@@ -67,7 +67,7 @@ as accidentally removing one too many isn't a problem, as it can be recreated ea
 This also only really works, when you are able to
 isolate the application from other systems you don't have control over / can't provision automatically.
 
-Make sure not to forget continous environments.
+Make sure not to forget continuous environments.
 It's great if you can spin up different environments quickly,
 but that doesn't help, if after every release you need to
 recreate production because the data isn't compatible.
