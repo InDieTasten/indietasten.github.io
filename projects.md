@@ -11,7 +11,7 @@ description: A list of my past and current development projects
 
 ✔ Donely abandoned
 
-⚰ Abondoned abandoned
+⚰ Abandoned abandoned
 
 ## 2020
 
@@ -166,7 +166,7 @@ As you can imagine from the description. No progress whatsoever.
 
 ## 2016
 
-### ✔ Slated Prime Sudoku solver
+### ✔ Slanted Prime Sudoku solver
 
 This brute-forces a specially formed type of sudoku also linked below.
 That was like an hour wasted, and sadly, I wasn't first to solve it. But I was close.
