@@ -11,7 +11,7 @@ description: A list of my past and current development projects
 
 ✔ Donely abandoned
 
-⚰ Abondoned abandoned
+⚰ Abandoned abandoned
 
 ## 2020
 
