@@ -1,0 +1,44 @@
+[
+	{
+		"name": "DevBot.NET",
+		"description": "A bot that communicates via text. You can tell the bot requirements. The bot will help refine these requirements. The bot then generates source that satisfies all requirements. The process is then highly iterative.",
+		"technologies": [".NET", "Bot", "Code Generation"],
+		"difficulty": "extreme",
+		"scope": "extreme"
+	},
+	{
+		"name": "cli-lighthouse-viewer",
+		"description": "A node.js cli tool capable of rendering a lighthouse audit report inside the terminal.",
+		"technologies": ["Node.js", "Terminal", "Lighthouse"],
+		"difficulty:": "easy",
+		"scope": "small"
+	},
+	{
+		"name": "EduPlex",
+		"description": "A terminal multiplexer for educational purposes of how terminal multiplexing works.",
+		"technologies": [".NET", "Terminal"],
+		"difficulty": "high",
+		"scope": "medium"
+	},
+	{
+		"name": "Cqrs.NET",
+		"description": "A command query responsibility segregation framework for .NET. Allows pipeline processing of commands and queries.",
+		"technologies": [".NET"],
+		"difficulty": "medium",
+		"scope": "medium"
+	},
+	{
+		"name": "StaticSite.NET",
+		"description": "A static site generator written in .NET. Supports some form of templating.",
+		"technologies": [".NET"],
+		"scope": "large",
+		"difficulty": "high"
+	},
+	{
+		"name": "ConsoleCasino.NET",
+		"description": "A cli game collection of classic casino games",
+		"technologies": [".NET"],
+		"scope": "large",
+		"difficulty": "medium"
+	}
+]
