@@ -1,5 +1,17 @@
 [
   {
+    "name": "CliSpectrogram.NET",
+    "status": "abandoned",
+    "description": "A project using NAudio nuget library to display a real-time spectrogram of a sound input device. While I wasn't able to render an actual FFT, at least peak rendering works.",
+    "github_link": "https://github.com/InDieTasten/CliSpectrogram.NET",
+    "tags": [
+      ".NET Core",
+      "NAudio",
+      "C#",
+      "Sample"
+    ]
+  },
+  {
     "name": "Space Race",
     "status": "abandoned",
     "description": "Entry for the Game Off 2020 itchio game jam. Created by me and some colleagues in Unity. You are a mechanic and try to build a rocket capable of flying to the moon faster than your enemy.",
