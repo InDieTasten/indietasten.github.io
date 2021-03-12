@@ -13,7 +13,6 @@ description: A list of my past and current development projects
 
 ⚰ Abandoned abandoned
 
-## 2020
 
 {% for project in site.data.projects %}
 
