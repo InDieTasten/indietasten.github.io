@@ -1,5 +1,5 @@
 ---
-status_icon_map: -
+status_icon_map:
   active: 🛠
   done: ✔
   abandoned: ⚰
