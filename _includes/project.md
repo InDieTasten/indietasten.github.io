@@ -1,4 +1,7 @@
 
-#### {{ include.name }}
+{% assign status_icon = include.project.status | replace "active" "🛠" | replace "done" "✔" | replace "abandoned" "⚰" %}
 
-{{ include.description }}
+### {{ status_icon }} {{ include.project.name }}
+
+{{ include.project.description }}
+

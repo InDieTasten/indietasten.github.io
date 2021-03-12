@@ -17,6 +17,6 @@ description: A list of my past and current development projects
 
 {% for project in site.data.projects %}
 
-{% include project.md name=project.name description=project.description %}
+{% include project.md project=project %}
 
 {% endfor %}
