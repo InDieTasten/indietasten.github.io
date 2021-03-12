@@ -2,3 +2,7 @@ title: "InDieTasten"
 description: "Developer & Gamer"
 gems:
   - jekyll-feed
+status_icon_map:
+  active: 🛠
+  done: ✔
+  abandoned: ⚰
