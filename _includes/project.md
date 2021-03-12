@@ -2,6 +2,4 @@
 
 {{ include.project.description }}
 
-```text
-Tags: {{ include.project.tags | join: "|" }}
-```
+{{ include.project.tags | join: "\|" }}
