@@ -1,5 +1,17 @@
 [
   {
+    "name": "VirtualDev",
+    "status": "active",
+    "description": "A project trying to build a bot that acts like a software developer. The idea was something between voice enabled code editor to fully fledged low code platform.",
+    "github_link": "https://github.com/InDieTasten/VirtualDev",
+    "tags": [
+      "ML",
+      "Rasa",
+      "Python",
+      "Bot"
+    ]
+  },
+  {
     "name": "CliSpectrogram.NET",
     "status": "abandoned",
     "description": "A project using NAudio nuget library to display a real-time spectrogram of a sound input device. While I wasn't able to render an actual FFT, at least peak rendering works.",
