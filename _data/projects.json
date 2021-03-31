@@ -1,5 +1,17 @@
 [
   {
+    "name": "DevTease.Rasa",
+    "status": "active",
+    "description": "A sample project for playing around with the Rasa virtual assistant platform.",
+    "github_link": "https://github.com/InDieTasten/DevTease.Rasa",
+    "tags": [
+      "ML",
+      "Rasa",
+      "Python",
+      "Sample"
+    ]
+  },
+  {
     "name": "VirtualDev",
     "status": "active",
     "description": "A project trying to build a bot that acts like a software developer. The idea was something between voice enabled code editor to fully fledged low code platform.",
