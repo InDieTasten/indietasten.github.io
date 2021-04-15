@@ -224,13 +224,14 @@
   {
     "name": "Connect4",
     "status": "done",
-    "description": "A basic implementation of the infamous Connect4 game. I think it turned out quite well for the amount of experience I had at the time. I also made a Tutorial series about it.",
+    "description": "A basic implementation of the infamous Connect4 game. I think it turned out quite well for the amount of experience I had at the time. I also made a tutorial series about it. It even allows for remote multiplayer via client server networking.",
     "github_link": "https://github.com/InDieTasten/Connect4",
     "youtube_link": "https://www.youtube.com/playlist?list=PLmdmw12jg5swgMJmFO-ra7BPRH5_7AD1i",
     "demo_link": "https://github.com/InDieTasten/Connect4/releases",
     "tags": [
       "C++",
       "SFML",
+      "Networking",
       "Game"
     ]
   },
