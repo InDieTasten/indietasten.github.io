@@ -95,6 +95,17 @@
     ]
   },
   {
+    "name": "terminal-damage",
+    "status": "abandoned",
+    "description": "A project to build a navigable homepage as a cli program running in xterm.js. It was a fun idea, but never came to fruition.",
+    "github_link": "https://github.com/InDieTasten/terminal-damage",
+    "tags": [
+      "xterm.js",
+      "JavaScript",
+      "Homepage"
+    ]
+  },
+  {
     "name": "breadstone",
     "status": "abandoned",
     "description": "A blazor app for designing eletrical cirtcuits for minecraft, known as Redstone. Not even close to beginning with the actual implementation. The website is already up though, running in WASM capable browsers.",
