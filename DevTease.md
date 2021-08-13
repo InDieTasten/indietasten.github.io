@@ -9,15 +9,11 @@ title: Dev-Tease
 - Architecture
   - Service-Oriented architectures
 - C#
-  - Advanced Unit Testing
-  - ~Integration Testing~
+  - ~~Integration Testing~~
   - Parallel Programming
-  - Dependeny Injection
-    - ~Scopes~
-    - Factories
-  - ~Logging~
-    - ~Scopes~
-    - ~MinimumLevels (per caller or provider)~
+  - ~~Dependeny Injection~~
+  - ~~Logging~~
+  - [Playwright for .NET](https://playwright.dev/dotnet/docs/api/class-playwright)
 - JavaScript
   - How to use NPM without giving up
 - Docker
