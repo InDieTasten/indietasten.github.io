@@ -11,7 +11,7 @@ Hi, my name is Max. I do software. This is my home page. Welcome.
 
 - pizza
 - chicken
-- kitten/cats (no eat)
+- dogs/doge (no eat)
 - sparkly software
 - Rocket League
 
