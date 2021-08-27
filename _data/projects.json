@@ -1,19 +1,19 @@
 [
   {
-    "name": "DevTease.Rasa",
-    "status": "active",
-    "description": "A sample project for playing around with the Rasa virtual assistant platform.",
-    "github_link": "https://github.com/InDieTasten/DevTease.Rasa",
+    "name": "DigitalDepot",
+    "status": "done",
+    "description": "A proof of concept quickly cobbled together for the 2021 OsnaHack Hackathon. For details see the repo itself ;)",
+    "github_link": "https://github.com/InDieTasten/DigitalDepot",
     "tags": [
-      "ML",
-      "Rasa",
-      "Python",
-      "Sample"
+      "JavaScript",
+      "Node.js",
+      "HTML",
+      "Hackathon Submission"
     ]
   },
   {
     "name": "VirtualDev",
-    "status": "active",
+    "status": "abandoned",
     "description": "A project trying to build a bot that acts like a software developer. The idea was something between voice enabled code editor to fully fledged low code platform.",
     "github_link": "https://github.com/InDieTasten/VirtualDev",
     "tags": [
