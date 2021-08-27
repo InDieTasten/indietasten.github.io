@@ -22,6 +22,10 @@ title: Dev-Tease
     - Images and Repositories
   - Handling stateful services
   - Using the Docker daemon API
+- Other
+  - graph-ql
+  - deepspeech voice recognition
+  - webkit voice recognition api
 
 ## "Mini Projects"
 
@@ -34,7 +38,6 @@ A .NET text adventure engine.
 - Savegames
 - Easy to use
   - Little to no knowledge required to setup basic textadventure scenes
-- 
 
 ### CQRS Framework
 
