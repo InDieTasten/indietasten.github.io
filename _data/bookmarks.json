@@ -1,0 +1,54 @@
+[{
+  "href": "https://github.com/marcinbudny/applicationinsights-owinextensions",
+  "title": "Owin App Insights Collector",
+  "description": "This package is helpful to collect request data and dependency call data from Owin based applications into Application Insights instances.",
+  "tags": ["dotnet","package","helper"],
+  "devTease": false
+},{
+  "href": "https://github.com/netxs-group/vtm",
+  "title": "VTM",
+  "description": "A terminal multiplexer looking like a window manager",
+  "tags": ["terminal","tool"],
+  "devTease": false
+},{
+  "href": "https://github.com/cloudcommunity/Free-Certifications",
+  "title": "Free Certifications List",
+  "description": "List of links to freely available learning material for certifications",
+  "tags": ["list"],
+  "devTease": true
+},{
+  "href": "https://github.com/darkrenaissance/darkfi",
+  "title": "Dark.Fi",
+  "description": "Anonymous smart contracts on block chains such as solana, eth, btc or monero",
+  "tags": ["blockchain"],
+  "devTease": false
+},{
+  "href": "https://github.com/copy/v86",
+  "title": "v86",
+  "description": "x86 virtualization in your browser, recompiling x86 to wasm on the fly.",
+  "tags": ["emulator", "wasm", "fun"],
+  "devTease": true
+},{
+  "href": "https://github.com/natemcmaster/LettuceEncrypt",
+  "title": "Lettuce Encrypt",
+  "description": "Nuget package to easily integrate a .NET based ACME client into Kestrel.",
+  "tags": ["dotnet","package","helper"],
+  "devTease": false
+},{
+  "href": "https://github.com/sindresorhus/awesome",
+  "title": "Awesome Lists",
+  "description": "A list of other useful lists of links.",
+  "tags": ["list"],
+  "devTease": false
+},{
+  "href": "https://github.com/BKcore/HexGL",
+  "title": "HexGL",
+  "description": "A demo game to showcase HTML5 + WebGL capabilities.",
+  "tags": ["game", "demo"],
+  "devTease": false
+},{
+  "href": "https://github.com/pico-8/awesome-PICO-8",
+  "title": "PICO-8 Link List",
+  "description": "A list of useful links from around the PICO-8 community/eco system",
+  "devTease": false
+}]
