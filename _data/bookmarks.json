@@ -50,5 +50,42 @@
   "href": "https://github.com/pico-8/awesome-PICO-8",
   "title": "PICO-8 Link List",
   "description": "A list of useful links from around the PICO-8 community/eco system",
+  "tags": ["list", "fun"],
   "devTease": false
+},{
+  "href": "https://github.com/microsoft/Bringing-Old-Photos-Back-to-Life",
+  "title": "Old photo restoration",
+  "description": "Photo restoration via GANS ML",
+  "tags": ["Machine Learning", "Tool"],
+  "devTease": false
+},{
+  "href": "https://github.com/aslushnikov/been",
+  "title": "been",
+  "description": "A simple webpage to display the countries you've been to.",
+  "tags": ["simple", "demo", "fun"],
+  "devTease": false
+},{
+  "href": "https://github.com/wei/socialify",
+  "title": "Socialify",
+  "description": "Webpage to generate hero banners for your repo ReadMes",
+  "tags": ["tool", "readme"],
+  "devTease": false
+},{
+  "href": "https://github.com/benaadams/Ben.Demystifier",
+  "title": "Ben.Demystifier",
+  "description": "Package to make .NET stacktrace more readable.",
+  "tags": ["dotnet", "package", "helper", "diagnostics"],
+  "devTease": false
+},{
+  "href": "https://github.com/microsoft/Microsoft.IO.RecyclableMemoryStream",
+  "title": "RecyclableMemoryStream",
+  "description": "Pooling for MemoryStreams to ",
+  "tags": ["dotnet", "performance"],
+  "devTease": true
+},{
+  "href": "https://github.com/TNG/ArchUnitNET",
+  "title": "ArchUnit.NET",
+  "description": "Framework for validating class architecture in automated tests.",
+  "tags": ["dotnet", "testing"],
+  "devTease": true
 }]
