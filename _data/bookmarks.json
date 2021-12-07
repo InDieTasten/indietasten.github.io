@@ -3,13 +3,13 @@
   "title": "Owin App Insights Collector",
   "description": "This package is helpful to collect request data and dependency call data from Owin based applications into Application Insights instances.",
   "tags": ["dotnet","package","helper"],
-  "devTease": false
+  "devTease": true
 },{
   "href": "https://github.com/netxs-group/vtm",
   "title": "VTM",
   "description": "A terminal multiplexer looking like a window manager",
   "tags": ["terminal","tool"],
-  "devTease": false
+  "devTease": true
 },{
   "href": "https://github.com/cloudcommunity/Free-Certifications",
   "title": "Free Certifications List",
@@ -75,7 +75,7 @@
   "title": "Ben.Demystifier",
   "description": "Package to make .NET stacktrace more readable.",
   "tags": ["dotnet", "package", "helper", "diagnostics"],
-  "devTease": false
+  "devTease": true
 },{
   "href": "https://github.com/microsoft/Microsoft.IO.RecyclableMemoryStream",
   "title": "RecyclableMemoryStream",
