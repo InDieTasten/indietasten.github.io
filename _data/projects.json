@@ -1,5 +1,16 @@
 [
   {
+    "name": "CoinTale",
+    "status": "abandoned",
+    "description": "A command based text adventure game set with pirate theme",
+    "github_link": "https://github.com/InDieTasten/CoinTale",
+    "tags": [
+      "NET 6",
+      "Terminal",
+      "Game"
+    ]
+  },
+  {
     "name": "DigitalDepot",
     "status": "done",
     "description": "A proof of concept quickly cobbled together for the 2021 OsnaHack Hackathon. For details see the repo itself ;)",
