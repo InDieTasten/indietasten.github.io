@@ -1,5 +1,12 @@
 [
 	{
+		"name": "Leergut-Simulator",
+		"description": "Trashy browser-based video game playing in Germany, where you are a peasant living off of \"Leergut\" you find on the streets.",
+		"technologies": ["JavaScript", "HTML", "CSS"],
+		"difficulty": "high",
+		"scope": "high"
+	},
+	{
 		"name": "DevBot.NET",
 		"description": "A bot that communicates via text. You can tell the bot requirements. The bot will help refine these requirements. The bot then generates source that satisfies all requirements. The process is then highly iterative.",
 		"technologies": [".NET", "Bot", "Code Generation"],
