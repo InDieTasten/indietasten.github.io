@@ -1,5 +1,33 @@
 [
 	{
+		"name": "OpenTodo.Spec",
+		"description": "A spandardized specification for applications and todo management applications to exchange todo items and updates.",
+		"technologies": ["Protocol Schemas", "JSON", "Specification"],
+		"difficulty": "medium",
+		"scope": "medium"
+	},
+	{
+		"name": "Novel-Now",
+		"description": "A book-writing tool for writing and editing, back by a git repository for storage and versioning.",
+		"technologies": ["Git", "HTML/CSS/JavaScript", "Application"],
+		"difficulty": "high",
+		"scope": "high"
+	},
+	{
+		"name": "GitPages.Editor",
+		"description": "A WYSIWYG-editor for writing documentation or general web pages as alternative to Atlassian Confluence, backed by a git repository for storage and versioning.",
+		"technologies": ["Git", "Code-Generation", "HTML/CSS/JS", "SVG", "Application"],
+		"difficulty": "high",
+		"scope": "high"
+	},
+	{
+		"name": "ASCII-mate",
+		"description": "A CLI tool with mouse support for drawing ascii art and animations",
+		"technologies": [".NET", "Terminal", "Tool"],
+		"difficulty": "medium",
+		"scope": "medium"
+	},
+	{
 		"name": "Leergut-Simulator",
 		"description": "Trashy browser-based video game playing in Germany, where you are a peasant living off of \"Leergut\" you find on the streets.",
 		"technologies": ["JavaScript", "HTML", "CSS"],
