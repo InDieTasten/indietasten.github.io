@@ -6,7 +6,7 @@ categories: environment climate ethics hosting
 Green website design
 ====================
 
-In recent years, I've checked the carbon footprint of my personal homepage using a neat little tool available at https://websitecarbon.com.
+In recent years, I've checked the carbon footprint of my personal homepage using a neat little tool available at [https://websitecarbon.com](https://websitecarbon.com).
 
 The tool evaluates the carbon footprint of a website based on how much data it returns, and based on the type of power that is used to host the server, from what it can guess based on the IP address.
 
