@@ -17,6 +17,7 @@ body {
   line-height: 1.5;
   color: $text-color;
   background: $background-color;
+  overflow-y: overlay;
 }
 
 p {
