@@ -5,10 +5,10 @@ description: This is the personal homepage of InDieTasten
 
 # Welcome
 
-[About me](about)
+[Blog](blog)
 
 [Projects](projects)
 
 [Ideas](ideas)
 
-[Blog](blog)
+[About me](about)
