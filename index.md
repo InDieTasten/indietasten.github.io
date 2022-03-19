@@ -8,3 +8,7 @@ description: This is the personal homepage of InDieTasten
 [About me](about)
 
 [Projects](projects)
+
+[Ideas](ideas)
+
+[Blog](blog)
