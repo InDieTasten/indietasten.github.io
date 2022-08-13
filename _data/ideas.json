@@ -1,5 +1,12 @@
 [
 	{
+		"name": "IceChat",
+		"description": "Serverless RTC/ICE console chat",
+		"technologies": ["ICE", "STUN", "Rust", "Demo"],
+		"difficulty": "medium",
+		"scope": "small"
+	},
+	{
 		"name": "OpenTodo.Spec",
 		"description": "A spandardized specification for applications and todo management applications to exchange todo items and updates.",
 		"technologies": ["Protocol Schemas", "JSON", "Specification"],
