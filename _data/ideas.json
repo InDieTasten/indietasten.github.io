@@ -2,7 +2,7 @@
 	{
 		"name": "ConnectIce",
 		"description": "Serverless RTC/ICE data-channel connect 4 game",
-		"technologies": ["ICE", "STUN", "Rust", "Demo"],
+		"technologies": ["ICE", "STUN", "Rust", "Game"],
 		"difficulty": "medium",
 		"scope": "small"
 	},
