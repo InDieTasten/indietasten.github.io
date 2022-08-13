@@ -1,5 +1,12 @@
 [
 	{
+		"name": "ConnectIce",
+		"description": "Serverless RTC/ICE data-channel connect 4 game",
+		"technologies": ["ICE", "STUN", "Rust", "Demo"],
+		"difficulty": "medium",
+		"scope": "small"
+	},
+	{
 		"name": "IceChat",
 		"description": "Serverless RTC/ICE console chat",
 		"technologies": ["ICE", "STUN", "Rust", "Demo"],
