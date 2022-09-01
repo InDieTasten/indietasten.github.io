@@ -1,5 +1,19 @@
 [
 	{
+		"name": "Screen-Peer",
+		"description": "A statically hosted website for starting RTC screen sharing without a server"
+		"technologies": ["WebRTC"],
+		"difficulty": "medium",
+		"scope": "small"
+	},
+	{
+		"name": "FlatFlat",
+		"description": "PWA for collaborating on keeping a flat nice and tidy",
+		"technologies": ["Google Drive Spreadsheets"],
+		"difficulty": "medium",
+		"scope": "large"
+	},
+	{
 		"name": "ConnectIce",
 		"description": "Serverless RTC/ICE data-channel connect 4 game",
 		"technologies": ["ICE", "STUN", "Rust", "Game"],
