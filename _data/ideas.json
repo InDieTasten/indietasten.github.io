@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Screen-Peer",
-		"description": "A statically hosted website for starting RTC screen sharing without a server"
+		"description": "A statically hosted website for starting RTC screen sharing without a server",
 		"technologies": ["WebRTC"],
 		"difficulty": "medium",
 		"scope": "small"
