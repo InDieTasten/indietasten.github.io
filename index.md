@@ -1,6 +1,7 @@
 ---
 title: InDieTasten
 description: This is the personal homepage of InDieTasten
+layout: default
 ---
 
 # Welcome

@@ -6,3 +6,4 @@ status_icon_map:
   active: 🛠
   done: ✔
   abandoned: ⚰
+layout: default
