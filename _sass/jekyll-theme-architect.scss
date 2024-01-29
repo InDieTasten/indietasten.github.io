@@ -11,7 +11,7 @@ $heading-icon-color: adjust-hue($primary-color, 0deg);
 
 /* LAYOUT STYLES */
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, 'Segoe UI Emoji', serif;
+  font-family: 'Courier New', 'Segoe UI Emoji', monospace;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
@@ -103,7 +103,7 @@ figure {
 
 code, pre {
   margin-bottom: 30px;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: monospace;
   font-size: 13px;
 }
 
