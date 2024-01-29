@@ -6,4 +6,5 @@ status_icon_map:
   active: 🛠
   done: ✔
   abandoned: ⚰
+highlighter: rouge
 layout: default
