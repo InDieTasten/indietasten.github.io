@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
-    <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
+    <link rel="stylesheet" href="{{ '/assets/css/print.css?v=' | append: site.github.build_revision | relative_url }}" media="print" type="text/css">
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png?v=2">
@@ -16,43 +17,45 @@
     <meta name="msapplication-TileColor" content="#535353">
     <meta name="msapplication-config" content="/icons/browserconfig.xml?v=2">
     <meta name="theme-color" content="#ffffff">
-    
+
     <!-- jekyll feed (atom feed)-->
     {% feed_meta %}
 
     <title>{{ site.title }}</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div class="inner">
-        <a href="/">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-        {% if site.github.is_user_page %}
-          <a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a>
-        {% endif %}
-      </div>
+        <div class="inner">
+            <a href="/">
+                <h1>{{ site.title | default: site.github.repository_name }}</h1>
+            </a>
+            <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+            {% if site.github.is_user_page %}
+            <a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a>
+            {% endif %}
+        </div>
     </header>
 
     <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <a href="/">Home</a>
-          | <a href="/blog">Blog</a>
-          | <a href="/projects">Projects</a>
-          | <a href="/ideas">Ideas</a>
-          | <a href="/about">About me</a>
-          <hr>
-          {{ content }}
-        </section>
-      </div>
+        <div class="inner clearfix">
+            <section id="main-content">
+                <a href="/">Home</a>
+                | <a href="/blog">Blog</a>
+                | <a href="/projects">Projects</a>
+                | <a href="/ideas">Ideas</a>
+                | <a href="/about">About me</a>
+                <hr>
+                {{ content }}
+            </section>
+        </div>
     </div>
-  </body>
-  <footer class="inner clearfix">
+</body>
+<footer class="inner clearfix">
     <hr>
     <a href="/legal">Legal</a>
     <hr>
-    &copy; 2011, InDieTasten. All rights reserved 
-  </footer>
+    &copy; 2011, InDieTasten. All rights reserved
+</footer>
+
 </html>
