@@ -65,7 +65,7 @@ This should output
 systemd=true
 {% endhighlight %}
 
-In the file does not exist or contains something else, refer to [these steps](#configuring-systemd-inside-wsl).
+If the file does not exist or contains something else, refer to [these steps](#configuring-systemd-inside-wsl).
 
 ### Install docker
 
@@ -81,7 +81,7 @@ apt-get update -y && apt-get install -y docker-ce && usermod -aG docker $USER &&
 ### Use docker
 
 {% highlight bash %}
-sudo docker ps
+sudo docker run hello-world
 {% endhighlight %}
 
 Done! You can now use Docker inside your WSL2 Ubuntu 22.04!
