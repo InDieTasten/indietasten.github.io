@@ -1,5 +1,16 @@
 [
   {
+    "name": "alternate-screen-buffer-demo",
+    "status": "done",
+    "description": "A demo showcasing terminal escape sequences to enter and leave the alternate screen buffer mode",
+    "github_link": "https://github.com/InDieTasten/alternate-screen-buffer-demo",
+    "tags": [
+      "Rust",
+      "Terminal",
+      "Demo"
+    ]
+  },
+  {
     "name": "CoinTale",
     "status": "abandoned",
     "description": "A command based text adventure game set with pirate theme",
