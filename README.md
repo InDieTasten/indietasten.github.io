@@ -1,3 +1,3 @@
 # My Homepage
 
- - about.indietasten.net
+ - indietasten.net
