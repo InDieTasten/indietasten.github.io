@@ -1,10 +1,7 @@
----
-layout: default
-title: I have a dream about dynamic environment provisioning
-categories: ci cd testing infrastructure
----
-I have a dream about dynamic environment provisioning
-========================================================
++++
+title = "I have a dream about dynamic environment provisioning"
+tags = ["ci", "cd", "testing", "infrastructure"]
++++
 
 ## The repeating annoyance of pre-release madness
 

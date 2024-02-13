@@ -1,10 +1,7 @@
----
-layout: default
-title: Green website design
-categories: environment climate ethics hosting
----
-Green website design
-====================
++++
+title = "Green website design"
+tags = ["environment", "climate", "ethics", "hosting"]
++++
 
 In recent years, I've checked the carbon footprint of my personal homepage using a neat little tool available at [https://websitecarbon.com](https://websitecarbon.com).
 

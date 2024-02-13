@@ -1,11 +1,7 @@
----
-layout: default
-title: "I have a dream about conventional commits"
-categories: git versioning
----
-
-I have a dream about conventional commits
-=========================================
++++
+title = "I have a dream about conventional commits"
+tags = ["git", "versioning"]
++++
 
 Everyone these days has heard of semver,
 as most package managers try to enforce it upon their packages.
