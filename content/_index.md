@@ -1,3 +1,7 @@
 +++
-paginate_by = 20
+template = "section.html"
 +++
+
+## Hey!
+
+Take a look around :)
