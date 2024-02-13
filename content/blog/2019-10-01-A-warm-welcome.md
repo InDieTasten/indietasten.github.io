@@ -1,8 +1,7 @@
----
-layout: post
-title: "A warm welcome to my blog"
-categories: general
----
++++
+title = "A warm welcome to my blog"
+tags = ["general"]
++++
 
 Hi there! Welcome to my blog. I'm Max. I am a full-stack web developer based in Germany.
 
