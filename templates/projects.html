@@ -1,0 +1,22 @@
+{% extends "after-dark/templates/index.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+{% block header %}
+{{ super() }}
+{% endblock header %}
+
+<main>
+    {% if config.extra.after_dark_title %}
+    <header>
+        <h1>{{ config.extra.after_dark_title }}</h1>
+    </header>
+    {% endif %}
+
+    <h2>{{ section.title | safe }}</h2>
+    {% set data = load_data(path="content/projects/data.json", format="json") %}
+    {% for project in data %}
+    {{ macros::project(project = project) }}
+    {% endfor %}
+</main>
+{% endblock content %}

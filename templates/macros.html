@@ -1,0 +1,19 @@
+{% macro project(project) %}
+<h3>
+    {{ project.status }} -
+    {{ project.name }}
+</h3>
+{{ project.description }} <br>
+{{ project.tags | join(sep=" | ") | safe }} <br>
+{% if project.github_link %}
+<a href="{{ project.github_link}}">GitHub</a>
+{% endif %}
+{% if project.youtube_link %}
+<a href="{{ project.youtube_link}}">YouTube</a>
+{% endif %}
+{% if project.demo_link %}
+<a href="{{ project.demo_link}}">Demo</a>
+{% endif %}
+
+
+{% endmacro project %}
