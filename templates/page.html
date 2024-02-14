@@ -1,4 +1,4 @@
-{% extends "after-dark/templates/index.html" %}
+{% extends "after-dark/templates/page.html" %}
 
 {% block extra_head %}
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png?v=2">
@@ -11,21 +11,3 @@
 <meta name="msapplication-config" content="/icons/browserconfig.xml?v=2">
 <meta name="theme-color" content="#ffffff">
 {% endblock %}
-
-{% block content %}
-{% block header %}
-{{ super() }}
-{% endblock header %}
-
-<main>
-    {% if config.extra.after_dark_title %}
-    <header>
-        <h1>{{ config.extra.after_dark_title }}</h1>
-    </header>
-    {% endif %}
-
-    {% if section %}
-    {{ section.content | safe }}
-    {% endif %}
-</main>
-{% endblock content %}
