@@ -1,10 +1,13 @@
 ---
-layout: default
 title: "I have a dream(rant) about secrets in repositories"
-categories: git secrets deployment
+excerpt: "Please don't put them there"
+date: "2020-08-18T00:00:00.000Z"
+author:
+  name: InDieTasten
+  picture: "/assets/blog/authors/idt.jpeg"
+tags: ["git", "secrets", "deployment"]
 ---
 
-# I have a ~~dream~~ rant about secrets in repositories
 
 TL DR: Please don't put them there
 
@@ -26,9 +29,9 @@ But even for private repos, there is always a chance of leaking the repo. A quic
 Drive may not be encrypted and the device gets lost. Of course you forget, which repos have been cloned to that machine.
 Nobody keeps track of that. I have probably 30 something repos on my dev machine. Some of which containing secrets that can potentially cause damage.
 
-{% highlight plaintext %}
-appsettings.json => connection strings => sql db => drop
-{% endhighlight %}
+
+    appsettings.json => connection strings => sql db => drop
+
 
 Or even worse, silently taking dumps and blackmailing us. The problem wouldn't be as bad, when secrets would rotate often.
 But sadly, that's another problem we haven't touched. It's been getting better lately, but there's still room for improvement.
@@ -90,11 +93,11 @@ No more "config". You don't have builds that only work for one environment.
 You don't need to rebuild to move a code version from one environment to another.
 You just deploy the same code with different config to the next environment.
 
-{% highlight plaintext %}
-Code => Build
 
-Build + Config => Release
-{% endhighlight %}
+    Code => Build
+
+    Build + Config => Release
+
 
 And the intern can finally work on all them cool projects without seeing prod credentials.
 
