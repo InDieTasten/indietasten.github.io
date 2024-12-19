@@ -1,7 +1,11 @@
 ---
-layout: post
 title: "A warm welcome to my blog"
-categories: general
+excerpt: "Hi there! Welcome to my blog. I'm Max. I am a full-stack web developer based in Germany."
+date: "2019-10-01T00:00:00.000Z"
+author:
+  name: InDieTasten
+  picture: "/assets/blog/authors/idt.jpeg"
+tags: ["general"]
 ---
 
 Hi there! Welcome to my blog. I'm Max. I am a full-stack web developer based in Germany.
