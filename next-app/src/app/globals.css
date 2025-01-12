@@ -1,3 +1,8 @@
+@import '../../node_modules/@wooorm/starry-night/style/dark.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+pre {
+    overflow-x: auto;
+}

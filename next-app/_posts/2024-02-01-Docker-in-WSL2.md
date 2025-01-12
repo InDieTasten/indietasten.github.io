@@ -61,7 +61,7 @@ cat /etc/wsl.conf
 
 This should output
 
-```conf
+```toml
 [boot]
 systemd=true
 ```
@@ -105,7 +105,7 @@ Done! You can now use Docker inside your WSL2 Ubuntu 22.04!
 
 Replace `/etc/wsl.conf` inside the distro with the following:
 
-```conf
+```toml
 [boot]
 systemd=true
 ```
