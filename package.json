@@ -6,8 +6,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
     "@wooorm/starry-night": "^3.6.0",
     "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
     "gray-matter": "^4.0.3",
     "next": "15.0.2",
