@@ -9,7 +9,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="w-full ring-1 bg-zinc-900 ring-zinc-300/20" />
         </div>
       </div>
-      <div className="relative flex w-full flex-col">
+      <div className="relative flex w-full flex-col text-zinc-400">
         <Header />
         <main className="flex-auto">{children}</main>
         <Footer />

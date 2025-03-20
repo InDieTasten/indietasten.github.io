@@ -1,9 +1,6 @@
-import Footer from "@/app/_components/footer";
 import { SITE_TITLE, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import cn from "classnames";
-import { ThemeSwitcher } from "./_components/theme-switcher";
 
 import "./globals.css";
 import { Layout } from "@/components/Layout";
