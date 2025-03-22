@@ -1,28 +1,55 @@
-import Container from "@/app/_components/container";
-import { HeroPost } from "@/app/_components/hero-post";
-import { MoreStories } from "@/app/_components/more-stories";
-import { getAllPosts } from "@/lib/api";
+import { Container } from "@/components/Container";
+import { GitHubIcon, StravaIcon } from "@/components/SocialIcons";
+import Link from "next/link";
+
+function SocialLink({
+  icon: Icon,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof Link> & {
+  icon: React.ComponentType<{ className?: string }>
+}) {
+  return (
+    <Link className="group -m-1 p-1" {...props}>
+      <Icon className="h-6 w-6 transition fill-zinc-400 group-hover:fill-zinc-300" />
+    </Link>
+  )
+}
 
 export default function Index() {
-    const allPosts = getAllPosts();
-
-    const heroPost = allPosts[0];
-
-    const morePosts = allPosts.slice(1);
-
-    return (
-        <main>
-            <Container>
-                <HeroPost
-                    title={heroPost.title}
-                    //   coverImage={heroPost.coverImage}
-                    date={heroPost.date}
-                    author={heroPost.author}
-                    slug={heroPost.slug}
-                    excerpt={heroPost.excerpt}
-                />
-                {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-            </Container>
-        </main>
-    );
+  return (
+    <Container className="mt-9">
+      <div className="max-w-2xl">
+        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-zinc-100">
+          Open Sourcerer. Gamer. Runner.
+        </h1>
+        <p className="mt-6 text-base text-zinc-400">
+          I’m Max, a software developer based in Osnabrück, Germany.
+          I love tinkering with code and automating annoying things in life.
+          In my free time, I enjoy running and gaming.
+        </p>
+        <div className="mt-6 flex gap-6">
+          <SocialLink
+            href="https://github.com/InDieTasten"
+            aria-label="Follow on GitHub"
+            icon={GitHubIcon}
+          />
+          {/* <SocialLink
+            href="https://youtube.com/InDieTasten"
+            aria-label="Watch on YouTube"
+            icon={YouTubeIcon}
+          /> */}
+          {/* <SocialLink
+            href="https://stackoverflow.com/users/3919195/indietasten"
+            aria-label="Follow on Stack Overflow"
+            icon={StackOverflowIcon}
+          /> */}
+          <SocialLink
+            href="https://www.strava.com/athletes/93088631"
+            aria-label="Follow on Strava"
+            icon={StravaIcon}
+          />
+        </div>
+      </div>
+    </Container>
+  );
 }
