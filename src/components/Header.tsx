@@ -88,7 +88,7 @@ function MobileNavigation(
         </div>
         <nav className="mt-6">
           <ul className="-my-2 divide-y text-base divide-zinc-100/5 text-zinc-300">
-            <MobileNavItem href="/about">About</MobileNavItem>
+            <MobileNavItem href="/">About</MobileNavItem>
             <MobileNavItem href="/articles">Articles</MobileNavItem>
             <MobileNavItem href="/projects">Projects</MobileNavItem>
             <MobileNavItem href="/speaking">Speaking</MobileNavItem>
@@ -133,7 +133,7 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full px-3 text-sm font-medium ring-1 shadow-lg shadow-zinc-800/5 backdrop-blur-sm bg-zinc-800/90 text-zinc-200 ring-white/10">
-        <NavItem href="/about">About</NavItem>
+        <NavItem href="/">About</NavItem>
         <NavItem href="/articles">Articles</NavItem>
         <NavItem href="/projects">Projects</NavItem>
         <NavItem href="/speaking">Speaking</NavItem>
