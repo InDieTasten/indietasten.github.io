@@ -33,16 +33,6 @@ export default function Index() {
             aria-label="Follow on GitHub"
             icon={GitHubIcon}
           />
-          {/* <SocialLink
-            href="https://youtube.com/InDieTasten"
-            aria-label="Watch on YouTube"
-            icon={YouTubeIcon}
-          /> */}
-          {/* <SocialLink
-            href="https://stackoverflow.com/users/3919195/indietasten"
-            aria-label="Follow on Stack Overflow"
-            icon={StackOverflowIcon}
-          /> */}
           <SocialLink
             href="https://www.strava.com/athletes/93088631"
             aria-label="Follow on Strava"
