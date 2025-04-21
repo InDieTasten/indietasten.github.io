@@ -1,15 +1,15 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug } from "@/lib/api";
+import { getAllArticles as getAllArticles, getPostBySlug as getArticleBySlug } from "@/lib/api";
 import { SITE_TITLE } from "@/lib/constants";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
 import { Container } from "@/components/Container";
 
-export default async function Post(props: Params) {
+export default async function Article(props: Params) {
     const params = await props.params;
-    const post = getPostBySlug(params.slug);
+    const post = getArticleBySlug(params.slug);
 
     if (!post) {
         return notFound();
@@ -41,25 +41,25 @@ type Params = {
 
 export async function generateMetadata(props: Params): Promise<Metadata> {
     const params = await props.params;
-    const post = getPostBySlug(params.slug);
+    const article = getArticleBySlug(params.slug);
 
-    if (!post) {
+    if (!article) {
         return notFound();
     }
 
-    const title = `${post.title} - ${SITE_TITLE}`;
+    const title = `${article.title} - ${SITE_TITLE}`;
 
     return {
         title,
         openGraph: {
             title,
-            images: [post.ogImage?.url],
+            images: [article.ogImage?.url],
         },
     };
 }
 
 export async function generateStaticParams() {
-    const posts = getAllPosts();
+    const posts = getAllArticles();
 
     return posts.map((post) => ({
         slug: post.slug,
