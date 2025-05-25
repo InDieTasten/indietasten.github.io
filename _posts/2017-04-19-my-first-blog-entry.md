@@ -1,7 +1,11 @@
 ---
-layout: default
 title: "My first blog entry using GH pages and Jekyll"
-categories: milestone update
+excerpt: "Some content of my newly created blog post"
+date: "2017-04-19T00:00:00.000Z"
+author:
+  name: InDieTasten
+  picture: "/avatar.png"
+tags: ["milestone", "update"]
 ---
 
 Some content of my newly created blog post

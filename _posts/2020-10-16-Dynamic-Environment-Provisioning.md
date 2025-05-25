@@ -1,10 +1,12 @@
 ---
-layout: default
-title: I have a dream about dynamic environment provisioning
-categories: ci cd testing infrastructure
+title: "I have a dream about dynamic environment provisioning"
+excerpt: "Learnings from pre-release madness"
+date: "2020-10-16T00:00:00.000Z"
+author:
+  name: InDieTasten
+  picture: "/avatar.png"
+tags: ["ci", "cd", "testing", "infrastructure"]
 ---
-I have a dream about dynamic environment provisioning
-========================================================
 
 ## The repeating annoyance of pre-release madness
 

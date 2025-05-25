@@ -1,10 +1,12 @@
 ---
-layout: default
-title: Green website design
-categories: environment climate ethics hosting
+title: "Green website design"
+excerpt: "How to reduce the carbon footprint of our modern websites"
+date: "2022-03-19T00:00:00.000Z"
+author:
+  name: InDieTasten
+  picture: "/avatar.png"
+tags: ["environment", "climate", "ethics", "hosting"]
 ---
-Green website design
-====================
 
 In recent years, I've checked the carbon footprint of my personal homepage using a neat little tool available at [https://websitecarbon.com](https://websitecarbon.com).
 

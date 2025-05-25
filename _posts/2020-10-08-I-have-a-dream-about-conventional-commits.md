@@ -1,11 +1,12 @@
 ---
-layout: default
 title: "I have a dream about conventional commits"
-categories: git versioning
+excerpt: "Everyone these days has heard of semver, but what about conventional commits?"
+date: "2020-10-08T00:00:00.000Z"
+author:
+  name: InDieTasten
+  picture: "/avatar.png"
+tags: ["git", "versioning"]
 ---
-
-I have a dream about conventional commits
-=========================================
 
 Everyone these days has heard of semver,
 as most package managers try to enforce it upon their packages.
