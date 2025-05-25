@@ -48,7 +48,7 @@ wsl --install -d Ubuntu-22.04
 This command should land you in the account creation. Create your local account for the distro. After that you should be greeted with the MOTD and a bash. Go ahead and update all packages:
 
 ```bash
-sudo apt-get update & sudo apt-get upgrade -y
+sudo apt-get update && sudo apt-get upgrade -y
 ```
 
 ### Verify systemd
