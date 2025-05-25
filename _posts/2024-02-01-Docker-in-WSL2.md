@@ -4,7 +4,7 @@ excerpt: "I had to write this, because nobody else did"
 date: "2024-02-01T00:00:00.000Z"
 author:
   name: InDieTasten
-  picture: "/assets/blog/authors/idt.jpeg"
+  picture: "/avatar.png"
 tags: ["docker", "wsl2", "linux"]
 ---
 

@@ -4,7 +4,7 @@ excerpt: "Learnings from pre-release madness"
 date: "2020-10-16T00:00:00.000Z"
 author:
   name: InDieTasten
-  picture: "/assets/blog/authors/idt.jpeg"
+  picture: "/avatar.png"
 tags: ["ci", "cd", "testing", "infrastructure"]
 ---
 
