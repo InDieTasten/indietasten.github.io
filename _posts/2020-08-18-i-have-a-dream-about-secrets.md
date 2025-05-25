@@ -4,7 +4,7 @@ excerpt: "Please don't put them there"
 date: "2020-08-18T00:00:00.000Z"
 author:
   name: InDieTasten
-  picture: "/assets/blog/authors/idt.jpeg"
+  picture: "/avatar.png"
 tags: ["git", "secrets", "deployment"]
 ---
 

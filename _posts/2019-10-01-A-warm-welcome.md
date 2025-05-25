@@ -4,7 +4,7 @@ excerpt: "Hi there! Welcome to my blog. I'm Max. I am a full-stack web developer
 date: "2019-10-01T00:00:00.000Z"
 author:
   name: InDieTasten
-  picture: "/assets/blog/authors/idt.jpeg"
+  picture: "/avatar.png"
 tags: ["general"]
 ---
 

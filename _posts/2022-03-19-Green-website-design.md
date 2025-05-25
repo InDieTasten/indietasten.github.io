@@ -4,7 +4,7 @@ excerpt: "How to reduce the carbon footprint of our modern websites"
 date: "2022-03-19T00:00:00.000Z"
 author:
   name: InDieTasten
-  picture: "/assets/blog/authors/idt.jpeg"
+  picture: "/avatar.png"
 tags: ["environment", "climate", "ethics", "hosting"]
 ---
 

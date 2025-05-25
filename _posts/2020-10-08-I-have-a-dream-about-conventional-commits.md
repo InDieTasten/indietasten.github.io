@@ -4,7 +4,7 @@ excerpt: "Everyone these days has heard of semver, but what about conventional c
 date: "2020-10-08T00:00:00.000Z"
 author:
   name: InDieTasten
-  picture: "/assets/blog/authors/idt.jpeg"
+  picture: "/avatar.png"
 tags: ["git", "versioning"]
 ---
 
