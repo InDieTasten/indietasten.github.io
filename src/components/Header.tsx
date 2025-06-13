@@ -15,6 +15,12 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/avatar.png'
 
+const NAV_ITEMS = [
+  { href: '/', label: 'About' },
+  { href: '/articles', label: 'Articles' },
+  { href: '/projects', label: 'Projects' },
+]
+
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -88,11 +94,11 @@ function MobileNavigation(
         </div>
         <nav className="mt-6">
           <ul className="-my-2 divide-y text-base divide-zinc-100/5 text-zinc-300">
-            <MobileNavItem href="/">About</MobileNavItem>
-            <MobileNavItem href="/articles">Articles</MobileNavItem>
-            <MobileNavItem href="/projects">Projects</MobileNavItem>
-            <MobileNavItem href="/speaking">Speaking</MobileNavItem>
-            <MobileNavItem href="/uses">Uses</MobileNavItem>
+            {NAV_ITEMS.map(item => (
+              <MobileNavItem key={item.href} href={item.href}>
+                {item.label}
+              </MobileNavItem>
+            ))}
           </ul>
         </nav>
       </PopoverPanel>
@@ -133,9 +139,11 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full px-3 text-sm font-medium ring-1 shadow-lg shadow-zinc-800/5 backdrop-blur-sm bg-zinc-800/90 text-zinc-200 ring-white/10">
-        <NavItem href="/">About</NavItem>
-        <NavItem href="/articles">Articles</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
+        {NAV_ITEMS.map(item => (
+          <NavItem key={item.href} href={item.href}>
+            {item.label}
+          </NavItem>
+        ))}
       </ul>
     </nav>
   )
