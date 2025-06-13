@@ -34,7 +34,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#ffffff" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
-      <body className="flex h-full bg-black">
+      <body className="flex h-full bg-zinc-900 md:bg-black">
         <div className="flex w-full">
           <Layout>{children}</Layout>
         </div>
