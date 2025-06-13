@@ -5,7 +5,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       {/* Desktop visual encapsulation only (md and up) */}
-      <div className="hidden md:fixed md:inset-0 md:flex md:justify-center md:px-8 pointer-events-none z-0">
+      <div className="hidden md:fixed md:inset-0 md:flex md:justify-center md:px-8 pointer-events-none z-0" aria-hidden="true">
         <div className="flex w-full max-w-7xl lg:px-8">
           <div className="w-full ring-1 bg-zinc-900 ring-zinc-300/20" />
         </div>

@@ -43,11 +43,7 @@
     border-color: var(--color-gray-200, currentColor);
   }
 
-  html {
-    color-scheme: dark;
-    border: none;
-  }
-
+  html,
   body {
     color-scheme: dark;
     border: none;
