@@ -12,4 +12,5 @@ export type Article = {
   };
   content: string;
   preview?: boolean;
+  tags?: string[]; // Add tags property
 };

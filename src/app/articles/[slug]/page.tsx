@@ -25,6 +25,7 @@ export default async function Article(props: Params) {
                         title={post.title}
                         date={post.date}
                         author={post.author}
+                        tags={post.tags}
                     />
                     <PostBody content={content} />
                 </article>
