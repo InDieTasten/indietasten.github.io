@@ -11,6 +11,18 @@ function Article({ article }: { article: ArticleType }) {
                 <Card.Title href={`/articles/${article.slug}`}>
                     {article.title}
                 </Card.Title>
+                {article.tags && article.tags.length > 0 && (
+                    <div className="mb-2 flex flex-wrap gap-2">
+                        {article.tags.map((tag) => (
+                            <span
+                                key={tag}
+                                className="border border-teal-400 text-teal-300 bg-transparent px-2 py-0.5 rounded text-xs font-medium"
+                            >
+                                #{tag}
+                            </span>
+                        ))}
+                    </div>
+                )}
                 <Card.Eyebrow
                     as="time"
                     dateTime={article.date}
