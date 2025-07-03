@@ -11,7 +11,7 @@
     "clsx": "2.1.1",
     "date-fns": "4.1.0",
     "gray-matter": "4.0.3",
-    "next": "15.3.2",
+    "next": "15.3.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "rehype-starry-night": "2.2.0",
