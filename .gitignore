@@ -44,3 +44,7 @@ next-env.d.ts
 
 # tailwind pro templates
 .pro/
+
+# project sample files
+_data/*-sample.yml
+_data/*-sample.json
