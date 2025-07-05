@@ -27,12 +27,6 @@ function ProjectLinks({ project }: { project: Project }) {
   if (project.github_link) {
     links.push({ url: project.github_link, label: 'GitHub', type: 'github' });
   }
-  if (project.demo_link) {
-    links.push({ url: project.demo_link, label: 'Demo', type: 'demo' });
-  }
-  if (project.youtube_link) {
-    links.push({ url: project.youtube_link, label: 'YouTube', type: 'youtube' });
-  }
   if (project.website) {
     links.push({ url: project.website, label: 'Website', type: 'website' });
   }
@@ -59,21 +53,21 @@ function ProjectLinks({ project }: { project: Project }) {
 function ProjectCard({ project }: { project: Project }) {
   return (
     <Card className="md:col-span-3">
+      {project.og_image && (
+        <div className="mb-4 -mx-6 -mt-6">
+          <img
+            src={project.og_image}
+            alt={`${project.name} preview`}
+            className="w-full h-48 object-cover rounded-t-lg"
+          />
+        </div>
+      )}
+      
       <div className="flex items-start justify-between mb-2">
         <Card.Title href={project.github_link}>
           {project.name}
         </Card.Title>
-        <div className="flex items-center gap-2">
-          {project.stars !== undefined && project.stars > 0 && (
-            <span className="text-xs text-zinc-400 flex items-center gap-1">
-              <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-              {project.stars}
-            </span>
-          )}
-          <ProjectStatus status={project.status} />
-        </div>
+        <ProjectStatus status={project.status} />
       </div>
       
       {project.tags && project.tags.length > 0 && (
@@ -94,12 +88,6 @@ function ProjectCard({ project }: { project: Project }) {
       )}
       
       <Card.Description>{project.description}</Card.Description>
-      
-      {(project.forks !== undefined && project.forks > 0) && (
-        <div className="mt-2 text-xs text-zinc-500">
-          {project.forks} fork{project.forks !== 1 ? 's' : ''}
-        </div>
-      )}
       
       <ProjectLinks project={project} />
       

@@ -25,143 +25,15 @@ jobs:
         with:
           node-version: '20'
           
-      - name: Install dependencies
-        run: npm install js-yaml
-        
       - name: Fetch repository data and generate projects file
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          node << 'EOF'
-          const fs = require('fs');
-          const yaml = require('js-yaml');
-          
-          async function fetchRepoData() {
-            const owner = 'InDieTasten';
-            const headers = {
-              'Authorization': `token ${process.env.GITHUB_TOKEN}`,
-              'Accept': 'application/vnd.github.v3+json',
-              'User-Agent': 'indietasten-projects-bot'
-            };
-            
-            try {
-              // Fetch public repositories
-              const reposResponse = await fetch(`https://api.github.com/users/${owner}/repos?type=public&per_page=100&sort=updated`, {
-                headers
-              });
-              
-              if (!reposResponse.ok) {
-                throw new Error(`Failed to fetch repos: ${reposResponse.status}`);
-              }
-              
-              const repos = await reposResponse.json();
-              console.log(`Found ${repos.length} repositories`);
-              
-              const projects = [];
-              
-              for (const repo of repos) {
-                // Skip forks unless they have significant activity
-                if (repo.fork && repo.stargazers_count === 0) continue;
-                
-                // Skip the indietasten.github.io repository itself
-                if (repo.name === 'indietasten.github.io') continue;
-                
-                // Determine status based on repository data
-                let status = 'done';
-                if (repo.archived) {
-                  status = 'abandoned';
-                } else if (repo.pushed_at) {
-                  const lastPush = new Date(repo.pushed_at);
-                  const sixMonthsAgo = new Date();
-                  sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
-                  
-                  if (lastPush < sixMonthsAgo && repo.stargazers_count === 0) {
-                    status = 'abandoned';
-                  } else if (lastPush > sixMonthsAgo && !repo.archived) {
-                    status = 'in-progress';
-                  }
-                }
-                
-                // Extract tags from topics
-                const tags = repo.topics || [];
-                
-                // Add primary language as a tag if available
-                if (repo.language && !tags.includes(repo.language)) {
-                  tags.unshift(repo.language);
-                }
-                
-                // Try to get additional metadata from repository
-                let ogImage = null;
-                let websiteUrl = repo.homepage || null;
-                
-                // Use repository social preview image if available
-                if (repo.owner && repo.name) {
-                  ogImage = `https://opengraph.githubassets.com/1/${repo.full_name}`;
-                }
-                
-                const project = {
-                  name: repo.name,
-                  status: status,
-                  description: repo.description || 'No description available.',
-                  github_link: repo.html_url,
-                  website: websiteUrl,
-                  tags: tags.length > 0 ? tags : ['Miscellaneous'],
-                  stars: repo.stargazers_count,
-                  forks: repo.forks_count,
-                  language: repo.language,
-                  created_at: repo.created_at,
-                  updated_at: repo.updated_at,
-                  og_image: ogImage,
-                  archived: repo.archived
-                };
-                
-                projects.push(project);
-              }
-              
-              // Sort projects by status (done, in-progress, abandoned) and then by stars/activity
-              projects.sort((a, b) => {
-                const statusOrder = { 'done': 0, 'in-progress': 1, 'abandoned': 2 };
-                const statusDiff = statusOrder[a.status] - statusOrder[b.status];
-                if (statusDiff !== 0) return statusDiff;
-                
-                // Within same status, sort by stars descending, then by updated date
-                const starsDiff = b.stars - a.stars;
-                if (starsDiff !== 0) return starsDiff;
-                
-                return new Date(b.updated_at) - new Date(a.updated_at);
-              });
-              
-              console.log(`Generated ${projects.length} projects`);
-              
-              // Generate YAML file
-              const yamlContent = yaml.dump(projects, {
-                indent: 2,
-                lineWidth: 120,
-                quotingType: '"',
-                forceQuotes: false
-              });
-              
-              // Write to file
-              fs.writeFileSync('_data/projects.yml', yamlContent);
-              console.log('Projects YAML file generated successfully');
-              
-              // Also update the JSON file for backward compatibility
-              fs.writeFileSync('_data/projects.json', JSON.stringify(projects, null, 2));
-              console.log('Projects JSON file updated for backward compatibility');
-              
-            } catch (error) {
-              console.error('Error fetching repository data:', error);
-              process.exit(1);
-            }
-          }
-          
-          fetchRepoData();
-          EOF
+        run: ./scripts/fetch-projects.sh
           
       - name: Check for changes
         id: check_changes
         run: |
-          if git diff --quiet _data/projects.yml _data/projects.json; then
+          if git diff --quiet _data/projects.yml; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "No changes detected in projects data"
           else
@@ -181,20 +53,19 @@ jobs:
             
             ## Changes
             - Updated `_data/projects.yml` with latest repository information
-            - Updated `_data/projects.json` for backward compatibility
             
             ## Repository Data Included
             - Repository name, description, and status
-            - Topics/tags from GitHub
-            - Star count, fork count, and primary language
+            - Topics/tags from GitHub (excluding status tags)
+            - Primary language and activity information
             - Creation and last update dates
             - Homepage URL and OpenGraph image
             - Repository archived status
             
             ## Status Classification
-            - **Done**: Active repositories with recent activity or stars
-            - **In Progress**: Repositories with recent commits (within 6 months)
-            - **Abandoned**: Archived repositories or inactive projects
+            - **Done**: Repositories tagged with "status-done"
+            - **In Progress**: Active repositories with recent commits (within 6 months)
+            - **Abandoned**: Archived repositories or inactive projects (6+ months)
             
             Generated automatically by GitHub Actions on $(date -u).
           branch: auto-update-projects

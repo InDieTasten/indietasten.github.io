@@ -31,35 +31,24 @@ export function getAllArticles(): Article[] {
 }
 
 export function getAllProjects(): Project[] {
-  // Try to load YAML file first, fall back to JSON
+  // Load YAML file only
   const yamlPath = join(dataDirectory, "projects.yml");
-  const jsonPath = join(dataDirectory, "projects.json");
   
-  let projects: Project[];
-  
-  if (fs.existsSync(yamlPath)) {
-    const fileContents = fs.readFileSync(yamlPath, "utf8");
-    projects = yaml.load(fileContents) as Project[];
-  } else if (fs.existsSync(jsonPath)) {
-    const fileContents = fs.readFileSync(jsonPath, "utf8");
-    projects = JSON.parse(fileContents) as Project[];
-  } else {
-    throw new Error("No projects data file found (projects.yml or projects.json)");
+  if (!fs.existsSync(yamlPath)) {
+    throw new Error("No projects data file found (projects.yml)");
   }
   
+  const fileContents = fs.readFileSync(yamlPath, "utf8");
+  const projects = yaml.load(fileContents) as Project[];
+  
   // Sort projects by status (done first, then in-progress, then abandoned) 
-  // and within each status by stars/name
+  // and within each status by updated date
   return projects.sort((a, b) => {
     const statusOrder = { 'done': 0, 'in-progress': 1, 'abandoned': 2 };
     const statusDiff = statusOrder[a.status] - statusOrder[b.status];
     if (statusDiff !== 0) return statusDiff;
     
-    // Within same status, sort by stars if available, then by name
-    if (a.stars !== undefined && b.stars !== undefined) {
-      const starsDiff = b.stars - a.stars;
-      if (starsDiff !== 0) return starsDiff;
-    }
-    
-    return a.name.localeCompare(b.name);
+    // Within same status, sort by updated date descending
+    return new Date(b.updated_at || 0).getTime() - new Date(a.updated_at || 0).getTime();
   });
 }
