@@ -1,0 +1,18 @@
+export type Project = {
+  name: string;
+  status: 'done' | 'abandoned' | 'in-progress';
+  description: string;
+  github_link?: string;
+  demo_link?: string;
+  youtube_link?: string;
+  website?: string;
+  tags: string[];
+  // Additional fields that will be auto-generated
+  stars?: number;
+  forks?: number;
+  language?: string;
+  created_at?: string;
+  updated_at?: string;
+  og_image?: string;
+  archived?: boolean;
+};
