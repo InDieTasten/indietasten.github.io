@@ -1,3 +1,22 @@
+- name: TerminalRTX
+  status: done
+  description: Port of the b0tnet ray tracing demo to .NET as standalone console application
+  github_link: https://github.com/InDieTasten/TerminalRTX
+  website: null
+  tags:
+    - C#
+    - cli
+    - dotnet-5
+    - graphics-engine
+    - port
+    - raytracing
+    - terminal
+  language: C#
+  created_at: "2020-05-23T23:54:11Z"
+  updated_at: "2025-07-06T00:49:42Z"
+  og_image: >-
+    https://opengraph.githubassets.com/c60b39b5be4d1b426ed32941ae53e2b58de1efc57dae6ec359d65ab30cee1b6f/InDieTasten/TerminalRTX
+  archived: false
 - name: superstitious-gh
   status: in-progress
   description: GitHub Action that ensures that no issue or PR receives unlucky IDs
@@ -532,6 +551,19 @@
   og_image: >-
     https://opengraph.githubassets.com/c3fd98e44e7d55e8ad9d13b2ca76abd35692c9c5f490da574526cc4288526317/InDieTasten/--CodeX
   archived: true
+- name: "--2k16"
+  status: abandoned
+  description: The new one, actually
+  github_link: https://github.com/InDieTasten/--2k16
+  website: null
+  tags:
+    - HTML
+  language: HTML
+  created_at: "2015-12-31T23:05:18Z"
+  updated_at: "2023-01-28T21:20:54Z"
+  og_image: >-
+    https://opengraph.githubassets.com/c3fd98e44e7d55e8ad9d13b2ca76abd35692c9c5f490da574526cc4288526317/InDieTasten/--2k16
+  archived: true
 - name: "--Formal"
   status: abandoned
   description: Graphical User Interface utilizing the SFML(Simple and Fast Multimedia Library)
@@ -570,19 +602,6 @@
   updated_at: "2023-01-28T21:20:54Z"
   og_image: >-
     https://opengraph.githubassets.com/c3fd98e44e7d55e8ad9d13b2ca76abd35692c9c5f490da574526cc4288526317/InDieTasten/--EXP-old-
-  archived: true
-- name: "--2k16"
-  status: abandoned
-  description: The new one, actually
-  github_link: https://github.com/InDieTasten/--2k16
-  website: null
-  tags:
-    - HTML
-  language: HTML
-  created_at: "2015-12-31T23:05:18Z"
-  updated_at: "2023-01-28T21:20:54Z"
-  og_image: >-
-    https://opengraph.githubassets.com/c3fd98e44e7d55e8ad9d13b2ca76abd35692c9c5f490da574526cc4288526317/InDieTasten/--2k16
   archived: true
 - name: REEL
   status: abandoned
@@ -822,24 +841,6 @@
   updated_at: "2020-10-02T01:44:33Z"
   og_image: >-
     https://opengraph.githubassets.com/851cc77ec8e144a9394aa2fc828eeef3e64106ac2a0c47da978d9f814d6bfcc0/InDieTasten/TextAdventure.NET
-  archived: false
-- name: TerminalRTX
-  status: abandoned
-  description: No description available.
-  github_link: https://github.com/InDieTasten/TerminalRTX
-  website: null
-  tags:
-    - C#
-    - cli
-    - dotnet-5
-    - graphics-engine
-    - raytracing
-    - terminal
-  language: C#
-  created_at: "2020-05-23T23:54:11Z"
-  updated_at: "2020-05-28T01:00:14Z"
-  og_image: >-
-    https://opengraph.githubassets.com/1da765b895f79d9183e9d65638cde47545bfb7715143cb2f83ad6225d921ecbe/InDieTasten/TerminalRTX
   archived: false
 - name: DevTease.Plugins
   status: abandoned
