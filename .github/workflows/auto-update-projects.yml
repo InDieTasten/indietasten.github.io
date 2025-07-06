@@ -1,0 +1,73 @@
+name: Auto-update Projects
+
+on:
+  # Run daily at 2 AM UTC
+  schedule:
+    - cron: '0 2 * * *'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-projects:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Fetch repository data and generate projects file
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./scripts/fetch-projects.sh
+          
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet _data/projects.yml; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in projects data"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in projects data"
+          fi
+          
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'Auto-update projects data from GitHub repositories'
+          title: '🤖 Auto-update projects data'
+          body: |
+            This PR automatically updates the projects data based on the latest public repositories.
+            
+            ## Changes
+            - Updated `_data/projects.yml` with latest repository information
+            
+            ## Repository Data Included
+            - Repository name, description, and status
+            - Topics/tags from GitHub (excluding status tags)
+            - Primary language and activity information
+            - Creation and last update dates
+            - Homepage URL and OpenGraph image
+            - Repository archived status
+            
+            ## Status Classification
+            - **Done**: Repositories tagged with "status-done"
+            - **In Progress**: Active repositories with recent commits (within 6 months)
+            - **Abandoned**: Archived repositories or inactive projects (6+ months)
+            
+            Generated automatically by GitHub Actions on $(date -u).
+          branch: auto-update-projects
+          branch-suffix: timestamp
+          delete-branch: true
