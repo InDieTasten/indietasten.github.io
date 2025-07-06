@@ -152,12 +152,12 @@ async function fetchAllRepos() {
                     }
                 }
             } catch (error) {
-                console.log(\`Could not fetch repository page for \${repo.full_name}: \${error.message}\`);
+                console.log(`Could not fetch repository page for ${repo.full_name}: ${error.message}`);
             }
             
             // Use the dynamic OpenGraph image as fallback
             if (!ogImage) {
-                ogImage = \`https://opengraph.githubassets.com/1/\${repo.full_name}\`;
+                ogImage = `https://opengraph.githubassets.com/1/${repo.full_name}`;
             }
             
             const project = {
