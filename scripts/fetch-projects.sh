@@ -133,11 +133,32 @@ async function fetchAllRepos() {
             // Try to get repository's actual OpenGraph image first
             let ogImage = null;
             
-            // Use the dynamic OpenGraph image as default
-            ogImage = `https://opengraph.githubassets.com/1/${repo.full_name}`;
+            // Try to extract OpenGraph image from repository HTML page
+            try {
+                const repoPageResponse = await fetch(repo.html_url, {
+                    method: 'GET',
+                    headers: {
+                        'User-Agent': 'Mozilla/5.0 (compatible; ProjectFetcher/1.0)',
+                        'Accept': 'text/html,application/xhtml+xml'
+                    }
+                });
+                
+                if (repoPageResponse.ok) {
+                    const htmlContent = await repoPageResponse.text();
+                    // Extract OpenGraph image from meta tag
+                    const ogImageMatch = htmlContent.match(/<meta property="og:image" content="([^"]*)"[^>]*>/i);
+                    if (ogImageMatch && ogImageMatch[1]) {
+                        ogImage = ogImageMatch[1];
+                    }
+                }
+            } catch (error) {
+                console.log(\`Could not fetch repository page for \${repo.full_name}: \${error.message}\`);
+            }
             
-            // Note: The repository's actual social preview image would require additional API calls
-            // For now, we use the dynamic OpenGraph image which GitHub generates automatically
+            // Use the dynamic OpenGraph image as fallback
+            if (!ogImage) {
+                ogImage = \`https://opengraph.githubassets.com/1/\${repo.full_name}\`;
+            }
             
             const project = {
                 name: repo.name,

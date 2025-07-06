@@ -53,47 +53,53 @@ function ProjectLinks({ project }: { project: Project }) {
 function ProjectCard({ project }: { project: Project }) {
   return (
     <Card className="md:col-span-3">
-      {project.og_image && (
-        <div className="mb-4 -mx-6 -mt-6">
-          <img
-            src={project.og_image}
-            alt={`${project.name} preview`}
-            className="w-full h-48 object-cover rounded-t-lg"
-          />
+      <div className="flex flex-col md:flex-row gap-4">
+        {/* Image section */}
+        {project.og_image && (
+          <div className="flex-shrink-0 -mx-6 -mt-6 md:mx-0 md:mt-0 md:w-48">
+            <img
+              src={project.og_image}
+              alt={`${project.name} preview`}
+              className="w-full h-48 object-cover rounded-t-lg md:rounded-lg md:rounded-t-lg"
+            />
+          </div>
+        )}
+        
+        {/* Content section */}
+        <div className="flex-1 md:min-w-0">
+          <div className="flex items-start justify-between mb-2">
+            <Card.Title href={project.github_link}>
+              {project.name}
+            </Card.Title>
+            <ProjectStatus status={project.status} />
+          </div>
+          
+          {project.tags && project.tags.length > 0 && (
+            <div className="mb-3 flex flex-wrap gap-1">
+              {project.tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className={`border text-xs px-2 py-0.5 rounded ${
+                    index === 0 && project.language === tag
+                      ? 'border-teal-500/50 text-teal-300 bg-teal-500/10'
+                      : 'border-zinc-600 text-zinc-300 bg-transparent'
+                  }`}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+          
+          <Card.Description>{project.description}</Card.Description>
+          
+          <ProjectLinks project={project} />
+          
+          {project.github_link && (
+            <Card.Cta>View on GitHub</Card.Cta>
+          )}
         </div>
-      )}
-      
-      <div className="flex items-start justify-between mb-2">
-        <Card.Title href={project.github_link}>
-          {project.name}
-        </Card.Title>
-        <ProjectStatus status={project.status} />
       </div>
-      
-      {project.tags && project.tags.length > 0 && (
-        <div className="mb-3 flex flex-wrap gap-1">
-          {project.tags.map((tag, index) => (
-            <span
-              key={index}
-              className={`border text-xs px-2 py-0.5 rounded ${
-                index === 0 && project.language === tag
-                  ? 'border-teal-500/50 text-teal-300 bg-teal-500/10'
-                  : 'border-zinc-600 text-zinc-300 bg-transparent'
-              }`}
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-      )}
-      
-      <Card.Description>{project.description}</Card.Description>
-      
-      <ProjectLinks project={project} />
-      
-      {project.github_link && (
-        <Card.Cta>View on GitHub</Card.Cta>
-      )}
     </Card>
   );
 }

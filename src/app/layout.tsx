@@ -1,11 +1,11 @@
 import { SITE_TITLE, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import "./globals.css";
 import { Layout } from "@/components/Layout";
 
-// const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: SITE_TITLE,
