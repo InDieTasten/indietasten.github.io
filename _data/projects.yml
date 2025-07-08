@@ -1,3 +1,26 @@
+- name: superstitious-gh
+  status: done
+  description: GitHub Action that ensures that no issue or PR receives unlucky IDs
+  github_link: https://github.com/InDieTasten/superstitious-gh
+  website: null
+  tags:
+    - TypeScript
+    - ci
+    - devil
+    - dumb
+    - fun
+    - github-action
+    - issues
+    - lucky
+    - pull-request
+    - superstition
+    - trolling
+  language: TypeScript
+  created_at: "2025-01-29T10:06:33Z"
+  updated_at: "2025-07-07T07:50:13Z"
+  og_image: >-
+    https://opengraph.githubassets.com/2d98771e27af0fa4bdb8ee9bbd39b4a7c829f8517dd2311b1e2f5a48106b1061/InDieTasten/superstitious-gh
+  archived: false
 - name: Connect4
   status: done
   description: A game of Connect4 (local and remote multiplayer included)
@@ -233,29 +256,6 @@
   updated_at: "2025-07-06T01:38:23Z"
   og_image: >-
     https://opengraph.githubassets.com/3e8e2728e654a431b9a29e21cac7fff48e25bf96f03e7375d2110f731cfd9d59/InDieTasten/Authenticated-Integration-Testing
-  archived: false
-- name: superstitious-gh
-  status: done
-  description: GitHub Action that ensures that no issue or PR receives unlucky IDs
-  github_link: https://github.com/InDieTasten/superstitious-gh
-  website: null
-  tags:
-    - TypeScript
-    - ci
-    - devil
-    - dumb
-    - fun
-    - github-action
-    - issues
-    - lucky
-    - pull-request
-    - superstition
-    - trolling
-  language: TypeScript
-  created_at: "2025-01-29T10:06:33Z"
-  updated_at: "2025-07-06T01:38:15Z"
-  og_image: >-
-    https://opengraph.githubassets.com/f5c5a25d14f438e77a255f6ee5cebce9fc5636762519addf8d853ae7c02188da/InDieTasten/superstitious-gh
   archived: false
 - name: alternate-screen-buffer-demo
   status: done
