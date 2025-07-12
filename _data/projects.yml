@@ -293,6 +293,19 @@
   og_image: >-
     https://opengraph.githubassets.com/c60b39b5be4d1b426ed32941ae53e2b58de1efc57dae6ec359d65ab30cee1b6f/InDieTasten/TerminalRTX
   archived: false
+- name: OpenHour
+  status: in-progress
+  description: Free and open source time tracking for GitHub issues
+  github_link: https://github.com/InDieTasten/OpenHour
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2025-07-12T02:22:37Z"
+  updated_at: "2025-07-12T02:22:38Z"
+  og_image: >-
+    https://opengraph.githubassets.com/ab9a9cb5ca669adcec4d2f326191284fe3f2daaaac978334d280b1923cd4e531/InDieTasten/OpenHour
+  archived: false
 - name: InDieTasten
   status: in-progress
   description: No description available.
@@ -729,23 +742,6 @@
   updated_at: "2023-01-28T20:40:31Z"
   og_image: https://opengraph.githubassets.com/073c830c82460c54e6b207c421a99ad8fa9f4931b7d4bf7604410f3ad275d2cf/InDieTasten/REEL
   archived: true
-- name: CSharp.lua
-  status: abandoned
-  description: The C# to Lua compiler
-  github_link: https://github.com/InDieTasten/CSharp.lua
-  website: null
-  tags:
-    - C#
-    - buildtool
-    - c-sharp
-    - compiler
-    - lua
-  language: C#
-  created_at: "2018-04-21T12:41:43Z"
-  updated_at: "2023-01-28T15:41:45Z"
-  og_image: >-
-    https://opengraph.githubassets.com/8448a3bf506b4cc143b0c7ae2aa3619e6ebc8d403c6299b467c60b33756a7be4/InDieTasten/CSharp.lua
-  archived: true
 - name: indie-ml
   status: abandoned
   description: Machine learning algorithms and models implemented in Lua
@@ -771,6 +767,23 @@
   updated_at: "2023-01-28T15:41:45Z"
   og_image: >-
     https://opengraph.githubassets.com/8448a3bf506b4cc143b0c7ae2aa3619e6ebc8d403c6299b467c60b33756a7be4/InDieTasten/CC-CSharp
+  archived: true
+- name: CSharp.lua
+  status: abandoned
+  description: The C# to Lua compiler
+  github_link: https://github.com/InDieTasten/CSharp.lua
+  website: null
+  tags:
+    - C#
+    - buildtool
+    - c-sharp
+    - compiler
+    - lua
+  language: C#
+  created_at: "2018-04-21T12:41:43Z"
+  updated_at: "2023-01-28T15:41:45Z"
+  og_image: >-
+    https://opengraph.githubassets.com/8448a3bf506b4cc143b0c7ae2aa3619e6ebc8d403c6299b467c60b33756a7be4/InDieTasten/CSharp.lua
   archived: true
 - name: Top-Down-Heist
   status: abandoned
