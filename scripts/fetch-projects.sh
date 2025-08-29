@@ -114,21 +114,14 @@ async function fetchAllRepos() {
                 status = 'abandoned';
             } else if (repo.pushed_at) {
                 const lastPush = new Date(repo.pushed_at);
-                const created = new Date(repo.created_at);
                 const sixMonthsAgo = new Date();
                 sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
                 
-                // Check if repo is uninitialized (created and barely touched)
-                const daysSinceCreation = Math.abs(lastPush - created) / (1000 * 60 * 60 * 24);
-                
-                if (daysSinceCreation <= 1) {
-                    // Repo was created but never significantly developed
-                    status = 'idea';
-                } else if (lastPush < sixMonthsAgo) {
+                if (lastPush < sixMonthsAgo) {
                     status = 'abandoned';
                 }
             } else {
-                // No push_at data suggests repo is uninitialized
+                // No pushed_at data means no commits have ever been pushed - truly uninitialized
                 status = 'idea';
             }
             
