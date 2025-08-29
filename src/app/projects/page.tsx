@@ -8,6 +8,7 @@ function ProjectStatus({ status }: { status: Project['status'] }) {
     'done': { label: 'Completed', className: 'bg-green-900/50 text-green-300 border-green-500/50' },
     'in-progress': { label: 'In Progress', className: 'bg-blue-900/50 text-blue-300 border-blue-500/50' },
     'abandoned': { label: 'Archived', className: 'bg-zinc-700/50 text-zinc-400 border-zinc-600/50' },
+    'idea': { label: 'Idea', className: 'bg-purple-900/50 text-purple-300 border-purple-500/50' },
   };
 
   const config = statusConfig[status];

@@ -1,6 +1,6 @@
 export type Project = {
   name: string;
-  status: 'done' | 'abandoned' | 'in-progress';
+  status: 'done' | 'abandoned' | 'in-progress' | 'idea';
   description: string;
   github_link?: string;
   website?: string;

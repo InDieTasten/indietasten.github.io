@@ -103,7 +103,7 @@ async function fetchAllRepos() {
             // Skip the indietasten.github.io repository itself
             if (repo.name === 'indietasten.github.io') continue;
             
-            // Determine status based on repository topics
+            // Determine status based on repository topics and activity
             let status = 'in-progress'; // Default status
             
             const topics = repo.topics || [];
@@ -114,12 +114,22 @@ async function fetchAllRepos() {
                 status = 'abandoned';
             } else if (repo.pushed_at) {
                 const lastPush = new Date(repo.pushed_at);
+                const created = new Date(repo.created_at);
                 const sixMonthsAgo = new Date();
                 sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
                 
-                if (lastPush < sixMonthsAgo) {
+                // Check if repo is uninitialized (created and barely touched)
+                const daysSinceCreation = Math.abs(lastPush - created) / (1000 * 60 * 60 * 24);
+                
+                if (daysSinceCreation <= 1) {
+                    // Repo was created but never significantly developed
+                    status = 'idea';
+                } else if (lastPush < sixMonthsAgo) {
                     status = 'abandoned';
                 }
+            } else {
+                // No push_at data suggests repo is uninitialized
+                status = 'idea';
             }
             
             // Extract tags from topics (excluding status tags)
@@ -177,9 +187,9 @@ async function fetchAllRepos() {
             projects.push(project);
         }
         
-        // Sort projects by status (done, in-progress, abandoned) and then by updated date
+        // Sort projects by status (done, in-progress, idea, abandoned) and then by updated date
         projects.sort((a, b) => {
-            const statusOrder = { 'done': 0, 'in-progress': 1, 'abandoned': 2 };
+            const statusOrder = { 'done': 0, 'in-progress': 1, 'idea': 2, 'abandoned': 3 };
             const statusDiff = statusOrder[a.status] - statusOrder[b.status];
             if (statusDiff !== 0) return statusDiff;
             

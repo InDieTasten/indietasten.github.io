@@ -293,34 +293,6 @@
   og_image: >-
     https://opengraph.githubassets.com/c60b39b5be4d1b426ed32941ae53e2b58de1efc57dae6ec359d65ab30cee1b6f/InDieTasten/TerminalRTX
   archived: false
-- name: acc-engineering-agent
-  status: in-progress
-  description: >-
-    AI agent that understands Assetto Corsa Competizione telemetry data and points out driving and setup advice built
-    with MCP
-  github_link: https://github.com/InDieTasten/acc-engineering-agent
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2025-07-13T10:56:45Z"
-  updated_at: "2025-07-13T10:56:45Z"
-  og_image: >-
-    https://opengraph.githubassets.com/d67d59e1c346b2f27d2c113cf5fa6cd9ef5d989a7e45738d5b0b7194b7c0fb3c/InDieTasten/acc-engineering-agent
-  archived: false
-- name: OpenHour
-  status: in-progress
-  description: Free and open source time tracking for GitHub issues
-  github_link: https://github.com/InDieTasten/OpenHour
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2025-07-12T02:22:37Z"
-  updated_at: "2025-07-12T02:22:38Z"
-  og_image: >-
-    https://opengraph.githubassets.com/ab9a9cb5ca669adcec4d2f326191284fe3f2daaaac978334d280b1923cd4e531/InDieTasten/OpenHour
-  archived: false
 - name: InDieTasten
   status: in-progress
   description: No description available.
@@ -354,8 +326,36 @@
   og_image: >-
     https://opengraph.githubassets.com/7ea257cc486c2c9b21e45af55425bb2eba6dd4e9e49b51d3c75ef9b2dd31c591/InDieTasten/pfand
   archived: false
+- name: acc-engineering-agent
+  status: idea
+  description: >-
+    AI agent that understands Assetto Corsa Competizione telemetry data and points out driving and setup advice built
+    with MCP
+  github_link: https://github.com/InDieTasten/acc-engineering-agent
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2025-07-13T10:56:45Z"
+  updated_at: "2025-07-13T10:56:45Z"
+  og_image: >-
+    https://opengraph.githubassets.com/d67d59e1c346b2f27d2c113cf5fa6cd9ef5d989a7e45738d5b0b7194b7c0fb3c/InDieTasten/acc-engineering-agent
+  archived: false
+- name: OpenHour
+  status: idea
+  description: Free and open source time tracking for GitHub issues
+  github_link: https://github.com/InDieTasten/OpenHour
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2025-07-12T02:22:37Z"
+  updated_at: "2025-07-12T02:22:38Z"
+  og_image: >-
+    https://opengraph.githubassets.com/ab9a9cb5ca669adcec4d2f326191284fe3f2daaaac978334d280b1923cd4e531/InDieTasten/OpenHour
+  archived: false
 - name: k8s-bug
-  status: in-progress
+  status: idea
   description: No description available.
   github_link: https://github.com/InDieTasten/k8s-bug
   website: null
@@ -366,6 +366,207 @@
   updated_at: "2025-03-12T16:45:47Z"
   og_image: >-
     https://opengraph.githubassets.com/4dce0556bd899219d31af8f88c530f7e237abab159ffdbcb01586b0a9b11dfb6/InDieTasten/k8s-bug
+  archived: false
+- name: lua-test
+  status: idea
+  description: No description available.
+  github_link: https://github.com/InDieTasten/lua-test
+  website: null
+  tags:
+    - Lua
+  language: Lua
+  created_at: "2024-07-22T20:48:06Z"
+  updated_at: "2024-07-22T21:15:22Z"
+  og_image: >-
+    https://opengraph.githubassets.com/fe5cbf7bca9d6a2c219e6137fe0a50835ffc9d9cf02c1a1eb146542dd70d9f7a/InDieTasten/lua-test
+  archived: false
+- name: gpg-signing-test
+  status: idea
+  description: No description available.
+  github_link: https://github.com/InDieTasten/gpg-signing-test
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2024-07-22T12:20:39Z"
+  updated_at: "2024-07-22T13:11:31Z"
+  og_image: >-
+    https://opengraph.githubassets.com/25745dd2eeabfa3c3c279f7cc792a3972d13a04cb24ae038cbc8d062fd7533c3/InDieTasten/gpg-signing-test
+  archived: false
+- name: gh-sine-activity
+  status: idea
+  description: A GitHub Actions workflow that draws a sine-wave into your profile activity chart
+  github_link: https://github.com/InDieTasten/gh-sine-activity
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2024-05-24T01:36:29Z"
+  updated_at: "2024-05-24T01:36:29Z"
+  og_image: >-
+    https://opengraph.githubassets.com/7a27fd9e92b89417366065e831fb874681f86df4e914ac4e11a868de4d1549ea/InDieTasten/gh-sine-activity
+  archived: false
+- name: gh-extraordinaire-farm
+  status: idea
+  description: >-
+    A GitHub Actions workflow that generates co-authored commits with popular user id's on GitHub to farm exposure
+    through Achievements
+  github_link: https://github.com/InDieTasten/gh-extraordinaire-farm
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2024-05-24T01:34:56Z"
+  updated_at: "2024-05-24T01:34:56Z"
+  og_image: >-
+    https://opengraph.githubassets.com/263debf3ecb6d5a8d1427466190319c54062e54c1f788990a6e297e9d5f3541a/InDieTasten/gh-extraordinaire-farm
+  archived: false
+- name: Shady-Comms-Inc
+  status: idea
+  description: Tycoon type game about building an evil internet service provider
+  github_link: https://github.com/InDieTasten/Shady-Comms-Inc
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2024-05-05T19:32:56Z"
+  updated_at: "2024-05-05T19:33:00Z"
+  og_image: >-
+    https://opengraph.githubassets.com/5b97838c93719eb0fdb98d87086bad38b163a0382b894c29b3dcb5276afe5cb0/InDieTasten/Shady-Comms-Inc
+  archived: false
+- name: EduPlex
+  status: idea
+  description: A terminal multiplexer for educational purposes of how terminal multiplexing works.
+  github_link: https://github.com/InDieTasten/EduPlex
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2024-05-05T12:01:25Z"
+  updated_at: "2024-05-05T12:01:29Z"
+  og_image: >-
+    https://opengraph.githubassets.com/1dbac8ed912fde031f27ea92cc394675937bff6868d04fba0df671b94aa70c53/InDieTasten/EduPlex
+  archived: false
+- name: cli-lighthouse-viewer
+  status: idea
+  description: A node.js cli tool capable of rendering a lighthouse audit report inside the terminal.
+  github_link: https://github.com/InDieTasten/cli-lighthouse-viewer
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2024-05-05T12:01:00Z"
+  updated_at: "2024-05-05T12:01:04Z"
+  og_image: >-
+    https://opengraph.githubassets.com/577b4abadf36d62d560c3f9ff1bee62e5ba86a4e9af9857d6f9d310c9b9f0320/InDieTasten/cli-lighthouse-viewer
+  archived: false
+- name: Leergut-Simulator
+  status: idea
+  description: >-
+    Trashy browser-based video game playing in Germany, where you are a peasant living off of “Leergut” you find on the
+    streets.
+  github_link: https://github.com/InDieTasten/Leergut-Simulator
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2024-05-05T12:00:24Z"
+  updated_at: "2024-05-05T12:00:27Z"
+  og_image: >-
+    https://opengraph.githubassets.com/abfa86bd95787fe3dd0e46ff12aead991f8cdd0558930c766db601e67f2a6da9/InDieTasten/Leergut-Simulator
+  archived: false
+- name: Novel-Now
+  status: idea
+  description: A book-writing tool for writing and editing, backed by a git repository for storage and versioning
+  github_link: https://github.com/InDieTasten/Novel-Now
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2024-05-05T11:58:59Z"
+  updated_at: "2024-05-05T11:59:03Z"
+  og_image: >-
+    https://opengraph.githubassets.com/dd7fdd71dcce6f6caf5927ce1b3d5f5fa942baf102f68e4744bde5703e0f244f/InDieTasten/Novel-Now
+  archived: false
+- name: connect-ice
+  status: idea
+  description: Connect4 clone capable of p2p multiplayer using WebRTC / ICE
+  github_link: https://github.com/InDieTasten/connect-ice
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2024-05-05T11:57:10Z"
+  updated_at: "2024-05-05T11:57:14Z"
+  og_image: >-
+    https://opengraph.githubassets.com/24fecfa1d262af239bd5686212ed85feac1d121487ecb8dd2c75031ed040741d/InDieTasten/connect-ice
+  archived: false
+- name: flat-game
+  status: idea
+  description: Planning and tracking application for keeping shared apartments clean using gamification of chores
+  github_link: https://github.com/InDieTasten/flat-game
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2024-05-05T11:56:03Z"
+  updated_at: "2024-05-05T11:56:07Z"
+  og_image: >-
+    https://opengraph.githubassets.com/038a633786e8da1f68a93c02dc569695a8db7a60d03fe478044c50e412136aa6/InDieTasten/flat-game
+  archived: false
+- name: CliSpectrogram.NET
+  status: idea
+  description: A dotnet cli s
+  github_link: https://github.com/InDieTasten/CliSpectrogram.NET
+  website: null
+  tags:
+    - C#
+  language: C#
+  created_at: "2021-01-29T18:04:59Z"
+  updated_at: "2024-04-21T00:53:45Z"
+  og_image: >-
+    https://opengraph.githubassets.com/16724d3abfd4f9baea468f3e870de7a53ca93c90e5a2cd17ab96fd9d6742c396/InDieTasten/CliSpectrogram.NET
+  archived: false
+- name: WikiWebhookTestRepo
+  status: idea
+  description: >-
+    Created for certification learning path:
+    https://docs.microsoft.com/en-us/learn/modules/monitor-github-events-with-a-function-triggered-by-a-webhook/5-exercise-setup-webhook-for-github-repo
+  github_link: https://github.com/InDieTasten/WikiWebhookTestRepo
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2021-07-27T10:37:08Z"
+  updated_at: "2021-07-27T10:37:08Z"
+  og_image: >-
+    https://opengraph.githubassets.com/b2ef3529ce0618b45e991908d203c0571e75d9095ec7f469d493a7c6fb43fb33/InDieTasten/WikiWebhookTestRepo
+  archived: false
+- name: DevTease.Rasa
+  status: idea
+  description: A demo project to showcase rasa NLU and Core Models
+  github_link: https://github.com/InDieTasten/DevTease.Rasa
+  website: null
+  tags:
+    - Python
+  language: Python
+  created_at: "2021-02-09T20:53:57Z"
+  updated_at: "2021-02-09T20:55:13Z"
+  og_image: >-
+    https://opengraph.githubassets.com/2fd7ce10cfbfa42752ecbd803911b5ee6e93c9d8beea6311c2796075e3123cac/InDieTasten/DevTease.Rasa
+  archived: false
+- name: indie-classes
+  status: idea
+  description: A class creation helper for Lua language
+  github_link: https://github.com/InDieTasten/indie-classes
+  website: null
+  tags:
+    - Lua
+  language: Lua
+  created_at: "2018-01-06T18:37:16Z"
+  updated_at: "2018-01-06T18:38:25Z"
+  og_image: >-
+    https://opengraph.githubassets.com/5195963ea8fea5e48834f1b7c6a5f83d6b6ec5f0125e736e410ba32363d2c871/InDieTasten/indie-classes
   archived: false
 - name: TextAdventure.NET
   status: abandoned
@@ -461,32 +662,6 @@
   og_image: >-
     https://opengraph.githubassets.com/dec424542de9106a21663fe241c99ac13142eb8251ae987e4867d77cd32a514f/InDieTasten/RetailPro.Backend
   archived: true
-- name: lua-test
-  status: abandoned
-  description: No description available.
-  github_link: https://github.com/InDieTasten/lua-test
-  website: null
-  tags:
-    - Lua
-  language: Lua
-  created_at: "2024-07-22T20:48:06Z"
-  updated_at: "2024-07-22T21:15:22Z"
-  og_image: >-
-    https://opengraph.githubassets.com/fe5cbf7bca9d6a2c219e6137fe0a50835ffc9d9cf02c1a1eb146542dd70d9f7a/InDieTasten/lua-test
-  archived: false
-- name: gpg-signing-test
-  status: abandoned
-  description: No description available.
-  github_link: https://github.com/InDieTasten/gpg-signing-test
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2024-07-22T12:20:39Z"
-  updated_at: "2024-07-22T13:11:31Z"
-  og_image: >-
-    https://opengraph.githubassets.com/25745dd2eeabfa3c3c279f7cc792a3972d13a04cb24ae038cbc8d062fd7533c3/InDieTasten/gpg-signing-test
-  archived: false
 - name: astats-fast
   status: abandoned
   description: Service similar to astats.nl, but without timeouts and registration issues
@@ -499,140 +674,6 @@
   updated_at: "2024-05-24T03:28:14Z"
   og_image: >-
     https://opengraph.githubassets.com/40427b9fa7fd4bd63800262e35132798348ea395deb2d696b60994733df1d2e9/InDieTasten/astats-fast
-  archived: false
-- name: gh-sine-activity
-  status: abandoned
-  description: A GitHub Actions workflow that draws a sine-wave into your profile activity chart
-  github_link: https://github.com/InDieTasten/gh-sine-activity
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2024-05-24T01:36:29Z"
-  updated_at: "2024-05-24T01:36:29Z"
-  og_image: >-
-    https://opengraph.githubassets.com/7a27fd9e92b89417366065e831fb874681f86df4e914ac4e11a868de4d1549ea/InDieTasten/gh-sine-activity
-  archived: false
-- name: gh-extraordinaire-farm
-  status: abandoned
-  description: >-
-    A GitHub Actions workflow that generates co-authored commits with popular user id's on GitHub to farm exposure
-    through Achievements
-  github_link: https://github.com/InDieTasten/gh-extraordinaire-farm
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2024-05-24T01:34:56Z"
-  updated_at: "2024-05-24T01:34:56Z"
-  og_image: >-
-    https://opengraph.githubassets.com/263debf3ecb6d5a8d1427466190319c54062e54c1f788990a6e297e9d5f3541a/InDieTasten/gh-extraordinaire-farm
-  archived: false
-- name: Shady-Comms-Inc
-  status: abandoned
-  description: Tycoon type game about building an evil internet service provider
-  github_link: https://github.com/InDieTasten/Shady-Comms-Inc
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2024-05-05T19:32:56Z"
-  updated_at: "2024-05-05T19:33:00Z"
-  og_image: >-
-    https://opengraph.githubassets.com/5b97838c93719eb0fdb98d87086bad38b163a0382b894c29b3dcb5276afe5cb0/InDieTasten/Shady-Comms-Inc
-  archived: false
-- name: EduPlex
-  status: abandoned
-  description: A terminal multiplexer for educational purposes of how terminal multiplexing works.
-  github_link: https://github.com/InDieTasten/EduPlex
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2024-05-05T12:01:25Z"
-  updated_at: "2024-05-05T12:01:29Z"
-  og_image: >-
-    https://opengraph.githubassets.com/1dbac8ed912fde031f27ea92cc394675937bff6868d04fba0df671b94aa70c53/InDieTasten/EduPlex
-  archived: false
-- name: cli-lighthouse-viewer
-  status: abandoned
-  description: A node.js cli tool capable of rendering a lighthouse audit report inside the terminal.
-  github_link: https://github.com/InDieTasten/cli-lighthouse-viewer
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2024-05-05T12:01:00Z"
-  updated_at: "2024-05-05T12:01:04Z"
-  og_image: >-
-    https://opengraph.githubassets.com/577b4abadf36d62d560c3f9ff1bee62e5ba86a4e9af9857d6f9d310c9b9f0320/InDieTasten/cli-lighthouse-viewer
-  archived: false
-- name: Leergut-Simulator
-  status: abandoned
-  description: >-
-    Trashy browser-based video game playing in Germany, where you are a peasant living off of “Leergut” you find on the
-    streets.
-  github_link: https://github.com/InDieTasten/Leergut-Simulator
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2024-05-05T12:00:24Z"
-  updated_at: "2024-05-05T12:00:27Z"
-  og_image: >-
-    https://opengraph.githubassets.com/abfa86bd95787fe3dd0e46ff12aead991f8cdd0558930c766db601e67f2a6da9/InDieTasten/Leergut-Simulator
-  archived: false
-- name: Novel-Now
-  status: abandoned
-  description: A book-writing tool for writing and editing, backed by a git repository for storage and versioning
-  github_link: https://github.com/InDieTasten/Novel-Now
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2024-05-05T11:58:59Z"
-  updated_at: "2024-05-05T11:59:03Z"
-  og_image: >-
-    https://opengraph.githubassets.com/dd7fdd71dcce6f6caf5927ce1b3d5f5fa942baf102f68e4744bde5703e0f244f/InDieTasten/Novel-Now
-  archived: false
-- name: connect-ice
-  status: abandoned
-  description: Connect4 clone capable of p2p multiplayer using WebRTC / ICE
-  github_link: https://github.com/InDieTasten/connect-ice
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2024-05-05T11:57:10Z"
-  updated_at: "2024-05-05T11:57:14Z"
-  og_image: >-
-    https://opengraph.githubassets.com/24fecfa1d262af239bd5686212ed85feac1d121487ecb8dd2c75031ed040741d/InDieTasten/connect-ice
-  archived: false
-- name: flat-game
-  status: abandoned
-  description: Planning and tracking application for keeping shared apartments clean using gamification of chores
-  github_link: https://github.com/InDieTasten/flat-game
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2024-05-05T11:56:03Z"
-  updated_at: "2024-05-05T11:56:07Z"
-  og_image: >-
-    https://opengraph.githubassets.com/038a633786e8da1f68a93c02dc569695a8db7a60d03fe478044c50e412136aa6/InDieTasten/flat-game
-  archived: false
-- name: CliSpectrogram.NET
-  status: abandoned
-  description: A dotnet cli s
-  github_link: https://github.com/InDieTasten/CliSpectrogram.NET
-  website: null
-  tags:
-    - C#
-  language: C#
-  created_at: "2021-01-29T18:04:59Z"
-  updated_at: "2024-04-21T00:53:45Z"
-  og_image: >-
-    https://opengraph.githubassets.com/16724d3abfd4f9baea468f3e870de7a53ca93c90e5a2cd17ab96fd9d6742c396/InDieTasten/CliSpectrogram.NET
   archived: false
 - name: b0tnet
   status: abandoned
@@ -860,34 +901,6 @@
   og_image: >-
     https://opengraph.githubassets.com/4838fded7665b4bb8fbe3363342e1fafdf39ae5043a9f3582896b295f17662b7/InDieTasten/terminal-damage
   archived: false
-- name: WikiWebhookTestRepo
-  status: abandoned
-  description: >-
-    Created for certification learning path:
-    https://docs.microsoft.com/en-us/learn/modules/monitor-github-events-with-a-function-triggered-by-a-webhook/5-exercise-setup-webhook-for-github-repo
-  github_link: https://github.com/InDieTasten/WikiWebhookTestRepo
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2021-07-27T10:37:08Z"
-  updated_at: "2021-07-27T10:37:08Z"
-  og_image: >-
-    https://opengraph.githubassets.com/b2ef3529ce0618b45e991908d203c0571e75d9095ec7f469d493a7c6fb43fb33/InDieTasten/WikiWebhookTestRepo
-  archived: false
-- name: DevTease.Rasa
-  status: abandoned
-  description: A demo project to showcase rasa NLU and Core Models
-  github_link: https://github.com/InDieTasten/DevTease.Rasa
-  website: null
-  tags:
-    - Python
-  language: Python
-  created_at: "2021-02-09T20:53:57Z"
-  updated_at: "2021-02-09T20:55:13Z"
-  og_image: >-
-    https://opengraph.githubassets.com/2fd7ce10cfbfa42752ecbd803911b5ee6e93c9d8beea6311c2796075e3123cac/InDieTasten/DevTease.Rasa
-  archived: false
 - name: DevTease.DI
   status: abandoned
   description: No description available.
@@ -900,17 +913,4 @@
   updated_at: "2020-12-20T11:25:24Z"
   og_image: >-
     https://opengraph.githubassets.com/54bff6fe6f739a46969e2961fb25a0d45ed190f44995c41325764ab0a623d3ee/InDieTasten/DevTease.DI
-  archived: false
-- name: indie-classes
-  status: abandoned
-  description: A class creation helper for Lua language
-  github_link: https://github.com/InDieTasten/indie-classes
-  website: null
-  tags:
-    - Lua
-  language: Lua
-  created_at: "2018-01-06T18:37:16Z"
-  updated_at: "2018-01-06T18:38:25Z"
-  og_image: >-
-    https://opengraph.githubassets.com/5195963ea8fea5e48834f1b7c6a5f83d6b6ec5f0125e736e410ba32363d2c871/InDieTasten/indie-classes
   archived: false

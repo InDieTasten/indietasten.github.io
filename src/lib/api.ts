@@ -41,10 +41,10 @@ export function getAllProjects(): Project[] {
   const fileContents = fs.readFileSync(yamlPath, "utf8");
   const projects = yaml.load(fileContents) as Project[];
   
-  // Sort projects by status (done first, then in-progress, then abandoned) 
+  // Sort projects by status (done first, then in-progress, then idea, then abandoned) 
   // and within each status by updated date
   return projects.sort((a, b) => {
-    const statusOrder = { 'done': 0, 'in-progress': 1, 'abandoned': 2 };
+    const statusOrder = { 'done': 0, 'in-progress': 1, 'idea': 2, 'abandoned': 3 };
     const statusDiff = statusOrder[a.status] - statusOrder[b.status];
     if (statusDiff !== 0) return statusDiff;
     
