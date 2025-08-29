@@ -48,3 +48,6 @@ next-env.d.ts
 # project sample files
 _data/*-sample.yml
 _data/*-sample.json
+
+# backup files
+*.backup
