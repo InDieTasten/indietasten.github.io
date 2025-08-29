@@ -1,3 +1,26 @@
+- name: superstitious-gh
+  status: done
+  description: GitHub Action that ensures that no issue or PR receives unlucky IDs
+  github_link: https://github.com/InDieTasten/superstitious-gh
+  website: null
+  tags:
+    - JavaScript
+    - ci
+    - devil
+    - dumb
+    - fun
+    - github-action
+    - issues
+    - lucky
+    - pull-request
+    - superstition
+    - trolling
+  language: JavaScript
+  created_at: "2025-01-29T10:06:33Z"
+  updated_at: "2025-08-29T17:52:03Z"
+  og_image: >-
+    https://opengraph.githubassets.com/f6c4cd8c6ffab7ae18dbd73cc72b5a11bde548239de2d2f852ece6cd138d0c69/InDieTasten/superstitious-gh
+  archived: false
 - name: mandel-lua
   status: done
   description: Mandelbrot renderer in pure Lua
@@ -21,29 +44,6 @@
   created_at: "2024-08-09T12:22:43Z"
   updated_at: "2025-07-17T21:59:39Z"
   og_image: https://repository-images.githubusercontent.com/840310203/9323cb94-15c0-4e2e-8535-8dde50fe5b88
-  archived: false
-- name: superstitious-gh
-  status: done
-  description: GitHub Action that ensures that no issue or PR receives unlucky IDs
-  github_link: https://github.com/InDieTasten/superstitious-gh
-  website: null
-  tags:
-    - TypeScript
-    - ci
-    - devil
-    - dumb
-    - fun
-    - github-action
-    - issues
-    - lucky
-    - pull-request
-    - superstition
-    - trolling
-  language: TypeScript
-  created_at: "2025-01-29T10:06:33Z"
-  updated_at: "2025-07-07T07:50:13Z"
-  og_image: >-
-    https://opengraph.githubassets.com/2d98771e27af0fa4bdb8ee9bbd39b4a7c829f8517dd2311b1e2f5a48106b1061/InDieTasten/superstitious-gh
   archived: false
 - name: Connect4
   status: done
@@ -757,6 +757,23 @@
   updated_at: "2023-01-28T20:40:31Z"
   og_image: https://opengraph.githubassets.com/073c830c82460c54e6b207c421a99ad8fa9f4931b7d4bf7604410f3ad275d2cf/InDieTasten/REEL
   archived: true
+- name: CSharp.lua
+  status: abandoned
+  description: The C# to Lua compiler
+  github_link: https://github.com/InDieTasten/CSharp.lua
+  website: null
+  tags:
+    - C#
+    - buildtool
+    - c-sharp
+    - compiler
+    - lua
+  language: C#
+  created_at: "2018-04-21T12:41:43Z"
+  updated_at: "2023-01-28T15:41:45Z"
+  og_image: >-
+    https://opengraph.githubassets.com/8448a3bf506b4cc143b0c7ae2aa3619e6ebc8d403c6299b467c60b33756a7be4/InDieTasten/CSharp.lua
+  archived: true
 - name: indie-ml
   status: abandoned
   description: Machine learning algorithms and models implemented in Lua
@@ -782,23 +799,6 @@
   updated_at: "2023-01-28T15:41:45Z"
   og_image: >-
     https://opengraph.githubassets.com/8448a3bf506b4cc143b0c7ae2aa3619e6ebc8d403c6299b467c60b33756a7be4/InDieTasten/CC-CSharp
-  archived: true
-- name: CSharp.lua
-  status: abandoned
-  description: The C# to Lua compiler
-  github_link: https://github.com/InDieTasten/CSharp.lua
-  website: null
-  tags:
-    - C#
-    - buildtool
-    - c-sharp
-    - compiler
-    - lua
-  language: C#
-  created_at: "2018-04-21T12:41:43Z"
-  updated_at: "2023-01-28T15:41:45Z"
-  og_image: >-
-    https://opengraph.githubassets.com/8448a3bf506b4cc143b0c7ae2aa3619e6ebc8d403c6299b467c60b33756a7be4/InDieTasten/CSharp.lua
   archived: true
 - name: Top-Down-Heist
   status: abandoned
