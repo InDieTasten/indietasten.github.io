@@ -177,14 +177,14 @@ async function fetchAllRepos() {
             projects.push(project);
         }
         
-        // Sort projects by status (done, in-progress, abandoned) and then by updated date
+        // Sort projects by status (done, in-progress, abandoned) and then by created date
         projects.sort((a, b) => {
             const statusOrder = { 'done': 0, 'in-progress': 1, 'abandoned': 2 };
             const statusDiff = statusOrder[a.status] - statusOrder[b.status];
             if (statusDiff !== 0) return statusDiff;
             
-            // Within same status, sort by updated date descending
-            return new Date(b.updated_at) - new Date(a.updated_at);
+            // Within same status, sort by created date ascending (older repos first for stable diffs)
+            return new Date(a.created_at) - new Date(b.created_at);
         });
         
         console.log(`Generated ${projects.length} projects`);
