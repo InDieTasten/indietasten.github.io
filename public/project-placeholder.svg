@@ -1,0 +1,12 @@
+<svg width="384" height="192" viewBox="0 0 384 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="384" height="192" fill="#18181b"/>
+  <rect x="1" y="1" width="382" height="190" rx="7" stroke="#27272a" stroke-width="2"/>
+  
+  <!-- Code/Terminal Icon -->
+  <path d="M120 75L135 90L120 105M147 105H165M105 60H279C284.523 60 289 64.477 289 70V122C289 127.523 284.523 132 279 132H105C99.477 132 95 127.523 95 122V70C95 64.477 99.477 60 105 60Z" 
+        stroke="#52525b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Project Text -->
+  <text x="192" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" 
+        text-anchor="middle" fill="#71717a">Project Preview</text>
+</svg>
