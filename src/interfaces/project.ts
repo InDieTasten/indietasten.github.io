@@ -10,5 +10,6 @@ export type Project = {
   created_at?: string;
   updated_at?: string;
   og_image?: string;
+  custom_image_url?: string;
   archived?: boolean;
 };

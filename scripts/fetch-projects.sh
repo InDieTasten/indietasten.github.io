@@ -130,10 +130,11 @@ async function fetchAllRepos() {
                 tags.unshift(repo.language);
             }
             
-            // Try to get repository's actual OpenGraph image first
+            // Try to get repository's custom social preview image
             let ogImage = null;
+            let customImageUrl = null;
             
-            // Try to extract OpenGraph image from repository HTML page
+            // Try to extract custom repository image from repository HTML page
             try {
                 const repoPageResponse = await fetch(repo.html_url, {
                     method: 'GET',
@@ -148,16 +149,30 @@ async function fetchAllRepos() {
                     // Extract OpenGraph image from meta tag
                     const ogImageMatch = htmlContent.match(/<meta property="og:image" content="([^"]*)"[^>]*>/i);
                     if (ogImageMatch && ogImageMatch[1]) {
-                        ogImage = ogImageMatch[1];
+                        const imageUrl = ogImageMatch[1];
+                        
+                        // Check if this is a custom repository image (not the dynamic OpenGraph one)
+                        if (imageUrl.includes('repository-images.githubusercontent.com')) {
+                            // This is a custom social preview image - store URL for build-time processing
+                            customImageUrl = imageUrl;
+                            
+                            // Extract a unique identifier from the URL to create local filename
+                            const urlParts = imageUrl.split('/');
+                            const imageId = urlParts[urlParts.length - 1] || 'unknown';
+                            const localFileName = `${repo.name}-${imageId}`;
+                            ogImage = `/project-images/${localFileName}`;
+                            
+                            console.log(`Custom image found for ${repo.name}: ${imageUrl}`);
+                        }
                     }
                 }
             } catch (error) {
                 console.log(`Could not fetch repository page for ${repo.full_name}: ${error.message}`);
             }
             
-            // Use the dynamic OpenGraph image as fallback
+            // Use generic placeholder for projects without custom images
             if (!ogImage) {
-                ogImage = `https://opengraph.githubassets.com/1/${repo.full_name}`;
+                ogImage = '/project-placeholder.svg';
             }
             
             const project = {
@@ -171,6 +186,7 @@ async function fetchAllRepos() {
                 created_at: repo.created_at,
                 updated_at: repo.updated_at,
                 og_image: ogImage,
+                custom_image_url: customImageUrl,
                 archived: repo.archived
             };
             

@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build"
+    "download-project-images": "node scripts/download-project-images.js",
+    "build": "npm run download-project-images && next build"
   },
   "dependencies": {
     "@headlessui/react": "2.2.4",
