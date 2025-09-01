@@ -132,7 +132,7 @@ async function fetchAllRepos() {
             
             // Try to get repository's custom social preview image
             let ogImage = null;
-            let localImagePath = null;
+            let customImageUrl = null;
             
             // Try to extract custom repository image from repository HTML page
             try {
@@ -153,40 +153,16 @@ async function fetchAllRepos() {
                         
                         // Check if this is a custom repository image (not the dynamic OpenGraph one)
                         if (imageUrl.includes('repository-images.githubusercontent.com')) {
-                            // This is a custom social preview image - download it locally
-                            // Extract a unique identifier from the URL to create filename
+                            // This is a custom social preview image - store URL for build-time processing
+                            customImageUrl = imageUrl;
+                            
+                            // Extract a unique identifier from the URL to create local filename
                             const urlParts = imageUrl.split('/');
                             const imageId = urlParts[urlParts.length - 1] || 'unknown';
-                            const localFileName = `${repo.name}-${imageId}.jpg`;
-                            localImagePath = `/project-images/${localFileName}`;
+                            const localFileName = `${repo.name}-${imageId}`;
+                            ogImage = `/project-images/${localFileName}`;
                             
-                            try {
-                                console.log(`Downloading custom image for ${repo.name}...`);
-                                const imageResponse = await fetch(imageUrl);
-                                if (imageResponse.ok) {
-                                    const fs = require('fs');
-                                    const path = require('path');
-                                    
-                                    // Ensure the directory exists
-                                    const imageDir = path.join(process.cwd(), 'public', 'project-images');
-                                    if (!fs.existsSync(imageDir)) {
-                                        fs.mkdirSync(imageDir, { recursive: true });
-                                    }
-                                    
-                                    // Save the image
-                                    const arrayBuffer = await imageResponse.arrayBuffer();
-                                    const buffer = Buffer.from(arrayBuffer);
-                                    const fullPath = path.join(imageDir, localFileName);
-                                    fs.writeFileSync(fullPath, buffer);
-                                    
-                                    ogImage = localImagePath;
-                                    console.log(`Saved custom image to ${localImagePath}`);
-                                } else {
-                                    console.log(`Failed to download image for ${repo.name}: ${imageResponse.status}`);
-                                }
-                            } catch (downloadError) {
-                                console.log(`Error downloading image for ${repo.name}: ${downloadError.message}`);
-                            }
+                            console.log(`Custom image found for ${repo.name}: ${imageUrl}`);
                         }
                     }
                 }
@@ -210,6 +186,7 @@ async function fetchAllRepos() {
                 created_at: repo.created_at,
                 updated_at: repo.updated_at,
                 og_image: ogImage,
+                custom_image_url: customImageUrl,
                 archived: repo.archived
             };
             
