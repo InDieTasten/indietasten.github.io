@@ -67,11 +67,13 @@ function ProjectCard({ project }: { project: Project }) {
         
         {/* Content section */}
         <div className="flex-1 md:min-w-0">
-          <div className="flex items-start justify-between mb-2">
+          <div className="flex items-start mb-2">
             <Card.Title href={project.github_link}>
               {project.name}
             </Card.Title>
-            <ProjectStatus status={project.status} />
+            <div className="ml-auto flex-shrink-0">
+              <ProjectStatus status={project.status} />
+            </div>
           </div>
           
           {project.tags && project.tags.length > 0 && (
