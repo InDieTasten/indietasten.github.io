@@ -2,6 +2,7 @@ import Avatar from "./avatar";
 import DateFormatter from "./date-formatter";
 import { PostTitle } from "@/app/_components/post-title";
 import { type Author } from "@/interfaces/author";
+import Link from "next/link";
 
 type Props = {
     title: string;
@@ -13,6 +14,23 @@ type Props = {
 export function PostHeader({ title, date, author, tags }: Props) {
     return (
         <>
+            <div className="mb-4">
+                <Link 
+                    href="/articles"
+                    className="inline-flex items-center text-sm text-zinc-400 hover:text-zinc-300 transition-colors"
+                >
+                    <svg 
+                        className="w-4 h-4 mr-2" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                    >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                    </svg>
+                    Back to Articles
+                </Link>
+            </div>
             <PostTitle>{title}</PostTitle>
             {tags && tags.length > 0 && (
                 <div className="mb-4 flex flex-wrap gap-2">
