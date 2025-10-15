@@ -306,26 +306,6 @@
   og_image: >-
     https://opengraph.githubassets.com/10b2a430b30b71c848dd2ea6e1d657f0b11d455b42cf4e6f255e9f3f08646e4a/InDieTasten/InDieTasten
   archived: false
-- name: pfand
-  status: in-progress
-  description: German Pfandautomat simulator type game for the terminal
-  github_link: https://github.com/InDieTasten/pfand
-  website: null
-  tags:
-    - Rust
-    - cli
-    - rust-game
-    - simulator
-    - simulator-game
-    - terminal
-    - terminal-based
-    - terminal-game
-  language: Rust
-  created_at: "2024-07-24T16:26:12Z"
-  updated_at: "2025-04-08T18:34:29Z"
-  og_image: >-
-    https://opengraph.githubassets.com/7ea257cc486c2c9b21e45af55425bb2eba6dd4e9e49b51d3c75ef9b2dd31c591/InDieTasten/pfand
-  archived: false
 - name: OpenHour
   status: in-progress
   description: Free and open source time tracking for GitHub issues
@@ -887,6 +867,26 @@
   updated_at: "2024-07-22T21:15:22Z"
   og_image: >-
     https://opengraph.githubassets.com/fe5cbf7bca9d6a2c219e6137fe0a50835ffc9d9cf02c1a1eb146542dd70d9f7a/InDieTasten/lua-test
+  archived: false
+- name: pfand
+  status: abandoned
+  description: German Pfandautomat simulator type game for the terminal
+  github_link: https://github.com/InDieTasten/pfand
+  website: null
+  tags:
+    - Rust
+    - cli
+    - rust-game
+    - simulator
+    - simulator-game
+    - terminal
+    - terminal-based
+    - terminal-game
+  language: Rust
+  created_at: "2024-07-24T16:26:12Z"
+  updated_at: "2025-04-08T18:34:29Z"
+  og_image: >-
+    https://opengraph.githubassets.com/7ea257cc486c2c9b21e45af55425bb2eba6dd4e9e49b51d3c75ef9b2dd31c591/InDieTasten/pfand
   archived: false
 - name: Anti-GH-Pages-Yank
   status: abandoned
