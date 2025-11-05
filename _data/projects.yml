@@ -334,6 +334,21 @@
   og_image: >-
     https://opengraph.githubassets.com/d67d59e1c346b2f27d2c113cf5fa6cd9ef5d989a7e45738d5b0b7194b7c0fb3c/InDieTasten/acc-engineering-agent
   archived: false
+- name: reliable-statefulset-controller
+  status: in-progress
+  description: >-
+    A fork of the k8s statefulset controller with pod management improved for parallel scaling and capability for
+    maxUnavailable: 0 by implicitly scaling up before rolling out updates
+  github_link: https://github.com/InDieTasten/reliable-statefulset-controller
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2025-10-28T15:00:00Z"
+  updated_at: "2025-10-28T15:00:00Z"
+  og_image: >-
+    https://opengraph.githubassets.com/af56414bd85a1c3cdcbd93a7266066579f0a67b3022c44fecdb2b7ba8638d063/InDieTasten/reliable-statefulset-controller
+  archived: false
 - name: "--EXP-old-"
   status: abandoned
   description: A space-simulation-game
