@@ -293,19 +293,6 @@
   og_image: >-
     https://opengraph.githubassets.com/6fd344a7271eacd9a3ab467013b046c293a494fca559b3b6993b024ccff33745/InDieTasten/superstitious-gh
   archived: false
-- name: InDieTasten
-  status: in-progress
-  description: No description available.
-  github_link: https://github.com/InDieTasten/InDieTasten
-  website: null
-  tags:
-    - hacktoberfest
-  language: null
-  created_at: "2020-09-22T20:47:06Z"
-  updated_at: "2025-05-26T15:39:03Z"
-  og_image: >-
-    https://opengraph.githubassets.com/10b2a430b30b71c848dd2ea6e1d657f0b11d455b42cf4e6f255e9f3f08646e4a/InDieTasten/InDieTasten
-  archived: false
 - name: OpenHour
   status: in-progress
   description: Free and open source time tracking for GitHub issues
@@ -618,6 +605,19 @@
   og_image: >-
     https://opengraph.githubassets.com/3b5246ea36117acb0c762cc7cdc0c045dbf43e6d114e527a44f72060353392f2/InDieTasten/TextAdventure.NET
   archived: true
+- name: InDieTasten
+  status: abandoned
+  description: No description available.
+  github_link: https://github.com/InDieTasten/InDieTasten
+  website: null
+  tags:
+    - hacktoberfest
+  language: null
+  created_at: "2020-09-22T20:47:06Z"
+  updated_at: "2025-05-26T15:39:03Z"
+  og_image: >-
+    https://opengraph.githubassets.com/10b2a430b30b71c848dd2ea6e1d657f0b11d455b42cf4e6f255e9f3f08646e4a/InDieTasten/InDieTasten
+  archived: false
 - name: SpaceRace
   status: abandoned
   description: Game Jam entry for the Game Off 2020 on itch.io
