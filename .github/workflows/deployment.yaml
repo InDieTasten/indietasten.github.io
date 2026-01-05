@@ -74,24 +74,30 @@ jobs:
 
       - name: Deploy to gh-pages (preserving PR previews)
         run: |
+          # Create a unique temporary directory for backup
+          BACKUP_DIR=$(mktemp -d)
+          
           # Save the pr-preview directory if it exists
           if [ -d "gh-pages-branch/pr-preview" ]; then
-            echo "Preserving PR preview directory"
-            cp -r gh-pages-branch/pr-preview /tmp/pr-preview-backup
+            echo "Preserving PR preview directory to $BACKUP_DIR"
+            cp -r gh-pages-branch/pr-preview "$BACKUP_DIR/pr-preview"
           fi
           
           # Remove all content except .git
           cd gh-pages-branch
-          find . -maxdepth 1 ! -name '.git' ! -name '.' ! -name '..' -exec rm -rf {} +
+          ls -A1 | grep -v '^\.git$' | xargs -r rm -rf
           
           # Copy new production build
           cp -r ../out/* .
           
           # Restore pr-preview directory if it was backed up
-          if [ -d "/tmp/pr-preview-backup" ]; then
-            echo "Restoring PR preview directory"
-            cp -r /tmp/pr-preview-backup pr-preview
+          if [ -d "$BACKUP_DIR/pr-preview" ]; then
+            echo "Restoring PR preview directory from $BACKUP_DIR"
+            cp -r "$BACKUP_DIR/pr-preview" pr-preview
           fi
+          
+          # Clean up temporary backup
+          rm -rf "$BACKUP_DIR"
           
           # Configure git
           git config user.name "github-actions[bot]"
