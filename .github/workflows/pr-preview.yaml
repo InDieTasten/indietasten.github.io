@@ -131,13 +131,15 @@ jobs:
               comment.body.includes('Preview deployment')
             );
             
-            const commentBody = `## 🚀 Preview Deployment
-
-Your preview deployment is ready!
-
-🔗 **Preview URL**: ${previewUrl}
-
-This preview will be automatically removed when the PR is closed or merged.`;
+            const commentBody = [
+              '## 🚀 Preview Deployment',
+              '',
+              'Your preview deployment is ready!',
+              '',
+              `🔗 **Preview URL**: ${previewUrl}`,
+              '',
+              'This preview will be automatically removed when the PR is closed or merged.'
+            ].join('\n');
             
             if (botComment) {
               // Update existing comment
