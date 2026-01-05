@@ -54,6 +54,30 @@ Each PR gets its own unique subdirectory based on the PR number.
 - `pull-requests: write` - To comment on PRs
 - `deployments: write` - To update deployment status
 
+#### 3. Production Deployment (`.github/workflows/deployment.yaml`)
+
+**Triggers:**
+- Push to `main` branch
+- Manual workflow dispatch
+
+**Process:**
+1. Checks out the main branch
+2. Installs dependencies with pnpm
+3. Builds the Next.js site for production
+4. Checks out the `gh-pages` branch
+5. **Backs up the `pr-preview/` directory** (if it exists)
+6. Clears all content from `gh-pages` root
+7. Copies the production build to root
+8. **Restores the `pr-preview/` directory** (if it was backed up)
+9. Commits and pushes to the `gh-pages` branch
+
+**Permissions Required:**
+- `contents: write` - To push to gh-pages branch
+- `pages: write` - For GitHub Pages configuration
+- `id-token: write` - For GitHub Pages authentication
+
+**Important:** This workflow was modified from the standard GitHub Pages deployment to preserve PR preview directories during production updates.
+
 ## How It Works
 
 ### Base Path Configuration
@@ -91,8 +115,23 @@ This ensures that if multiple commits are pushed quickly, only the latest build 
 The PR preview system is designed to coexist with the main production deployment:
 
 1. **Separate Paths**: Production is at `/`, previews are at `/pr-preview/pr-{number}/`
-2. **Separate Workflows**: The main deployment workflow (`deployment.yaml`) only runs on pushes to `main`
-3. **Branch-based Deployment**: Both write to `gh-pages` but in different directories
+2. **Unified Deployment Method**: Both workflows now deploy to the `gh-pages` branch using git operations
+3. **Preview Preservation**: The production deployment workflow preserves the `pr-preview/` directory when updating production files
+
+### Production Deployment Modified
+
+The production deployment workflow (`deployment.yaml`) has been **modified from the standard GitHub Pages deployment** to ensure coexistence with PR previews:
+
+**Key Changes:**
+- Uses manual git operations instead of `actions/deploy-pages@v4`
+- Backs up the `pr-preview/` directory before deploying
+- Deploys production content to the root
+- Restores the `pr-preview/` directory after deployment
+- Commits and pushes all changes to `gh-pages` branch
+
+This ensures that when production deploys, all active PR previews remain accessible.
+
+**Impact:** Production deployments no longer use the standard GitHub Pages action, but the deployment method is functionally equivalent while supporting preview coexistence.
 
 ## Testing Locally
 
