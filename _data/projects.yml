@@ -293,21 +293,6 @@
   og_image: >-
     https://opengraph.githubassets.com/6fd344a7271eacd9a3ab467013b046c293a494fca559b3b6993b024ccff33745/InDieTasten/superstitious-gh
   archived: false
-- name: acc-engineering-agent
-  status: in-progress
-  description: >-
-    AI agent that understands Assetto Corsa Competizione telemetry data and points out driving and setup advice built
-    with MCP
-  github_link: https://github.com/InDieTasten/acc-engineering-agent
-  website: null
-  tags:
-    - Miscellaneous
-  language: null
-  created_at: "2025-07-13T10:56:45Z"
-  updated_at: "2025-07-13T10:56:45Z"
-  og_image: >-
-    https://opengraph.githubassets.com/d67d59e1c346b2f27d2c113cf5fa6cd9ef5d989a7e45738d5b0b7194b7c0fb3c/InDieTasten/acc-engineering-agent
-  archived: false
 - name: reliable-statefulset-controller
   status: in-progress
   description: >-
@@ -928,4 +913,19 @@
   updated_at: "2025-07-12T02:22:38Z"
   og_image: >-
     https://opengraph.githubassets.com/ab9a9cb5ca669adcec4d2f326191284fe3f2daaaac978334d280b1923cd4e531/InDieTasten/OpenHour
+  archived: false
+- name: acc-engineering-agent
+  status: abandoned
+  description: >-
+    AI agent that understands Assetto Corsa Competizione telemetry data and points out driving and setup advice built
+    with MCP
+  github_link: https://github.com/InDieTasten/acc-engineering-agent
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: "2025-07-13T10:56:45Z"
+  updated_at: "2025-07-13T10:56:45Z"
+  og_image: >-
+    https://opengraph.githubassets.com/d67d59e1c346b2f27d2c113cf5fa6cd9ef5d989a7e45738d5b0b7194b7c0fb3c/InDieTasten/acc-engineering-agent
   archived: false
