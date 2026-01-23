@@ -1,0 +1,160 @@
+name: Deploy PR Preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+# Sets permissions
+permissions:
+  contents: write
+  pull-requests: write
+  deployments: write
+
+# Allow only one concurrent deployment per PR
+concurrency:
+  group: "pr-preview-${{ github.event.pull_request.number }}"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 10
+          run_install: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Restore cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .next/cache
+          key: ${{ runner.os }}-nextjs-pr-${{ github.event.pull_request.number }}-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-pr-${{ github.event.pull_request.number }}-${{ hashFiles('**/pnpm-lock.yaml') }}-
+
+      - name: Build with Next.js
+        run: pnpm run build
+        env:
+          PAGES_BASE_PATH: /pr-preview/pr-${{ github.event.pull_request.number }}
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages-branch
+
+      - name: Deploy preview to gh-pages
+        run: |
+          # Create the pr-preview directory if it doesn't exist
+          mkdir -p gh-pages-branch/pr-preview
+          
+          # Remove old preview if it exists
+          rm -rf gh-pages-branch/pr-preview/pr-${{ github.event.pull_request.number }}
+          
+          # Copy new build to preview location
+          cp -r out gh-pages-branch/pr-preview/pr-${{ github.event.pull_request.number }}
+          
+          # Configure git
+          cd gh-pages-branch
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Commit and push changes
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Deploy preview for PR #${{ github.event.pull_request.number }}"
+            git push origin gh-pages
+          fi
+
+      - name: Create deployment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const previewUrl = `https://indietasten.net/pr-preview/pr-${prNumber}`;
+            
+            // Create a deployment
+            const deployment = await github.rest.repos.createDeployment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: context.payload.pull_request.head.sha,
+              environment: `pr-preview-${prNumber}`,
+              description: `Preview deployment for PR #${prNumber}`,
+              auto_merge: false,
+              required_contexts: [],
+              transient_environment: true,
+              production_environment: false
+            });
+            
+            // Create a deployment status
+            await github.rest.repos.createDeploymentStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              deployment_id: deployment.data.id,
+              state: 'success',
+              environment_url: previewUrl,
+              description: 'Preview deployment successful'
+            });
+
+      - name: Comment on PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const previewUrl = `https://indietasten.net/pr-preview/pr-${prNumber}`;
+            
+            // Find existing comment
+            const comments = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber
+            });
+            
+            const botComment = comments.data.find(comment => 
+              comment.user.type === 'Bot' && 
+              comment.body.includes('Preview deployment')
+            );
+            
+            const commentBody = [
+              '## 🚀 Preview Deployment',
+              '',
+              'Your preview deployment is ready!',
+              '',
+              `🔗 **Preview URL**: ${previewUrl}`,
+              '',
+              'This preview will be automatically removed when the PR is closed or merged.'
+            ].join('\n');
+            
+            if (botComment) {
+              // Update existing comment
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: commentBody
+              });
+            } else {
+              // Create new comment
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: commentBody
+              });
+            }
