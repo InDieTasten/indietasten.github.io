@@ -48,6 +48,10 @@
     color-scheme: dark;
     border: none;
   }
+
+  html {
+    overflow-y: scroll;
+  }
 }
 
 pre {
