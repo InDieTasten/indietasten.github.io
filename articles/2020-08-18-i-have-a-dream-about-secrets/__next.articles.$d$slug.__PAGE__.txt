@@ -1,0 +1,76 @@
+1:"$Sreact.fragment"
+5:I[61879,["/_next/static/chunks/7c4f85df3640cb60.js","/_next/static/chunks/67b669c080ef588c.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+:HL["/avatar.png","image"]
+:HL["/_next/static/chunks/11a6a7cd862de9e1.css","style"]
+2:T147f,<p>TL DR: Please don't put them there</p>
+<h2>What?</h2>
+<p>I've been working in the software development business professionally for 5 years now.
+The company I work for has yet to "discover" open source. We heavily use OSS, but have nothing up of our own stuff.
+That may be the reason why nobody so far has ever questioned putting secrets into git repositories.</p>
+<p>That would be one of the first lessons, when pushing anything into a public repository.
+No secrets. It's that simple.</p>
+<h2>Why not?</h2>
+<p>For public repositories, I think it should be fairly obvious, that putting secrets there is a bad idea.</p>
+<p>But even for private repos, there is always a chance of leaking the repo. A quick clone on some machine.
+Drive may not be encrypted and the device gets lost. Of course you forget, which repos have been cloned to that machine.
+Nobody keeps track of that. I have probably 30 something repos on my dev machine. Some of which containing secrets that can potentially cause damage.</p>
+<pre><code>appsettings.json => connection strings => sql db => drop
+</code></pre>
+<p>Or even worse, silently taking dumps and blackmailing us. The problem wouldn't be as bad, when secrets would rotate often.
+But sadly, that's another problem we haven't touched. It's been getting better lately, but there's still room for improvement.</p>
+<p>Another problem is versioning. It might not come off as a huge problem, but the commit history is cluttered with our devops people
+commiting "config" over and over again, as they want to trigger our continuous deployment with different settings in a trial and error manner.
+It's a cool setup. We have branches for each environment, and you just have to merge into them, and as they update, they will be deployed.
+It's cool as long as you go "forward". If you want to get back to a different version, or want to try a feature branch on some environment,
+you will be faced with reverting commits, which is kinf of stupid, because then you'd have to revert the revert, if you were to ever test that
+branch again. Resetting the branch would be better, but often people will branch off of these CD branches, so their branch will be infected with these broken config changes that way.</p>
+<p>Also, any intern starting to set foot in one of the real projects requiring access to code,
+will automatically be granted access to all of the environments secrets. Good stuff.</p>
+<h2>A vision for improvement</h2>
+<p>So what's my dream solution about?</p>
+<p>Don't put secrets into the repository. Treat every repository, as if it was public.</p>
+<p>What about that cool CI/CD pipeline we have going on?
+Well, we can keep it. We just have to make some changes to it.</p>
+<p>Have two build pipelines: Debug &#x26; Release</p>
+<p>They are analogous to the build definitions Debug and Release.</p>
+<p>Define your secrets in your Release pipelines.
+Have a release pipeline for every environment.</p>
+<p>Now you can use any build, and deploy it to any environment. No more config changes are tracked in the repo.
+Having a hard to repro bug in production? Just deploy the Debug version there for some extra verbose error tracking for a couple minutes.</p>
+<p>Want to test a feature branch? Select your preferred build definition. Select an environment, done.</p>
+<p>As a bonus, you also have increased confidence,
+that moving a code version from one environment to another won't introduce additional changes,
+that may have happened in the target environment branch before.</p>
+<p>Of course you still need to communicate about who is putting what into which environment.
+Unless you can dynamically provision new environments,
+but that's a dream for another night.</p>
+<h3>But what if the config schema changes?</h3>
+<p>That would break the pipelines, and that's good?</p>
+<p>It's a great way to interpret semver for code, that nobody depends on.
+If you develop a product with no exposed APIs,
+it's a bit difficult to define what change would be breaking and therefor a major version increase.
+But the configuration schema is kind of like an interface, that the application needs to support.</p>
+<p>Whenever the config schema changes, or existing configs in your pipelines will break,
+that's a major code version increase for your repository.</p>
+<p>Now your repository is managing code only. Your commits can now focus on development.
+No more "config". You don't have builds that only work for one environment.
+You don't need to rebuild to move a code version from one environment to another.
+You just deploy the same code with different config to the next environment.</p>
+<pre><code>Code => Build
+
+Build + Config => Release
+</code></pre>
+<p>And the intern can finally work on all them cool projects without seeing prod credentials.</p>
+<p>A great time to be alive.</p>
+<h2>Who is responsible for this mess?</h2>
+<p>Microsoft.</p>
+<p>All the samples and project templates are generating configuration files ready for committing them.
+The default VS .gitignore won't ignore appsettings.json and similar files.</p>
+<h1>Discussion</h1>
+<p>Are you already living the dream?
+Are there problems I haven't thought about?
+Shoot me an issue on <a href="https://github.com/InDieTasten/indietasten.github.io/issues">GitHub</a>.</p>0:{"buildId":"xRREO7qbuAEKvxbaaa96y","rsc":["$","$1","c",{"children":[["$","main",null,{"children":["$","div",null,{"className":"sm:px-8","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","article",null,{"className":"mb-32","children":[[["$","h1",null,{"className":"text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left","children":"I have a dream(rant) about secrets in repositories"}],["$","div",null,{"className":"mb-4 flex flex-wrap gap-2","children":[["$","span","git",{"className":"bg-gray-300 text-gray-700 px-2 py-1 rounded text-xs font-medium","children":["#","git"]}],["$","span","secrets",{"className":"bg-gray-300 text-gray-700 px-2 py-1 rounded text-xs font-medium","children":["#","secrets"]}],["$","span","deployment",{"className":"bg-gray-300 text-gray-700 px-2 py-1 rounded text-xs font-medium","children":["#","deployment"]}]]}],["$","div",null,{"className":"hidden md:block md:mb-12","children":["$","div",null,{"className":"flex items-center","children":[["$","img",null,{"src":"/avatar.png","className":"w-12 h-12 rounded-full mr-4","alt":"InDieTasten"}],["$","div",null,{"className":"text-xl font-bold","children":"InDieTasten"}]]}]}],["$","div",null,{"className":"max-w-2xl mx-auto","children":[["$","div",null,{"className":"block md:hidden mb-6","children":["$","div",null,{"className":"flex items-center","children":[["$","img",null,{"src":"/avatar.png","className":"w-12 h-12 rounded-full mr-4","alt":"InDieTasten"}],["$","div",null,{"className":"text-xl font-bold","children":"InDieTasten"}]]}]}],["$","div",null,{"className":"mb-6 text-lg","children":["$","time",null,{"dateTime":"2020-08-18T00:00:00.000Z","children":"August\t18, 2020"}]}]]}]],["$","div",null,{"className":"max-w-2xl mx-auto","children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]}]]}]}]}]}]}]}],["$L3"],"$L4"]}],"loading":null,"isPartial":false}
+3:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/11a6a7cd862de9e1.css","precedence":"next"}]
+4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
+7:null
