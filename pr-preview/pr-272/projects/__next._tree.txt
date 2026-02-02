@@ -1,4 +1,4 @@
-:HL["/pr-preview/pr-272/_next/static/chunks/4c8fce464b786e05.css","style"]
+:HL["/pr-preview/pr-272/_next/static/chunks/055d524cca3e2418.css","style"]
 :HL["/pr-preview/pr-272/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["https://opengraph.githubassets.com/6fd344a7271eacd9a3ab467013b046c293a494fca559b3b6993b024ccff33745/InDieTasten/superstitious-gh","image"]
 :HL["https://repository-images.githubusercontent.com/840310203/9323cb94-15c0-4e2e-8535-8dde50fe5b88","image"]
@@ -60,4 +60,4 @@
 :HL["https://opengraph.githubassets.com/2fd7ce10cfbfa42752ecbd803911b5ee6e93c9d8beea6311c2796075e3123cac/InDieTasten/DevTease.Rasa","image"]
 :HL["https://opengraph.githubassets.com/54bff6fe6f739a46969e2961fb25a0d45ed190f44995c41325764ab0a623d3ee/InDieTasten/DevTease.DI","image"]
 :HL["https://opengraph.githubassets.com/5195963ea8fea5e48834f1b7c6a5f83d6b6ec5f0125e736e410ba32363d2c871/InDieTasten/indie-classes","image"]
-0:{"buildId":"Gg_NnfqvkgLy8GP99GymH","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"projects","paramType":null,"paramKey":"projects","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"tmO-Puxf2gk2x-wDw3pPj","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"projects","paramType":null,"paramKey":"projects","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
