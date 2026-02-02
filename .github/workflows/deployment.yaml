@@ -82,6 +82,11 @@ jobs:
             echo "Preserving PR preview directory to $BACKUP_DIR"
             cp -r gh-pages-branch/pr-preview "$BACKUP_DIR/pr-preview"
           fi
+
+          # Save the CNAME and .nojekyll files
+          echo "Preserving CNAME and .nojekyll
+          cp gh-pages-branch/CNAME "$BACKUP_DIR/CNAME"
+          cp gh-pages-branch/.nojekyll "$BACKUP_DIR/.nojekyll"
           
           # Remove all content except .git
           cd gh-pages-branch
@@ -95,6 +100,11 @@ jobs:
             echo "Restoring PR preview directory from $BACKUP_DIR"
             cp -r "$BACKUP_DIR/pr-preview" pr-preview
           fi
+
+          # Restore CNAME and .nojekyll
+          echo "Restoring CNAME and .nojekyll
+          cp "$BACKUP_DIR/CNAME" CNAME
+          cp "$BACKUP_DIR/.nojekyll .nojekyll
           
           # Clean up temporary backup
           rm -rf "$BACKUP_DIR"
