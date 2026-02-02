@@ -92,7 +92,7 @@ jobs:
           fi
 
           # Save the CNAME and .nojekyll files
-          echo "Preserving CNAME and .nojekyll
+          echo "Preserving CNAME and .nojekyll"
           cp gh-pages-branch/CNAME "$BACKUP_DIR/CNAME"
           cp gh-pages-branch/.nojekyll "$BACKUP_DIR/.nojekyll"
           
@@ -110,9 +110,9 @@ jobs:
           fi
 
           # Restore CNAME and .nojekyll
-          echo "Restoring CNAME and .nojekyll
+          echo "Restoring CNAME and .nojekyll"
           cp "$BACKUP_DIR/CNAME" CNAME
-          cp "$BACKUP_DIR/.nojekyll .nojekyll
+          cp "$BACKUP_DIR/.nojekyll" .nojekyll
           
           # Clean up temporary backup
           rm -rf "$BACKUP_DIR"
