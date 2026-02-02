@@ -72,6 +72,14 @@ jobs:
           ref: gh-pages
           path: gh-pages-branch
 
+      - name: Debug gh-pages content
+        run: |
+          echo "Listing files in gh-pages-branch:"
+          ls -la gh-pages-branch/
+          echo "Checking for CNAME and .nojekyll:"
+          [ -f gh-pages-branch/CNAME ] && echo "CNAME exists" || echo "CNAME is missing"
+          [ -f gh-pages-branch/.nojekyll ] && echo ".nojekyll exists" || echo ".nojekyll is missing"
+
       - name: Deploy to gh-pages (preserving PR previews)
         run: |
           # Create a unique temporary directory for backup
