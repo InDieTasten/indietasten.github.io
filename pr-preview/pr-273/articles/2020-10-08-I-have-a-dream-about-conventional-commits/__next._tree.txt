@@ -1,0 +1,5 @@
+:HL["/pr-preview/pr-273/_next/static/chunks/482b0a0d5669335a.css","style"]
+:HL["/pr-preview/pr-273/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/pr-preview/pr-273/_next/static/chunks/11a6a7cd862de9e1.css","style"]
+:HL["/avatar.png","image"]
+0:{"buildId":"oHp3XkVT9qEfWWZFrsne8","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"articles","paramType":null,"paramKey":"articles","hasRuntimePrefetch":false,"slots":{"children":{"name":"slug","paramType":"d","paramKey":"2020-10-08-I-have-a-dream-about-conventional-commits","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
