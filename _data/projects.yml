@@ -243,7 +243,7 @@
     - tui-app
   language: Lua
   created_at: "2024-05-05T11:59:56Z"
-  updated_at: "2025-07-06T01:38:32Z"
+  updated_at: "2026-02-05T23:58:50Z"
   og_image: https://repository-images.githubusercontent.com/796251486/5ffc646c-85db-450e-9018-8ce2b86de90d
   archived: false
 - name: mandel-lua
