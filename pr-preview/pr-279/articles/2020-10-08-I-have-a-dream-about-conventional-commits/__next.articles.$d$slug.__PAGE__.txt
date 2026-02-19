@@ -1,0 +1,20 @@
+1:"$Sreact.fragment"
+3:I[61879,["/pr-preview/pr-279/_next/static/chunks/7c4f85df3640cb60.js","/pr-preview/pr-279/_next/static/chunks/67b669c080ef588c.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+:HL["/avatar.png","image"]
+:HL["/pr-preview/pr-279/_next/static/chunks/11a6a7cd862de9e1.css","style"]
+2:T44c,<p>Everyone these days has heard of semver,
+as most package managers try to enforce it upon their packages.</p>
+<p>While the idea behind it is nobel, the execution often lacks.</p>
+<p>We've all been screwed by some form of <a href="http://sentimentalversioning.org/">sentimental versioning</a>
+before I'm sure, so here's an idea you might not have heard of:</p>
+<h2>Conventional Commits</h2>
+<p>Use ✨<a href="https://www.conventionalcommits.org/">conventional commits</a>✨,
+introduce some tooling, and you'll be semantically versioning in no time.</p>
+<p>Commit messages are subject to rules according to a specification which ensures, that the git history can be tracked for patch, minor and major changes.</p>
+<p>As a bonus, you can from now on generate your CHANGELOG.md as well.</p>
+<p>Thanks for adhering to my advice.</p>
+<h1>Discussion</h1>
+<p>Are you already comitting conventionally? How is it working out for you? Was it hard to adapt with an entire team?</p>
+<p>Let me know by submitting an issue on <a href="https://github.com/InDieTasten/indietasten.github.io/issues">GitHub</a>.</p>0:{"buildId":"7ZJpfUP9ZaNI12WUzdD1E","rsc":["$","$1","c",{"children":[["$","main",null,{"children":["$","div",null,{"className":"sm:px-8","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","article",null,{"className":"mb-32","children":[[["$","h1",null,{"className":"text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left","children":"I have a dream about conventional commits"}],["$","div",null,{"className":"mb-4 flex flex-wrap gap-2","children":[["$","span","git",{"className":"bg-gray-300 text-gray-700 px-2 py-1 rounded text-xs font-medium","children":["#","git"]}],["$","span","versioning",{"className":"bg-gray-300 text-gray-700 px-2 py-1 rounded text-xs font-medium","children":["#","versioning"]}]]}],["$","div",null,{"className":"hidden md:block md:mb-12","children":["$","div",null,{"className":"flex items-center","children":[["$","img",null,{"src":"/avatar.png","className":"w-12 h-12 rounded-full mr-4","alt":"InDieTasten"}],["$","div",null,{"className":"text-xl font-bold","children":"InDieTasten"}]]}]}],["$","div",null,{"className":"max-w-2xl mx-auto","children":[["$","div",null,{"className":"block md:hidden mb-6","children":["$","div",null,{"className":"flex items-center","children":[["$","img",null,{"src":"/avatar.png","className":"w-12 h-12 rounded-full mr-4","alt":"InDieTasten"}],["$","div",null,{"className":"text-xl font-bold","children":"InDieTasten"}]]}]}],["$","div",null,{"className":"mb-6 text-lg","children":["$","time",null,{"dateTime":"2020-10-08T00:00:00.000Z","children":"October\t8, 2020"}]}]]}]],["$","div",null,{"className":"max-w-2xl mx-auto","children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]}]]}]}]}]}]}]}],[["$","link","0",{"rel":"stylesheet","href":"/pr-preview/pr-279/_next/static/chunks/11a6a7cd862de9e1.css","precedence":"next"}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null

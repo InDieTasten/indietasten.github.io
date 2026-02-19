@@ -1,0 +1,80 @@
+1:"$Sreact.fragment"
+5:I[61879,["/pr-preview/pr-279/_next/static/chunks/7c4f85df3640cb60.js","/pr-preview/pr-279/_next/static/chunks/67b669c080ef588c.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+:HL["/avatar.png","image"]
+:HL["/pr-preview/pr-279/_next/static/chunks/11a6a7cd862de9e1.css","style"]
+2:T11d0,<h2>Prerequisites</h2>
+<ul>
+<li>Windows 11 23H2 OS Build 22631.3007 <a href="#checking-windows-version">How to check</a></li>
+<li>UEFI / BIOS with virtualization enabled <a href="#checking-virtualization">How to check</a></li>
+</ul>
+<h2>Steps:</h2>
+<h3>Installing MS Store version of WSL2</h3>
+<p>Even if you've installed WSL2 before using one of the distributions listed in the Microsoft Store, there is a separate Store Product by Microsoft called <a href="https://www.microsoft.com/store/productId/9P9TQF7MRM4R?ocid=pdpshare">Windows Subsystem for Linux</a> that supports a crucial feature, called initd.</p>
+<p>Go ahead and install that package. If you have existing distributions, they will be kept. The installation of this store product will only update WSL2 itself, and won't mess with your distributions.</p>
+<p>You can also install the package using WinGet within PowerShell:</p>
+<pre><code class="language-powershell">winget install 9P9TQF7MRM4R <span class="pl-k">--</span>source msstore
+</code></pre>
+<p>You can check your install by running <code>wsl --version</code> in PowerShell or Cmd. The expected output should be similar to this:</p>
+<pre><code>WSL version: 2.0.14.0
+Kernel version: 5.15.133.1-1
+WSLg version: 1.0.59
+MSRDC version: 1.2.4677
+Direct3D version: 1.611.1-81528511
+DXCore version: 10.0.25131.1002-220531-1700.rs-onecore-base2-hyp
+Windows version: 10.0.22631.3007
+</code></pre>
+<h3>Installing Ubuntu distro</h3>
+<p>Similar steps might work in other distros as well, but I have verified these steps only for the Ubuntu distro, so that's what this tutorial will be focused on.</p>
+<p>In powershell, run the following to install a new Ubuntu instance:</p>
+<pre><code class="language-powershell">wsl <span class="pl-k">--</span>install <span class="pl-k">-</span>d Ubuntu<span class="pl-k">-</span><span class="pl-c1">22.04</span>
+</code></pre>
+<p>This command should land you in the account creation. Create your local account for the distro. After that you should be greeted with the MOTD and a bash. Go ahead and update all packages:</p>
+<pre><code class="language-bash">sudo apt-get update <span class="pl-k">&#x26;&#x26;</span> sudo apt-get upgrade -y
+</code></pre>
+<h3>Verify systemd</h3>
+<p>While still in bash inside the WSL2 Ubuntu instance, run:</p>
+<pre><code class="language-bash">cat /etc/wsl.conf
+</code></pre>
+<p>This should output</p>
+<pre><code class="language-toml">[<span class="pl-en">boot</span>]
+<span class="pl-smi">systemd</span>=<span class="pl-c1">true</span>
+</code></pre>
+<p>If the file does not exist or contains something else, refer to <a href="#configuring-systemd-inside-wsl">these steps</a>.</p>
+<h3>Install docker</h3>
+<p>Inside the Ubuntu bash, execute:</p>
+<pre><code class="language-bash">sudo bash -c <span class="pl-s"><span class="pl-pds">'</span>apt-get install -y apt-transport-https ca-certificates curl software-properties-common &#x26;&#x26; \</span>
+<span class="pl-s">curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - &#x26;&#x26; \</span>
+<span class="pl-s">add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" &#x26;&#x26; \</span>
+<span class="pl-s">apt-get update -y &#x26;&#x26; apt-get install -y docker-ce &#x26;&#x26; usermod -aG docker $USER &#x26;&#x26; newgrp docker &#x26;&#x26; exit<span class="pl-pds">'</span></span>
+</code></pre>
+<h3>Use docker</h3>
+<pre><code class="language-bash">sudo docker run hello-world
+</code></pre>
+<p>Done! You can now use Docker inside your WSL2 Ubuntu 22.04!</p>
+<h2>Details &#x26; Troubleshooting</h2>
+<h3>Checking Windows Version</h3>
+<ol>
+<li>Open the "Run" prompt of Windows by pressing <code>Win</code> + <code>R</code></li>
+<li>Type in "winver" into the prompt and submit the command</li>
+<li>A window should open</li>
+</ol>
+<h3>Checking virtualization</h3>
+<ol>
+<li>Open Task Manager</li>
+<li>Navigate to the performance "tab"</li>
+<li>Navigate to the CPU details</li>
+<li>The details should display "Virtualization: Enabled"</li>
+</ol>
+<h3>Configuring systemd inside WSL</h3>
+<p>Replace <code>/etc/wsl.conf</code> inside the distro with the following:</p>
+<pre><code class="language-toml">[<span class="pl-en">boot</span>]
+<span class="pl-smi">systemd</span>=<span class="pl-c1">true</span>
+</code></pre>
+<p>In Windows, use PowerShell to power-cycle the distro:</p>
+<pre><code class="language-powershell">wsl <span class="pl-k">--</span>shutdown
+wsl <span class="pl-k">-</span>d Ubuntu<span class="pl-k">-</span><span class="pl-c1">22.04</span>
+</code></pre>0:{"buildId":"7ZJpfUP9ZaNI12WUzdD1E","rsc":["$","$1","c",{"children":[["$","main",null,{"children":["$","div",null,{"className":"sm:px-8","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl lg:px-8","children":["$","div",null,{"className":"relative px-4 sm:px-8 lg:px-12","children":["$","div",null,{"className":"mx-auto max-w-2xl lg:max-w-5xl","children":["$","article",null,{"className":"mb-32","children":[[["$","h1",null,{"className":"text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left","children":"Running docker engine inside WSL2"}],["$","div",null,{"className":"mb-4 flex flex-wrap gap-2","children":[["$","span","docker",{"className":"bg-gray-300 text-gray-700 px-2 py-1 rounded text-xs font-medium","children":["#","docker"]}],["$","span","wsl2",{"className":"bg-gray-300 text-gray-700 px-2 py-1 rounded text-xs font-medium","children":["#","wsl2"]}],["$","span","linux",{"className":"bg-gray-300 text-gray-700 px-2 py-1 rounded text-xs font-medium","children":["#","linux"]}]]}],["$","div",null,{"className":"hidden md:block md:mb-12","children":["$","div",null,{"className":"flex items-center","children":[["$","img",null,{"src":"/avatar.png","className":"w-12 h-12 rounded-full mr-4","alt":"InDieTasten"}],["$","div",null,{"className":"text-xl font-bold","children":"InDieTasten"}]]}]}],["$","div",null,{"className":"max-w-2xl mx-auto","children":[["$","div",null,{"className":"block md:hidden mb-6","children":["$","div",null,{"className":"flex items-center","children":[["$","img",null,{"src":"/avatar.png","className":"w-12 h-12 rounded-full mr-4","alt":"InDieTasten"}],["$","div",null,{"className":"text-xl font-bold","children":"InDieTasten"}]]}]}],["$","div",null,{"className":"mb-6 text-lg","children":["$","time",null,{"dateTime":"2024-02-01T00:00:00.000Z","children":"February\t1, 2024"}]}]]}]],["$","div",null,{"className":"max-w-2xl mx-auto","children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]}]]}]}]}]}]}]}],["$L3"],"$L4"]}],"loading":null,"isPartial":false}
+3:["$","link","0",{"rel":"stylesheet","href":"/pr-preview/pr-279/_next/static/chunks/11a6a7cd862de9e1.css","precedence":"next"}]
+4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
+7:null
