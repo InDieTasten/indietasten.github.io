@@ -34,7 +34,7 @@ export default function Index() {
             icon={GitHubIcon}
           />
           <SocialLink
-            href="https://www.strava.com/athletes/93088631"
+            href="https://www.strava.com/athletes/indietasten"
             aria-label="Follow on Strava"
             icon={StravaIcon}
           />
