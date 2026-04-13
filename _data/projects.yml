@@ -201,8 +201,7 @@
   language: Rust
   created_at: "2024-02-10T01:32:23Z"
   updated_at: "2025-07-06T01:27:37Z"
-  og_image: >-
-    https://opengraph.githubassets.com/48ddb6e5df82777e22b25c8f519e9c51a04c683418668be02d44b8bd9fef9d0b/InDieTasten/alternate-screen-buffer-demo
+  og_image: https://opengraph.githubassets.com/1/InDieTasten/alternate-screen-buffer-demo
   archived: false
 - name: mouse-tracking-demo
   status: done
