@@ -243,7 +243,7 @@
     - tui-app
   language: Lua
   created_at: '2024-05-05T11:59:56Z'
-  updated_at: '2026-02-12T21:12:31Z'
+  updated_at: '2026-07-14T04:59:59Z'
   og_image: https://repository-images.githubusercontent.com/796251486/5ffc646c-85db-450e-9018-8ce2b86de90d
   archived: false
 - name: mandel-lua
@@ -383,7 +383,7 @@
     - xterm-js
   language: TypeScript
   created_at: '2017-03-15T19:20:41Z'
-  updated_at: '2023-10-11T23:56:41Z'
+  updated_at: '2026-07-11T01:27:47Z'
   og_image: https://repository-images.githubusercontent.com/85112149/e96a4f00-fa8a-11e9-8f81-fa2ae4bffe68
   archived: true
 - name: Top-Down-Heist
