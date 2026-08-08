@@ -68,8 +68,8 @@ jobs:
             - **Abandoned**: Archived repositories or inactive projects (6+ months)
             
             Generated automatically by GitHub Actions on $(date -u).
-          add-paths:
-          - _data/projects.yml
+          add-paths: |
+            _data/projects.yml
           branch: auto-update-projects
           branch-suffix: timestamp
           delete-branch: true
