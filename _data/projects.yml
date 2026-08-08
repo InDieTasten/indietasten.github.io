@@ -1,298 +1,3 @@
-- name: Connect4
-  status: done
-  description: A game of Connect4 (local and remote multiplayer included)
-  github_link: https://github.com/InDieTasten/Connect4
-  website: null
-  tags:
-    - C++
-    - connect4-game
-    - game
-    - local-multiplayer
-    - multiplayer-game-server
-    - sfml
-    - tcp-socket
-  language: C++
-  created_at: '2016-10-02T13:07:18Z'
-  updated_at: '2025-07-06T01:50:41Z'
-  og_image: >-
-    https://opengraph.githubassets.com/bab195a2c9f578e288086c0612d70ed78132ec633de95b096bc80e9da734d175/InDieTasten/Connect4
-  archived: false
-- name: Slanted-Prime-Sudoku
-  status: done
-  description: Brute-force solver for Carykh's Slanted Prime Sudoko challenge (2nd place)
-  github_link: https://github.com/InDieTasten/Slanted-Prime-Sudoku
-  website: null
-  tags:
-    - C++
-    - brute-force
-    - cpp
-    - puzzle-solver
-    - solver-algorithm
-  language: C++
-  created_at: '2016-12-22T11:36:19Z'
-  updated_at: '2025-07-06T01:47:50Z'
-  og_image: >-
-    https://opengraph.githubassets.com/cc0ead899e605442efeabc05d0b56f87004ba19526134082c84ef0d4c04e6917/InDieTasten/Slanted-Prime-Sudoku
-  archived: false
-- name: DevTease.MicrosoftLoggingExtensions
-  status: done
-  description: Demo project to showcase the Microsoft Logger Extensions and abstractions.
-  github_link: https://github.com/InDieTasten/DevTease.MicrosoftLoggingExtensions
-  website: null
-  tags:
-    - HTML
-    - demo
-    - devtease
-    - dotnet
-    - hacktoberfest
-    - logging
-    - showcase
-  language: HTML
-  created_at: '2018-09-10T04:19:02Z'
-  updated_at: '2025-07-06T01:45:54Z'
-  og_image: >-
-    https://opengraph.githubassets.com/96ea5396d3579b33372d1050766d222601ec943a9bd335e23cfc7d38e8cb7bea/InDieTasten/DevTease.MicrosoftLoggingExtensions
-  archived: true
-- name: DevTease.AspNetIntegrationTests
-  status: done
-  description: Sample demonstrating ASP.NET Core integration testing using WebApplicationFactory
-  github_link: https://github.com/InDieTasten/DevTease.AspNetIntegrationTests
-  website: null
-  tags:
-    - HTML
-    - demo
-    - dotnet
-    - hacktoberfest
-    - integration-testing
-    - sample
-    - testing
-  language: HTML
-  created_at: '2018-09-26T10:11:27Z'
-  updated_at: '2025-07-06T01:44:46Z'
-  og_image: >-
-    https://opengraph.githubassets.com/7f2c3533f2af804ad1e203fab018cfb52ef73b993417617b8a90fee55f2ad6a7/InDieTasten/DevTease.AspNetIntegrationTests
-  archived: true
-- name: DevTease.Plugins
-  status: done
-  description: Sample plugin system (dynamic assembly loading/unloading) in .NET Core 3 and newer
-  github_link: https://github.com/InDieTasten/DevTease.Plugins
-  website: null
-  tags:
-    - C#
-    - net-core-3
-    - plugin-loader
-    - plugin-system
-  language: C#
-  created_at: '2019-02-03T19:59:43Z'
-  updated_at: '2025-07-06T01:49:01Z'
-  og_image: >-
-    https://opengraph.githubassets.com/f0780af1b0e6d327103fc236ad7c94879a736e241b7272089ae99828b6701fbb/InDieTasten/DevTease.Plugins
-  archived: false
-- name: Authenticated-Integration-Testing
-  status: done
-  description: >-
-    This is a sample respository showcasing how you can properly integration-test your ASP.NET Core application without
-    having to mock your authentication middleware.
-  github_link: https://github.com/InDieTasten/Authenticated-Integration-Testing
-  website: null
-  tags:
-    - C#
-    - demo
-    - devtease
-    - dotnet
-    - hacktoberfest
-    - integration-testing
-    - sample
-  language: C#
-  created_at: '2019-10-17T16:27:01Z'
-  updated_at: '2025-07-06T01:38:23Z'
-  og_image: >-
-    https://opengraph.githubassets.com/3e8e2728e654a431b9a29e21cac7fff48e25bf96f03e7375d2110f731cfd9d59/InDieTasten/Authenticated-Integration-Testing
-  archived: false
-- name: Sars-Cov2-Necessity-Screening
-  status: done
-  description: 'Hackathon Entry for #WirVsVirus for solving a challenge by Charité Berlin'
-  github_link: https://github.com/InDieTasten/Sars-Cov2-Necessity-Screening
-  website: https://necessity-screening.indietasten.net
-  tags:
-    - TypeScript
-    - angular
-    - coronavirus
-    - covid-19
-    - hacktoberfest
-    - medical
-    - mobile-friendly
-    - survey
-    - wirvsvirus
-  language: TypeScript
-  created_at: '2020-03-21T09:20:23Z'
-  updated_at: '2025-07-06T01:41:22Z'
-  og_image: >-
-    https://opengraph.githubassets.com/23c45f047278fc73ec19d295c271317a09f01d410e4ef4b351fb4677cf05f2e0/InDieTasten/Sars-Cov2-Necessity-Screening
-  archived: true
-- name: TerminalRTX
-  status: done
-  description: Port of the b0tnet ray tracing demo to .NET as standalone console application
-  github_link: https://github.com/InDieTasten/TerminalRTX
-  website: null
-  tags:
-    - C#
-    - cli
-    - dotnet-5
-    - graphics-engine
-    - port
-    - raytracing
-    - terminal
-  language: C#
-  created_at: '2020-05-23T23:54:11Z'
-  updated_at: '2025-07-06T00:49:42Z'
-  og_image: >-
-    https://opengraph.githubassets.com/c60b39b5be4d1b426ed32941ae53e2b58de1efc57dae6ec359d65ab30cee1b6f/InDieTasten/TerminalRTX
-  archived: false
-- name: DigitalDepot
-  status: done
-  description: Smart bus depot routing software as entry for the Osnahack hackathon
-  github_link: https://github.com/InDieTasten/DigitalDepot
-  website: null
-  tags:
-    - JavaScript
-    - automation
-    - digitization
-    - vehicle-routing-problem
-    - vehicle-tracking
-  language: JavaScript
-  created_at: '2021-07-15T17:09:41Z'
-  updated_at: '2025-07-06T01:42:45Z'
-  og_image: >-
-    https://opengraph.githubassets.com/c6c7c22ebfaf993da0e197a5f7c1b384b13320aa294028c022c8d2c690e6362b/InDieTasten/DigitalDepot
-  archived: true
-- name: tictactoe-rs
-  status: done
-  description: Knots & Crosses as a cli game
-  github_link: https://github.com/InDieTasten/tictactoe-rs
-  website: null
-  tags:
-    - Rust
-    - async-trait
-    - clap-rs
-    - cli
-    - game
-    - hacktoberfest
-    - rust
-    - tic-tac-toe
-    - tokio-rs
-  language: Rust
-  created_at: '2023-03-11T00:38:26Z'
-  updated_at: '2025-07-06T01:41:39Z'
-  og_image: >-
-    https://opengraph.githubassets.com/ac747458f72be7a94db597ac12dc4397241c0ac0e1e849ad6bd10b14ccc02781/InDieTasten/tictactoe-rs
-  archived: false
-- name: alternate-screen-buffer-demo
-  status: done
-  description: Demo showcasing alternate screen buffer mode in xterm
-  github_link: https://github.com/InDieTasten/alternate-screen-buffer-demo
-  website: null
-  tags:
-    - Rust
-    - demo
-    - rust
-    - terminal
-    - terminal-app
-  language: Rust
-  created_at: '2024-02-10T01:32:23Z'
-  updated_at: '2025-07-06T01:27:37Z'
-  og_image: >-
-    https://opengraph.githubassets.com/48ddb6e5df82777e22b25c8f519e9c51a04c683418668be02d44b8bd9fef9d0b/InDieTasten/alternate-screen-buffer-demo
-  archived: false
-- name: mouse-tracking-demo
-  status: done
-  description: A demo showcasing mouse tracking in xterm
-  github_link: https://github.com/InDieTasten/mouse-tracking-demo
-  website: null
-  tags:
-    - Rust
-    - demo
-    - minimal
-    - mouse-events
-    - mouse-tracking
-    - rust
-    - terminal
-    - xterm
-  language: Rust
-  created_at: '2024-02-14T02:50:22Z'
-  updated_at: '2025-07-06T01:39:40Z'
-  og_image: >-
-    https://opengraph.githubassets.com/7d8550a517e2718c57bc524b848eef5284a9239ca91384e4610ae6e639df082e/InDieTasten/mouse-tracking-demo
-  archived: false
-- name: ANSI-mate
-  status: done
-  description: A CLI tool with mouse support for drawing ascii art and animations
-  github_link: https://github.com/InDieTasten/ANSI-mate
-  website: null
-  tags:
-    - Lua
-    - ascii
-    - ascii-animator
-    - ascii-art
-    - cli-tool
-    - hacktoberfest
-    - lua
-    - terminal-app
-    - terminal-based
-    - tui
-    - tui-app
-  language: Lua
-  created_at: '2024-05-05T11:59:56Z'
-  updated_at: '2026-02-12T21:12:31Z'
-  og_image: https://repository-images.githubusercontent.com/796251486/5ffc646c-85db-450e-9018-8ce2b86de90d
-  archived: false
-- name: mandel-lua
-  status: done
-  description: Mandelbrot renderer in pure Lua
-  github_link: https://github.com/InDieTasten/mandel-lua
-  website: null
-  tags:
-    - Lua
-    - cli
-    - generator
-    - gif-animation
-    - gif-creator
-    - graphics-programming
-    - hacktoberfest
-    - interactive-visualizations
-    - lua
-    - mandelbrot
-    - mandelbrot-fractal
-    - terminal-based
-    - tool
-  language: Lua
-  created_at: '2024-08-09T12:22:43Z'
-  updated_at: '2025-08-29T18:31:33Z'
-  og_image: https://repository-images.githubusercontent.com/840310203/9323cb94-15c0-4e2e-8535-8dde50fe5b88
-  archived: false
-- name: superstitious-gh
-  status: done
-  description: GitHub Action that ensures that no issue or PR receives unlucky IDs
-  github_link: https://github.com/InDieTasten/superstitious-gh
-  website: null
-  tags:
-    - JavaScript
-    - ci
-    - devil
-    - dumb
-    - fun
-    - github-action
-    - issues
-    - lucky
-    - pull-request
-    - superstition
-    - trolling
-  language: JavaScript
-  created_at: '2025-01-29T10:06:33Z'
-  updated_at: '2026-06-10T21:16:12Z'
-  og_image: >-
-    https://opengraph.githubassets.com/b4c8725cbb14a0b9c56996355cc1ed0ab219edf97f14548298d9300db53a39e3/InDieTasten/superstitious-gh
-  archived: false
 - name: --EXP-old-
   status: abandoned
   description: A space-simulation-game
@@ -370,6 +75,42 @@
   updated_at: '2023-01-28T20:40:31Z'
   og_image: https://opengraph.githubassets.com/073c830c82460c54e6b207c421a99ad8fa9f4931b7d4bf7604410f3ad275d2cf/InDieTasten/REEL
   archived: true
+- name: Connect4
+  status: done
+  description: A game of Connect4 (local and remote multiplayer included)
+  github_link: https://github.com/InDieTasten/Connect4
+  website: null
+  tags:
+    - C++
+    - connect4-game
+    - game
+    - local-multiplayer
+    - multiplayer-game-server
+    - sfml
+    - tcp-socket
+  language: C++
+  created_at: '2016-10-02T13:07:18Z'
+  updated_at: '2025-07-06T01:50:41Z'
+  og_image: >-
+    https://opengraph.githubassets.com/bab195a2c9f578e288086c0612d70ed78132ec633de95b096bc80e9da734d175/InDieTasten/Connect4
+  archived: false
+- name: Slanted-Prime-Sudoku
+  status: done
+  description: Brute-force solver for Carykh's Slanted Prime Sudoko challenge (2nd place)
+  github_link: https://github.com/InDieTasten/Slanted-Prime-Sudoku
+  website: null
+  tags:
+    - C++
+    - brute-force
+    - cpp
+    - puzzle-solver
+    - solver-algorithm
+  language: C++
+  created_at: '2016-12-22T11:36:19Z'
+  updated_at: '2025-07-06T01:47:50Z'
+  og_image: >-
+    https://opengraph.githubassets.com/cc0ead899e605442efeabc05d0b56f87004ba19526134082c84ef0d4c04e6917/InDieTasten/Slanted-Prime-Sudoku
+  archived: false
 - name: b0tnet
   status: abandoned
   description: ASCII/Console/Text Hacking Adventure
@@ -383,7 +124,7 @@
     - xterm-js
   language: TypeScript
   created_at: '2017-03-15T19:20:41Z'
-  updated_at: '2023-10-11T23:56:41Z'
+  updated_at: '2026-07-11T01:27:47Z'
   og_image: https://repository-images.githubusercontent.com/85112149/e96a4f00-fa8a-11e9-8f81-fa2ae4bffe68
   archived: true
 - name: Top-Down-Heist
@@ -459,6 +200,44 @@
   og_image: >-
     https://opengraph.githubassets.com/8448a3bf506b4cc143b0c7ae2aa3619e6ebc8d403c6299b467c60b33756a7be4/InDieTasten/CC-CSharp
   archived: true
+- name: DevTease.MicrosoftLoggingExtensions
+  status: done
+  description: Demo project to showcase the Microsoft Logger Extensions and abstractions.
+  github_link: https://github.com/InDieTasten/DevTease.MicrosoftLoggingExtensions
+  website: null
+  tags:
+    - HTML
+    - demo
+    - devtease
+    - dotnet
+    - hacktoberfest
+    - logging
+    - showcase
+  language: HTML
+  created_at: '2018-09-10T04:19:02Z'
+  updated_at: '2025-07-06T01:45:54Z'
+  og_image: >-
+    https://opengraph.githubassets.com/96ea5396d3579b33372d1050766d222601ec943a9bd335e23cfc7d38e8cb7bea/InDieTasten/DevTease.MicrosoftLoggingExtensions
+  archived: true
+- name: DevTease.AspNetIntegrationTests
+  status: done
+  description: Sample demonstrating ASP.NET Core integration testing using WebApplicationFactory
+  github_link: https://github.com/InDieTasten/DevTease.AspNetIntegrationTests
+  website: null
+  tags:
+    - HTML
+    - demo
+    - dotnet
+    - hacktoberfest
+    - integration-testing
+    - sample
+    - testing
+  language: HTML
+  created_at: '2018-09-26T10:11:27Z'
+  updated_at: '2025-07-06T01:44:46Z'
+  og_image: >-
+    https://opengraph.githubassets.com/7f2c3533f2af804ad1e203fab018cfb52ef73b993417617b8a90fee55f2ad6a7/InDieTasten/DevTease.AspNetIntegrationTests
+  archived: true
 - name: RetailPro.Backend
   status: abandoned
   description: No description available.
@@ -515,6 +294,22 @@
   og_image: >-
     https://opengraph.githubassets.com/54bff6fe6f739a46969e2961fb25a0d45ed190f44995c41325764ab0a623d3ee/InDieTasten/DevTease.DI
   archived: false
+- name: DevTease.Plugins
+  status: done
+  description: Sample plugin system (dynamic assembly loading/unloading) in .NET Core 3 and newer
+  github_link: https://github.com/InDieTasten/DevTease.Plugins
+  website: null
+  tags:
+    - C#
+    - net-core-3
+    - plugin-loader
+    - plugin-system
+  language: C#
+  created_at: '2019-02-03T19:59:43Z'
+  updated_at: '2025-07-06T01:49:01Z'
+  og_image: >-
+    https://opengraph.githubassets.com/f0780af1b0e6d327103fc236ad7c94879a736e241b7272089ae99828b6701fbb/InDieTasten/DevTease.Plugins
+  archived: false
 - name: breadstone
   status: abandoned
   description: Circuit Design Software for Minecraft Redstone
@@ -532,6 +327,27 @@
   updated_at: '2026-04-02T13:14:18Z'
   og_image: https://repository-images.githubusercontent.com/197829352/8b0d6880-c46a-11e9-903b-6500e4a61ad2
   archived: false
+- name: Authenticated-Integration-Testing
+  status: done
+  description: >-
+    This is a sample respository showcasing how you can properly integration-test your ASP.NET Core application without
+    having to mock your authentication middleware.
+  github_link: https://github.com/InDieTasten/Authenticated-Integration-Testing
+  website: null
+  tags:
+    - C#
+    - demo
+    - devtease
+    - dotnet
+    - hacktoberfest
+    - integration-testing
+    - sample
+  language: C#
+  created_at: '2019-10-17T16:27:01Z'
+  updated_at: '2026-08-07T19:35:59Z'
+  og_image: >-
+    https://opengraph.githubassets.com/c4ea21ad0184c977c4a16f0f4515beb44bf2c189dce15efc71d08c41a3a335a6/InDieTasten/Authenticated-Integration-Testing
+  archived: false
 - name: terminal-damage
   status: abandoned
   description: My homepage as a terminal
@@ -544,6 +360,46 @@
   updated_at: '2021-11-30T08:06:20Z'
   og_image: >-
     https://opengraph.githubassets.com/4838fded7665b4bb8fbe3363342e1fafdf39ae5043a9f3582896b295f17662b7/InDieTasten/terminal-damage
+  archived: false
+- name: Sars-Cov2-Necessity-Screening
+  status: done
+  description: 'Hackathon Entry for #WirVsVirus for solving a challenge by Charité Berlin'
+  github_link: https://github.com/InDieTasten/Sars-Cov2-Necessity-Screening
+  website: https://necessity-screening.indietasten.net
+  tags:
+    - TypeScript
+    - angular
+    - coronavirus
+    - covid-19
+    - hacktoberfest
+    - medical
+    - mobile-friendly
+    - survey
+    - wirvsvirus
+  language: TypeScript
+  created_at: '2020-03-21T09:20:23Z'
+  updated_at: '2025-07-06T01:41:22Z'
+  og_image: >-
+    https://opengraph.githubassets.com/23c45f047278fc73ec19d295c271317a09f01d410e4ef4b351fb4677cf05f2e0/InDieTasten/Sars-Cov2-Necessity-Screening
+  archived: true
+- name: TerminalRTX
+  status: done
+  description: Port of the b0tnet ray tracing demo to .NET as standalone console application
+  github_link: https://github.com/InDieTasten/TerminalRTX
+  website: null
+  tags:
+    - C#
+    - cli
+    - dotnet-5
+    - graphics-engine
+    - port
+    - raytracing
+    - terminal
+  language: C#
+  created_at: '2020-05-23T23:54:11Z'
+  updated_at: '2025-07-06T00:49:42Z'
+  og_image: >-
+    https://opengraph.githubassets.com/c60b39b5be4d1b426ed32941ae53e2b58de1efc57dae6ec359d65ab30cee1b6f/InDieTasten/TerminalRTX
   archived: false
 - name: TextAdventure.NET
   status: abandoned
@@ -635,6 +491,23 @@
   og_image: >-
     https://opengraph.githubassets.com/2fd7ce10cfbfa42752ecbd803911b5ee6e93c9d8beea6311c2796075e3123cac/InDieTasten/DevTease.Rasa
   archived: false
+- name: DigitalDepot
+  status: done
+  description: Smart bus depot routing software as entry for the Osnahack hackathon
+  github_link: https://github.com/InDieTasten/DigitalDepot
+  website: null
+  tags:
+    - JavaScript
+    - automation
+    - digitization
+    - vehicle-routing-problem
+    - vehicle-tracking
+  language: JavaScript
+  created_at: '2021-07-15T17:09:41Z'
+  updated_at: '2025-07-06T01:42:45Z'
+  og_image: >-
+    https://opengraph.githubassets.com/c6c7c22ebfaf993da0e197a5f7c1b384b13320aa294028c022c8d2c690e6362b/InDieTasten/DigitalDepot
+  archived: true
 - name: WikiWebhookTestRepo
   status: abandoned
   description: >-
@@ -663,6 +536,27 @@
   og_image: >-
     https://opengraph.githubassets.com/eb8b9778ba864646b9cdee0515512835d5e798b420251852bf0689e2c4a6df8f/InDieTasten/CoinTale
   archived: true
+- name: tictactoe-rs
+  status: done
+  description: Knots & Crosses as a cli game
+  github_link: https://github.com/InDieTasten/tictactoe-rs
+  website: null
+  tags:
+    - Rust
+    - async-trait
+    - clap-rs
+    - cli
+    - game
+    - hacktoberfest
+    - rust
+    - tic-tac-toe
+    - tokio-rs
+  language: Rust
+  created_at: '2023-03-11T00:38:26Z'
+  updated_at: '2025-07-06T01:41:39Z'
+  og_image: >-
+    https://opengraph.githubassets.com/ac747458f72be7a94db597ac12dc4397241c0ac0e1e849ad6bd10b14ccc02781/InDieTasten/tictactoe-rs
+  archived: false
 - name: operator-game
   status: abandoned
   description: A game about operating machines, vessels and plants made in Bevy game engine
@@ -680,6 +574,43 @@
   og_image: >-
     https://opengraph.githubassets.com/171265910da829c16988fb40699baadfb48613faa1efa1cb4ec80dacc0364d31/InDieTasten/operator-game
   archived: true
+- name: alternate-screen-buffer-demo
+  status: done
+  description: Demo showcasing alternate screen buffer mode in xterm
+  github_link: https://github.com/InDieTasten/alternate-screen-buffer-demo
+  website: null
+  tags:
+    - Rust
+    - demo
+    - rust
+    - terminal
+    - terminal-app
+  language: Rust
+  created_at: '2024-02-10T01:32:23Z'
+  updated_at: '2025-07-06T01:27:37Z'
+  og_image: >-
+    https://opengraph.githubassets.com/48ddb6e5df82777e22b25c8f519e9c51a04c683418668be02d44b8bd9fef9d0b/InDieTasten/alternate-screen-buffer-demo
+  archived: false
+- name: mouse-tracking-demo
+  status: done
+  description: A demo showcasing mouse tracking in xterm
+  github_link: https://github.com/InDieTasten/mouse-tracking-demo
+  website: null
+  tags:
+    - Rust
+    - demo
+    - minimal
+    - mouse-events
+    - mouse-tracking
+    - rust
+    - terminal
+    - xterm
+  language: Rust
+  created_at: '2024-02-14T02:50:22Z'
+  updated_at: '2025-07-06T01:39:40Z'
+  og_image: >-
+    https://opengraph.githubassets.com/7d8550a517e2718c57bc524b848eef5284a9239ca91384e4610ae6e639df082e/InDieTasten/mouse-tracking-demo
+  archived: false
 - name: astats-fast
   status: abandoned
   description: Service similar to astats.nl, but without timeouts and registration issues
@@ -731,6 +662,28 @@
   updated_at: '2024-05-05T11:59:03Z'
   og_image: >-
     https://opengraph.githubassets.com/dd7fdd71dcce6f6caf5927ce1b3d5f5fa942baf102f68e4744bde5703e0f244f/InDieTasten/Novel-Now
+  archived: false
+- name: ANSI-mate
+  status: done
+  description: A CLI tool with mouse support for drawing ascii art and animations
+  github_link: https://github.com/InDieTasten/ANSI-mate
+  website: null
+  tags:
+    - Lua
+    - ascii
+    - ascii-animator
+    - ascii-art
+    - cli-tool
+    - hacktoberfest
+    - lua
+    - terminal-app
+    - terminal-based
+    - tui
+    - tui-app
+  language: Lua
+  created_at: '2024-05-05T11:59:56Z'
+  updated_at: '2026-07-14T04:59:59Z'
+  og_image: https://repository-images.githubusercontent.com/796251486/5ffc646c-85db-450e-9018-8ce2b86de90d
   archived: false
 - name: Leergut-Simulator
   status: abandoned
@@ -860,6 +813,30 @@
   og_image: >-
     https://opengraph.githubassets.com/7ea257cc486c2c9b21e45af55425bb2eba6dd4e9e49b51d3c75ef9b2dd31c591/InDieTasten/pfand
   archived: false
+- name: mandel-lua
+  status: done
+  description: Mandelbrot renderer in pure Lua
+  github_link: https://github.com/InDieTasten/mandel-lua
+  website: null
+  tags:
+    - Lua
+    - cli
+    - generator
+    - gif-animation
+    - gif-creator
+    - graphics-programming
+    - hacktoberfest
+    - interactive-visualizations
+    - lua
+    - mandelbrot
+    - mandelbrot-fractal
+    - terminal-based
+    - tool
+  language: Lua
+  created_at: '2024-08-09T12:22:43Z'
+  updated_at: '2025-08-29T18:31:33Z'
+  og_image: https://repository-images.githubusercontent.com/840310203/9323cb94-15c0-4e2e-8535-8dde50fe5b88
+  archived: false
 - name: Anti-GH-Pages-Yank
   status: abandoned
   description: Project for defending against GitHub Pages CNAME yanking
@@ -872,6 +849,29 @@
   updated_at: '2024-11-08T04:00:20Z'
   og_image: >-
     https://opengraph.githubassets.com/7257ee479f942d8005045c2948a60a6e0455b2ce88463571d098c4e88d68e04c/InDieTasten/Anti-GH-Pages-Yank
+  archived: false
+- name: superstitious-gh
+  status: done
+  description: GitHub Action that ensures that no issue or PR receives unlucky IDs
+  github_link: https://github.com/InDieTasten/superstitious-gh
+  website: null
+  tags:
+    - JavaScript
+    - ci
+    - devil
+    - dumb
+    - fun
+    - github-action
+    - issues
+    - lucky
+    - pull-request
+    - superstition
+    - trolling
+  language: JavaScript
+  created_at: '2025-01-29T10:06:33Z'
+  updated_at: '2026-06-10T21:16:12Z'
+  og_image: >-
+    https://opengraph.githubassets.com/b4c8725cbb14a0b9c56996355cc1ed0ab219edf97f14548298d9300db53a39e3/InDieTasten/superstitious-gh
   archived: false
 - name: k8s-bug
   status: abandoned
