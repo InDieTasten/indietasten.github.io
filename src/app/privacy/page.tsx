@@ -53,17 +53,20 @@ const PrivacyPage: NextPage<Props> = ({ }) => {
                     <ul className="list-disc pl-6 space-y-2">
                         <li>
                             <strong className="text-zinc-200">Planning a route:</strong> your browser sends the start and end point, the
-                            selected tiles and your settings. The server computes the route and sends it back without storing the
-                            request. The road overlay works the same way with the visible map area.
+                            selected tiles and your settings, including a custom profile if you made one. The server computes the
+                            route, sends it back (with progress updates while it works) and does not store the request or the
+                            profile. The road overlay works the same way with the visible map area.
                         </li>
                         <li>
-                            <strong className="text-zinc-200">Abuse protection:</strong> the server counts route requests per IP address in
-                            memory for a few minutes. The count is never written to disk, and no access logs with IP addresses are kept.
+                            <strong className="text-zinc-200">Abuse protection and fair queue:</strong> the server counts route requests per
+                            IP address in memory for a few minutes. While your route request waits for its turn or is being computed, your IP
+                            address is also kept in memory to share the server fairly between users, and dropped as soon as the request ends.
+                            None of this is written to disk, and no access logs with IP addresses are kept.
                         </li>
                         <li>
-                            <strong className="text-zinc-200">Stored in your browser:</strong> settings, selected tiles, start and end point,
-                            map view and the link to your collected squadrats are kept in your browser&apos;s local storage, only so the app
-                            remembers them. Clear the site data to remove them.
+                            <strong className="text-zinc-200">Stored in your browser:</strong> settings (including the chosen level of
+                            detail), selected tiles, start and end point, map view, your custom profiles and the link to your collected
+                            squadrats are kept in your browser&apos;s local storage, only so the app remembers them. Clear the site data to remove them.
                         </li>
                         <li>
                             <strong className="text-zinc-200">Your collected squadrats:</strong> your browser loads them directly from
@@ -98,7 +101,7 @@ const PrivacyPage: NextPage<Props> = ({ }) => {
                     </p>
                 </Section>
 
-                <p className="text-sm text-zinc-500 pt-4">Last updated: October 12, 2026</p>
+                <p className="text-sm text-zinc-500 pt-4">Last updated: October 13, 2026</p>
             </div>
         </Container>);
 }
