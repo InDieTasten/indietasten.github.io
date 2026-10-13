@@ -1,5 +1,6 @@
 import { Container } from '@/components/Container';
 import { NextPage } from 'next'
+import Link from 'next/link';
 
 interface Props { }
 
@@ -19,6 +20,11 @@ const LegalPage: NextPage<Props> = ({ }) => {
             </p>
             <p className="select-none pointer-events-none">
                 Contact: 𝗶𝗻𝗱𝗶𝗲𝘁𝗮𝘀𝘁𝗲𝗻@𝗴𝗺𝗮𝗶𝗹.𝗰𝗼𝗺
+            </p>
+            <p className="mt-5">
+                This legal notice also applies to the services under indietasten.net, for example{' '}
+                <a className="text-teal-400 hover:underline" href="https://tile-router.indietasten.net">Tile Router</a>.
+                How data is handled is described in the <Link className="text-teal-400 hover:underline" href="/privacy">privacy policy</Link>.
             </p>
             <h2 className="text-2xl font-bold tracking-tight sm:text-2xl text-zinc-100 my-5">3rd party links</h2>
             <p>

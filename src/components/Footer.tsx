@@ -30,6 +30,7 @@ export function Footer() {
                 <NavLink href="/">About</NavLink>
                 <NavLink href="/projects">Projects</NavLink>
                 <NavLink href="/legal">Legal</NavLink>
+                <NavLink href="/privacy">Privacy</NavLink>
               </div>
               <p className="text-sm text-zinc-500">
                 &copy; 2011 InDieTasten. All rights
