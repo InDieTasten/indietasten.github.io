@@ -34,11 +34,20 @@ const PrivacyPage: NextPage<Props> = ({ }) => {
 
                 <Section title="This website">
                     <p>
-                        indietasten.net is a static website hosted on GitHub Pages (GitHub, Inc., USA). To deliver the pages,
-                        GitHub processes your IP address and request details in its server logs; see the{' '}
+                        indietasten.net and the other sites under it (such as b0tnet, breadstone and necessity-screening) are static
+                        websites served from a private server in Germany. To deliver the pages, your IP address and the request are
+                        processed in memory only; no access logs are kept.
+                    </p>
+                    <p>
+                        Connections to every service under indietasten.net pass through a relay server at DigitalOcean, LLC (USA) in its
+                        Frankfurt, Germany data center. The relay only forwards the encrypted connection: it can&apos;t read the content,
+                        sees your IP address only to pass the connection on, and keeps no logs. See the{' '}
+                        <a className={linkClass} href="https://www.digitalocean.com/legal/privacy-policy" target="_blank" rel="noopener">DigitalOcean privacy policy</a>.
+                    </p>
+                    <p>
+                        The project previews on the Projects page are loaded from GitHub (opengraph.githubassets.com, GitHub, Inc., USA),
+                        which receives your IP address; see the{' '}
                         <a className={linkClass} href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub privacy statement</a>.
-                        GitHub is certified under the EU-US Data Privacy Framework. The project previews on the Projects page are
-                        loaded from GitHub as well (opengraph.githubassets.com).
                     </p>
                     <p>
                         Fonts are served from this website itself, not from Google. There are no cookies, no analytics and no
@@ -48,7 +57,8 @@ const PrivacyPage: NextPage<Props> = ({ }) => {
 
                 <Section title="Tile Router (tile-router.indietasten.net)">
                     <p>
-                        Tile Router runs on a private server in Germany. It has no accounts and stores nothing about you on the server.
+                        Tile Router runs on a private server in Germany, reached through the relay described above. It has no accounts
+                        and stores nothing about you on the server.
                     </p>
                     <ul className="list-disc pl-6 space-y-2">
                         <li>
