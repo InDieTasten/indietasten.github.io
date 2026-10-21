@@ -9,9 +9,9 @@ Every pull request from this repository gets its own environment at `https://hom
   PRs from forks only build the image (no token for the deployer, nothing pushed).
 - **`.github/workflows/pr-preview-cleanup.yaml`** (PR closed): removes the environment, marks the deployments inactive and
   comments. Previews without a new commit for 14 days are removed by the deployer anyway.
-- **`.github/workflows/release.yml`** (push to main): builds `ghcr.io/indietasten/homepage:sha-<short>` and opens a tag-bump
-  PR in `InDieTasten/lab` (`stacks/homepage/compose.yaml`), merged right away; the lab deploys it to https://indietasten.net.
-  Needs the secret `LAB_BUMP_TOKEN` (fine-grained PAT: `InDieTasten/lab` only, contents + pull requests write).
+- **`.github/workflows/release.yml`** (push to main): builds `ghcr.io/indietasten/homepage:sha-<short>` and `:edge`.
+  The lab (InDieTasten/lab, stack `homepage`) tracks `:edge` and Komodo redeploys it automatically at
+  https://indietasten.net — no tag-bump PR into the lab anymore.
 
 The deployer's contract (names, limits, private previews) is documented in the lab repo, `stacks/README.md`
 "Preview environments".
