@@ -1,7 +1,7 @@
 name: Release
 
-# main → image ghcr.io/indietasten/homepage:sha-<short> → tag-bump PR in InDieTasten/lab (merged right away), whose
-# push makes the lab deploy it. LAB_BUMP_TOKEN: fine-grained PAT, InDieTasten/lab only, contents + pull requests write.
+# main → images ghcr.io/indietasten/homepage:sha-<short> and :edge. The lab (InDieTasten/lab, stack "homepage")
+# tracks :edge with Komodo auto_update, which redeploys it at https://indietasten.net. No PR into the lab needed.
 on:
   push:
     branches: [main]
@@ -21,8 +21,9 @@ env:
 jobs:
   image:
     runs-on: ubuntu-latest
-    outputs:
-      tag: ${{ steps.tag.outputs.tag }}
+    environment:
+      name: production
+      url: https://indietasten.net
     steps:
       - uses: actions/checkout@v4
       - id: tag
@@ -44,41 +45,3 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-  bump-lab:
-    needs: image
-    runs-on: ubuntu-latest
-    environment:
-      name: production
-      url: https://indietasten.net
-    env:
-      TAG: ${{ needs.image.outputs.tag }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          repository: InDieTasten/lab
-          token: ${{ secrets.LAB_BUMP_TOKEN }}
-          path: lab
-      - name: Bump the image tag
-        run: |
-          f=lab/stacks/homepage/compose.yaml
-          sed -i -E "s|(image: ${IMAGE}:)[A-Za-z0-9._-]+|\1${TAG}|" "$f"
-          grep -q "image: ${IMAGE}:${TAG}" "$f"
-      - id: pr
-        uses: peter-evans/create-pull-request@v7
-        with:
-          path: lab
-          token: ${{ secrets.LAB_BUMP_TOKEN }}
-          branch: bump/homepage
-          delete-branch: true
-          sign-commits: true
-          commit-message: |
-            chore(homepage): ${{ env.TAG }}
-
-            ${{ github.repository }}@${{ github.sha }}
-          title: "chore(homepage): ${{ env.TAG }}"
-          body: "Deploys ${{ github.repository }}@${{ github.sha }} (`${{ env.IMAGE }}:${{ env.TAG }}`)."
-      - name: Merge
-        if: steps.pr.outputs.pull-request-number
-        env:
-          GH_TOKEN: ${{ secrets.LAB_BUMP_TOKEN }}
-        run: gh pr merge --repo InDieTasten/lab "${{ steps.pr.outputs.pull-request-number }}" --squash --delete-branch
