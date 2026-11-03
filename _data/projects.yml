@@ -105,7 +105,7 @@
   og_image: https://opengraph.githubassets.com/cc0ead899e605442efeabc05d0b56f87004ba19526134082c84ef0d4c04e6917/InDieTasten/Slanted-Prime-Sudoku
   archived: false
 - name: b0tnet
-  status: abandoned
+  status: in-progress
   description: ASCII/Console/Text Hacking Adventure
   github_link: https://github.com/InDieTasten/b0tnet
   website: https://b0tnet.indietasten.net/
@@ -117,9 +117,9 @@
     - xterm-js
   language: TypeScript
   created_at: '2017-03-15T19:20:41Z'
-  updated_at: '2026-10-16T21:36:05Z'
+  updated_at: '2026-10-27T22:35:37Z'
   og_image: https://repository-images.githubusercontent.com/85112149/e96a4f00-fa8a-11e9-8f81-fa2ae4bffe68
-  archived: true
+  archived: false
 - name: Top-Down-Heist
   status: abandoned
   description: A payday 2 clone in 2D for browser
@@ -305,7 +305,7 @@
     - redstone
   language: Rust
   created_at: '2019-07-19T19:14:26Z'
-  updated_at: '2026-10-22T20:52:52Z'
+  updated_at: '2026-10-27T22:42:21Z'
   og_image: https://repository-images.githubusercontent.com/197829352/8b0d6880-c46a-11e9-903b-6500e4a61ad2
   archived: false
 - name: Authenticated-Integration-Testing
@@ -357,9 +357,9 @@
     - wirvsvirus
   language: TypeScript
   created_at: '2020-03-21T09:20:23Z'
-  updated_at: '2026-10-16T21:36:10Z'
-  og_image: https://opengraph.githubassets.com/83312b4ba21b5b31ea957f81f0b3c2418648f6276bc4200fdd2bea3df4314e80/InDieTasten/Sars-Cov2-Necessity-Screening
-  archived: true
+  updated_at: '2026-10-27T22:35:37Z'
+  og_image: https://opengraph.githubassets.com/ff12a6efa61173e80cd6190a4eec36b5efe6963b7df8aef22a02b5b61131bfef/InDieTasten/Sars-Cov2-Necessity-Screening
+  archived: false
 - name: TerminalRTX
   status: done
   description: Port of the b0tnet ray tracing demo to .NET as standalone console application
@@ -873,4 +873,16 @@
   created_at: '2025-10-28T15:00:00Z'
   updated_at: '2025-10-28T15:00:00Z'
   og_image: https://opengraph.githubassets.com/af56414bd85a1c3cdcbd93a7266066579f0a67b3022c44fecdb2b7ba8638d063/InDieTasten/reliable-statefulset-controller
+  archived: false
+- name: .github
+  status: in-progress
+  description: No description available.
+  github_link: https://github.com/InDieTasten/.github
+  website: null
+  tags:
+    - Miscellaneous
+  language: null
+  created_at: '2026-10-27T22:27:58Z'
+  updated_at: '2026-10-27T22:28:07Z'
+  og_image: https://opengraph.githubassets.com/3697d954933b43d9eb7572ab0dda3b05fe980d564c84a80d867af79f92c3062c/InDieTasten/.github
   archived: false
