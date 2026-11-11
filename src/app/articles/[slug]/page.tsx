@@ -19,12 +19,11 @@ export default async function Article(props: Params) {
 
     return (
         <main>
-            <Container>
-                <article className="mb-32">
+            <Container className="mt-16 sm:mt-32">
+                <article>
                     <PostHeader
                         title={post.title}
                         date={post.date}
-                        author={post.author}
                         tags={post.tags}
                     />
                     <PostBody content={content} />
