@@ -110,7 +110,7 @@ Microsoft.
 All the samples and project templates are generating configuration files ready for committing them.
 The default VS .gitignore won't ignore appsettings.json and similar files.
 
-# Discussion
+## Discussion
 
 Are you already living the dream?
 Are there problems I haven't thought about?

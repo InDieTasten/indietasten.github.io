@@ -28,7 +28,7 @@ As a bonus, you can from now on generate your CHANGELOG.md as well.
 
 Thanks for adhering to my advice.
 
-# Discussion
+## Discussion
 
 Are you already comitting conventionally? How is it working out for you? Was it hard to adapt with an entire team?
 
