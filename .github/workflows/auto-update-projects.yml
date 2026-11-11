@@ -12,6 +12,8 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency: auto-update-projects
+
 jobs:
   update-projects:
     runs-on: ubuntu-latest
@@ -19,7 +21,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
+      - name: Set generation date
+        id: date
+        run: echo "date=$(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_OUTPUT
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -42,8 +48,9 @@ jobs:
           fi
           
       - name: Create Pull Request
+        id: create_pr
         if: steps.check_changes.outputs.has_changes == 'true'
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: 'Auto-update projects data from GitHub repositories'
@@ -67,9 +74,22 @@ jobs:
             - **In Progress**: Active repositories with recent commits (within 6 months)
             - **Abandoned**: Archived repositories or inactive projects (6+ months)
             
-            Generated automatically by GitHub Actions on $(date -u).
+            Generated automatically by GitHub Actions on ${{ steps.date.outputs.date }}.
           add-paths: |
             _data/projects.yml
           branch: auto-update-projects
           branch-suffix: timestamp
           delete-branch: true
+
+      - name: Close superseded pull requests
+        if: steps.create_pr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NEW_PR: ${{ steps.create_pr.outputs.pull-request-number }}
+        run: |
+          gh pr list --state open --limit 200 --json number,headRefName \
+            --jq "[.[] | select(.headRefName | startswith(\"auto-update-projects-\")) | .number | select(. != (${NEW_PR}))] | .[]" |
+          while read -r pr; do
+            gh pr close "$pr" --delete-branch \
+              --comment "Superseded by #${NEW_PR}, which carries the current projects data."
+          done
