@@ -59,7 +59,7 @@ jobs:
             - Topics/tags from GitHub (excluding status tags)
             - Primary language and activity information
             - Creation and last update dates
-            - Homepage URL and OpenGraph image
+            - Homepage URL and social preview image (if configured)
             - Repository archived status
             
             ## Status Classification

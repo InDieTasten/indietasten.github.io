@@ -45,9 +45,8 @@ const PrivacyPage: NextPage<Props> = ({ }) => {
                         <a className={linkClass} href="https://www.digitalocean.com/legal/privacy-policy" target="_blank" rel="noopener">DigitalOcean privacy policy</a>.
                     </p>
                     <p>
-                        The project previews on the Projects page are loaded from GitHub (opengraph.githubassets.com, GitHub, Inc., USA),
-                        which receives your IP address; see the{' '}
-                        <a className={linkClass} href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub privacy statement</a>.
+                        The project previews on the Projects page are served by this website itself. Browsing the Projects page
+                        does not connect to GitHub or any other third party.
                     </p>
                     <p>
                         Fonts are served from this website itself, not from Google. There are no cookies, no analytics and no
@@ -111,7 +110,7 @@ const PrivacyPage: NextPage<Props> = ({ }) => {
                     </p>
                 </Section>
 
-                <p className="text-sm text-zinc-500 pt-4">Last updated: October 13, 2026</p>
+                <p className="text-sm text-zinc-500 pt-4">Last updated: November 13, 2026</p>
             </div>
         </Container>);
 }

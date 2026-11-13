@@ -9,7 +9,9 @@ This repo provides a dev container config. Open in dev container and run
     pnpm install
     pnpm run dev
 
-to start coding.
+to start coding. `pnpm run dev` and `pnpm run build` download the repository social previews
+from GitHub into `public/project-previews/` (gitignored) so the Projects page serves them itself;
+use `PREVIEWS_SKIP=1` to skip that step when offline.
 
 ## PR previews and deploys
 
