@@ -57,7 +57,7 @@ function ProjectCard({ project }: { project: Project }) {
         {/* Image section */}
         <div className="flex-shrink-0 -mx-6 -mt-6 md:mx-0 md:mt-0 md:w-48">
           <img
-            src={project.preview_image ?? "/project-placeholder.svg"}
+            src={project.previewPath ?? "/project-placeholder.svg"}
             alt={`${project.name} preview`}
             loading="lazy"
             decoding="async"
