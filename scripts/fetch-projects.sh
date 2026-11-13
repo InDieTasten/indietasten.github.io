@@ -130,10 +130,13 @@ async function fetchAllRepos() {
                 tags.unshift(repo.language);
             }
             
-            // Try to get repository's actual OpenGraph image first
-            let ogImage = null;
+            // Try to get the repository's configured social preview image.
+            // GitHub only serves a repository-images.githubusercontent.com URL in og:image
+            // when the repository actually has a preview configured; the dynamic
+            // opengraph.githubassets.com fallback is deliberately not used, the site
+            // shows its own placeholder instead (see #191).
+            let previewImage = null;
             
-            // Try to extract OpenGraph image from repository HTML page
             try {
                 const repoPageResponse = await fetch(repo.html_url, {
                     method: 'GET',
@@ -145,19 +148,26 @@ async function fetchAllRepos() {
                 
                 if (repoPageResponse.ok) {
                     const htmlContent = await repoPageResponse.text();
-                    // Extract OpenGraph image from meta tag
-                    const ogImageMatch = htmlContent.match(/<meta property="og:image" content="([^"]*)"[^>]*>/i);
-                    if (ogImageMatch && ogImageMatch[1]) {
-                        ogImage = ogImageMatch[1];
+                    // Extract the og:image content from a meta tag, tolerating
+                    // single or double quotes and any attribute order
+                    for (const meta of htmlContent.match(/<meta\b[^>]*>/gi) || []) {
+                        if (!/property\s*=\s*["']og:image["']/i.test(meta)) continue;
+                        const contentMatch = meta.match(/content\s*=\s*["']([^"']*)["']/i);
+                        if (contentMatch && contentMatch[1]) {
+                            try {
+                                const url = new URL(contentMatch[1]);
+                                if (url.hostname === 'repository-images.githubusercontent.com') {
+                                    previewImage = url.toString();
+                                }
+                            } catch {
+                                // Not a usable URL - treat as no preview
+                            }
+                        }
+                        break;
                     }
                 }
             } catch (error) {
                 console.log(`Could not fetch repository page for ${repo.full_name}: ${error.message}`);
-            }
-            
-            // Use the dynamic OpenGraph image as fallback
-            if (!ogImage) {
-                ogImage = `https://opengraph.githubassets.com/1/${repo.full_name}`;
             }
             
             const project = {
@@ -170,9 +180,11 @@ async function fetchAllRepos() {
                 language: repo.language,
                 created_at: repo.created_at,
                 updated_at: repo.updated_at,
-                og_image: ogImage,
                 archived: repo.archived
             };
+            if (previewImage) {
+                project.preview_image = previewImage;
+            }
             
             projects.push(project);
         }
@@ -191,6 +203,8 @@ async function fetchAllRepos() {
         Object.entries(statusCounts).forEach(([status, count]) => {
             console.log(`  ${status}: ${count}`);
         });
+        const previewCount = projects.filter(p => p.preview_image).length;
+        console.log(`Repositories with a configured social preview: ${previewCount}`);
         
         // Generate YAML file
         const yamlContent = yaml.dump(projects, {

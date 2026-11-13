@@ -9,6 +9,6 @@ export type Project = {
   language?: string;
   created_at?: string;
   updated_at?: string;
-  og_image?: string;
+  preview_image?: string;
   archived?: boolean;
 };

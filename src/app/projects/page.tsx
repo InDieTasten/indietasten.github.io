@@ -55,15 +55,15 @@ function ProjectCard({ project }: { project: Project }) {
     <Card className="md:col-span-3">
       <div className="flex flex-col md:flex-row gap-4">
         {/* Image section */}
-        {project.og_image && (
-          <div className="flex-shrink-0 -mx-6 -mt-6 md:mx-0 md:mt-0 md:w-48">
-            <img
-              src={project.og_image}
-              alt={`${project.name} preview`}
-              className="w-full h-48 object-cover rounded-t-lg md:rounded-lg md:rounded-t-lg"
-            />
-          </div>
-        )}
+        <div className="flex-shrink-0 -mx-6 -mt-6 md:mx-0 md:mt-0 md:w-48">
+          <img
+            src={project.preview_image ?? "/project-placeholder.svg"}
+            alt={`${project.name} preview`}
+            loading="lazy"
+            decoding="async"
+            className="w-full h-48 object-cover rounded-t-lg md:rounded-lg md:rounded-t-lg"
+          />
+        </div>
         
         {/* Content section */}
         <div className="flex-1 md:min-w-0">
