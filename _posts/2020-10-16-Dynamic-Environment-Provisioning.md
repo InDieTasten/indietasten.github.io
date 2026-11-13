@@ -87,7 +87,7 @@ So strictly speaking it's not a caveat of dynamic provisioning, but more a cavea
 "not changing code directly in production" which itself comes with a bunch of other more severe caveats IMO.
 
 
-# Discussion
+## Discussion
 
 Do you have experience with this stuff?
 How would you go about implementing this kind of integration and isolation?
