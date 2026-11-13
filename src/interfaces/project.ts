@@ -9,6 +9,9 @@ export type Project = {
   language?: string;
   created_at?: string;
   updated_at?: string;
-  og_image?: string;
+  preview_image?: string;
+  // Attached at build time from _data/previews.json when the preview was
+  // downloaded to public/project-previews/ (see scripts/fetch-previews.mjs)
+  previewPath?: string;
   archived?: boolean;
 };

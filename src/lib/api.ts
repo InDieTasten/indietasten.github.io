@@ -41,6 +41,18 @@ export function getAllProjects(): Project[] {
   const fileContents = fs.readFileSync(yamlPath, "utf8");
   const projects = load(fileContents) as Project[];
 
+  // Map remote preview URLs to the locally downloaded copies, if the fetch
+  // step ran (scripts/fetch-previews.mjs writes _data/previews.json)
+  const previewsPath = join(dataDirectory, "previews.json");
+  if (fs.existsSync(previewsPath)) {
+    const previewPaths = JSON.parse(fs.readFileSync(previewsPath, "utf8")) as Record<string, string>;
+    for (const project of projects) {
+      if (project.preview_image && previewPaths[project.preview_image]) {
+        project.previewPath = previewPaths[project.preview_image];
+      }
+    }
+  }
+
   // Sort projects by status (done first, then in-progress, then abandoned) 
   // and within each status by updated date
   return projects.sort((a, b) => {

@@ -48,3 +48,7 @@ next-env.d.ts
 # project sample files
 _data/*-sample.yml
 _data/*-sample.json
+
+# social previews downloaded at build time (scripts/fetch-previews.mjs)
+/public/project-previews/
+/_data/previews.json

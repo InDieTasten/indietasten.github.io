@@ -1,8 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build"
+    "dev": "node scripts/fetch-previews.mjs && next dev --turbopack",
+    "build": "node scripts/fetch-previews.mjs --strict && next build",
+    "fetch:previews": "node scripts/fetch-previews.mjs"
   },
   "dependencies": {
     "@headlessui/react": "2.2.4",

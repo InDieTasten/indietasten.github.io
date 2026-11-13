@@ -19,7 +19,7 @@ The workflow fetches the following data for each public repository:
 - Creation and last update timestamps
 - Homepage/website URL
 - Archived status
-- OpenGraph social preview image
+- Social preview image (`preview_image`) - only for repositories that configure one; served from indietasten.net at build time (see below)
 
 ### 3. Smart Status Classification
 Projects are automatically classified based on activity:
@@ -37,6 +37,25 @@ When changes are detected, the workflow:
 - Commits the updated data files
 - Opens a pull request with detailed change information
 - Cleans up the branch after merge
+
+### 6. Self-hosted Preview Images
+
+The `preview_image` field holds the repository's configured social preview
+(`repository-images.githubusercontent.com`); it is omitted for repositories without one,
+and the Projects page shows the local `public/project-placeholder.svg` there.
+
+Browsers never load anything from GitHub: the build (`pnpm run build` and `pnpm dev`, via
+`scripts/fetch-previews.mjs`) downloads the referenced previews into `public/project-previews/`
+and records the remote -> local mapping in `_data/previews.json`, which `src/lib/api.ts`
+uses to render the local path. Both are gitignored and regenerated per build, so no binary
+files enter git and the nightly workflow still only ever changes `_data/projects.yml`.
+
+- File names come from the immutable preview URL (`<repo-id>-<uuid>.<ext>`), which lets nginx
+  serve `/project-previews/` with immutable cache headers.
+- `pnpm run build` runs the fetch with `--strict`, so a broken preview host fails the build
+  loudly; `pnpm run dev` is lenient and falls back to the placeholder with a warning.
+- `PREVIEWS_SKIP=1` skips the download entirely for offline builds (every card shows the
+  placeholder); `PREVIEWS_HOST` overrides the download host (testing only).
 
 ## Testing the Workflow
 
@@ -78,13 +97,15 @@ To modify the workflow behavior:
 ```
 _data/
 ├── projects.yml     # Primary YAML data file (auto-generated)
-└── projects-sample.yml  # Example of the new format
+├── projects-sample.yml  # Example of the new format
+└── previews.json    # Remote -> local preview mapping (gitignored, build-time)
 
 .github/workflows/
 └── auto-update-projects.yml  # GitHub Action workflow
 
 scripts/
-└── fetch-projects.sh  # Repository data fetching script
+├── fetch-projects.sh  # Repository data fetching script
+└── fetch-previews.mjs # Downloads social previews into public/project-previews/ (build time)
 
 src/lib/
 └── api.ts          # YAML data loading
