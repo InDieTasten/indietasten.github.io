@@ -277,15 +277,15 @@
   github_link: https://github.com/InDieTasten/breadstone
   website: https://breadstone.indietasten.net/
   tags:
-    - Rust
+    - TypeScript
     - aspnetcore
     - blazor
     - dotnet
     - minecraft
     - redstone
-  language: Rust
+  language: TypeScript
   created_at: '2019-07-19T19:14:26Z'
-  updated_at: '2026-11-10T00:24:47Z'
+  updated_at: '2026-11-14T00:03:27Z'
   archived: false
   preview_image: https://repository-images.githubusercontent.com/197829352/8b0d6880-c46a-11e9-903b-6500e4a61ad2
 - name: Authenticated-Integration-Testing
