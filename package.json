@@ -6,17 +6,17 @@
     "fetch:previews": "node scripts/fetch-previews.mjs"
   },
   "dependencies": {
-    "@headlessui/react": "2.2.4",
+    "@headlessui/react": "2.2.10",
     "@types/js-yaml": "^4.0.9",
-    "@wooorm/starry-night": "3.7.0",
+    "@wooorm/starry-night": "3.11.0",
     "classnames": "2.5.1",
     "clsx": "2.1.1",
-    "date-fns": "4.1.0",
+    "date-fns": "4.4.0",
     "gray-matter": "4.0.3",
-    "js-yaml": "^5.2.1",
-    "next": "16.3.8",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "js-yaml": "^5.5.0",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
     "rehype-starry-night": "2.2.0",
     "rehype-stringify": "10.0.1",
     "remark": "15.0.1",
@@ -27,12 +27,12 @@
     "vscode-oniguruma": "2.0.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "4.1.7",
+    "@tailwindcss/postcss": "4.3.5",
     "@tailwindcss/typography": "^0.5.20",
-    "@types/node": "22.15.21",
-    "@types/react": "19.1.5",
-    "postcss": "8.5.23",
-    "tailwindcss": "4.1.7",
-    "typescript": "5.8.3"
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "postcss": "8.5.33",
+    "tailwindcss": "4.3.5",
+    "typescript": "7.0.2"
   }
 }
